@@ -1,0 +1,942 @@
+[
+  {
+    "id": 1,
+    "title": "Ford Racing 3",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "Corrida",
+    "rating": 5,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/2/2e/Ford_Racing_3_%28PS2_cover%29.jpg",
+    "comment": "CD de demonstração que circulou por aí. Gráficos incríveis pra época, mais de 60 carros Ford!"
+  },
+  {
+    "id": 2,
+    "title": "HappyLand Adventures",
+    "platform": "PC",
+    "year": "2000",
+    "genre": "Plataforma",
+    "rating": 4,
+    "cover": "https://playclassic.games/wp-content/uploads/2019/04/HappyLand-Adventures.jpg",
+    "comment": "Colorido, divertido e viciante. Um clássico que muita gente jogou no Brasil."
+  },
+  {
+    "id": 11,
+    "title": "Sonic the Hedgehog",
+    "platform": "Sega Genesis",
+    "year": "1991",
+    "genre": "Plataforma",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg",
+    "comment": "Sonic em Hills Zone a toda velocidade. Emeralds, loops e aquele toque de nostalgia."
+  },
+  {
+    "id": 22,
+    "title": "Street Fighter II",
+    "platform": "Super Nintendo",
+    "year": "1992",
+    "genre": "Luta",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/0/06/Street_fighter_II_cover_SNES.jpg",
+    "comment": "Ryu cobrando Hadouken contra Guile. O jogo de luta que viciou gerações."
+  },
+  {
+    "id": 23,
+    "title": "Mortal Kombat",
+    "platform": "Sega Genesis",
+    "year": "1993",
+    "genre": "Luta",
+    "rating": 0,
+    "cover": "http://flipjeuxvideo.com/cdn/shop/files/1600_35bc7f19-2a75-4b5c-b8da-1c7e8b846ec5.jpg?v\\u003d1718297766",
+    "comment": "Luta sangrenta com fatalities. Johnny Cage contra Scorpion — atalho para o coração."
+  },
+  {
+    "id": 26,
+    "title": "Pokemon Crystal",
+    "platform": "Game Boy Color",
+    "year": "2000",
+    "genre": "RPG",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/1/19/Pok%C3%A9mon_Crystal_cover.png",
+    "comment": "Johto em toda sua glória. Lyra (ou Kris) em sua jornada. 16 badges, Ho-Oh esperando."
+  },
+  {
+    "id": 28,
+    "title": "World of Warcraft",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "MMORPG",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png",
+    "comment": "Azeroth. Raids, dungeons, PvP. 'For the Horde!' ou 'For the Alliance!'. Aquilo que roubou vidas."
+  },
+  {
+    "id": 30,
+    "title": "Mario Kart 64",
+    "platform": "Nintendo 64",
+    "year": "1996",
+    "genre": "Corrida",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg",
+    "comment": "Corrida com casca de banana, tartaruga vermelha e muito xingamento entre amigos. Rainbow Road era o terror de todo mundo."
+  },
+  {
+    "id": 31,
+    "title": "Pokémon Red",
+    "platform": "Game Boy Color",
+    "year": "1996",
+    "genre": "RPG",
+    "rating": 0,
+    "cover": "https://m.media-amazon.com/images/I/71aow5iRsfL._AC_UF350,350_QL50_.jpg",
+    "comment": "O começo de tudo. Escolher entre Bulbasaur, Charmander e Squirtle e sair de Pallet Town para se tornar mestre Pokémon."
+  },
+  {
+    "id": 32,
+    "title": "Rayman 2: The Great Escape",
+    "platform": "PC",
+    "year": "1999",
+    "genre": "Plataforma 3D",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/61/Rayman_2.jpg",
+    "comment": "Aventura incrível em 3D com o Rayman sem braços e pernas. Fases criativas, trilha sonora marcante e um dos melhores plataformas do PC."
+  },
+  {
+    "id": 33,
+    "title": "Medal of Honor: Allied Assault",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "FPS",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/d/d9/Medal_of_Honor_-_Allied_Assault_Coverart.png",
+    "comment": "FPS de Segunda Guerra Mundial que definiu o gênero. O desembarque na Normandia era tenso e cinematográfico — inspirou até o próprio Call of Duty."
+  },
+  {
+    "id": 34,
+    "title": "Need for Speed: Most Wanted",
+    "platform": "PC",
+    "year": "2005",
+    "genre": "Corrida",
+    "rating": 0,
+    "cover": "https://i.redd.it/jcd0799d5vd21.jpg",
+    "comment": "Fugir da polícia em mundo aberto com o BMW M3 GTR. A lista negra dos 15 rivais e aquela perseguição épica final — um dos melhores jogos de corrida já feitos."
+  },
+  {
+    "id": 35,
+    "title": "Need for Speed: Underground 2",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "Corrida",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/1/10/Nfsu2-win-cover.jpg",
+    "comment": "Tunar o carro do zero, mundo aberto à noite e trilha sonora incrível. Colocar aerofólio, neon e vinils era quase tão divertido quanto as corridas."
+  },
+  {
+    "id": 36,
+    "title": "The Simpsons: Hit & Run",
+    "platform": "PC",
+    "year": "2003",
+    "genre": "Ação / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/5/5f/The_Simpsons_Hit_and_Run_cover.png",
+    "comment": "GTA dos Simpsons em Springfield. Cada personagem com seu próprio capítulo, diálogos hilários e horas explorando a cidade."
+  },
+  {
+    "id": 37,
+    "title": "Grand Theft Auto: Vice City",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "Ação / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/ce/Vice-city-cover.jpg",
+    "comment": "Tommy Vercetti em Miami nos anos 80. Trilha sonora icônica no rádio, neon, palmeiras e aquela sensação de liberdade total."
+  },
+  {
+    "id": 38,
+    "title": "Grand Theft Auto: San Andreas",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "Ação / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/d/d3/Grand_Theft_Auto_San_Andreas_capa.png",
+    "comment": "CJ, Grove Street e um mapa gigantesco com três cidades. O jogo que todo mundo jogou por centenas de horas e ainda tem histórias pra contar."
+  },
+  {
+    "id": 39,
+    "title": "The Sims",
+    "platform": "PC",
+    "year": "2000",
+    "genre": "Simulação de Vida",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/5/5f/Capa_TS.jpg",
+    "comment": "Criar uma família, construir a casa dos sonhos e às vezes tirar a escada da piscina. O jogo que capturou jogadores de todos os perfis."
+  },
+  {
+    "id": 40,
+    "title": "Stronghold",
+    "platform": "PC",
+    "year": "2001",
+    "genre": "Estratégia / Simulação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/0c/Stronghold_%282001%29_Coverart.png",
+    "comment": "Construir castelos medievais, gerenciar o povo e defender o reino de invasões. O Lorde Rat e o Snake eram vilões memoráveis."
+  },
+  {
+    "id": 41,
+    "title": "MU Online",
+    "platform": "PC",
+    "year": "2001",
+    "genre": "MMORPG",
+    "rating": 0,
+    "cover": "https://img.hype.games/cdn/95aff532-8383-42a6-9fd8-2bb08ca20085mu-cover.jpg",
+    "comment": "MMORPG coreano que viciou o Brasil inteiro. Farmar experiência por horas, subir de classe e exibir o equipamento raro era a vida."
+  },
+  {
+    "id": 42,
+    "title": "Plants vs. Zombies",
+    "platform": "PC",
+    "year": "2009",
+    "genre": "Tower Defense",
+    "rating": 0,
+    "cover": "https://plantsvszombies.wiki.gg/images/thumb/Plantsvs.ZombiesGOTYPC.jpg/300px-Plantsvs.ZombiesGOTYPC.jpg?75f129",
+    "comment": "Defender a casa dos zumbis com ervilhas, girassóis e cogumelos. Simples, genial e impossível de largar."
+  },
+  {
+    "id": 43,
+    "title": "Worms Armageddon",
+    "platform": "PC",
+    "year": "1999",
+    "genre": "Estratégia / Tático",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/e/e5/Wa-win-cover.jpg",
+    "comment": "Minhocas armadas com granadas, bazucas e ovelhas explosivas. No multiplayer local era pura gritaria e risada."
+  },
+  {
+    "id": 44,
+    "title": "Counter-Strike 1.6",
+    "platform": "PC",
+    "year": "2000",
+    "genre": "FPS / Tático",
+    "rating": 0,
+    "cover": "https://ih1.redbubble.net/image.1123456637.4226/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg",
+    "comment": "O FPS que viciou gerações de PC gamers no Brasil. Lan houses, m4a1 silenciada, e aquele eco do silenciador da Glock. Clássico absoluto."
+  },
+  {
+    "id": 45,
+    "title": "Half-Life 2",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "FPS / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/25/Half-Life_2_cover.jpg/250px-Half-Life_2_cover.jpg",
+    "comment": "Gordon Freeman em City 17 contra a Combine. Câmaras de testes, gravgun revolucionária e aquele episódio de trem que te deixava tenso."
+  },
+  {
+    "id": 46,
+    "title": "Max Payne",
+    "platform": "PC",
+    "year": "2001",
+    "genre": "Ação / Noir",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/4/4c/Maxpaynebox.jpg",
+    "comment": "Max sofrendo em New York enquanto você dispara em câmera lenta em dramatic poses. Noir noir noir. Quadrinhos como cinemática. Obra de arte sombria."
+  },
+  {
+    "id": 47,
+    "title": "Warcraft III: Reign of Chaos",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "RTS / Estratégia",
+    "rating": 0,
+    "cover": "https://http2.mlstatic.com/D_NQ_NP_817325-MLU78938092165_092024-O.webp",
+    "comment": "O RTS que dividiu a história dos e-sports. Arthas, Illidan, Tyrande. Modo campanha com cinemáticas épicas. Customizável para mods infinitos."
+  },
+  {
+    "id": 48,
+    "title": "Tony Hawk's Pro Skater 3",
+    "platform": "PlayStation 2",
+    "year": "2001",
+    "genre": "Esporte / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/2/2b/Tony_Hawk%27s_Pro_Skater_3_Coverart.jpg",
+    "comment": "Fazer combos infinitos descendo ladeiras, espiral no corrimão e aquela satisfação de o contador de pontos virar vermelho de tão alto."
+  },
+  {
+    "id": 49,
+    "title": "Diablo",
+    "platform": "PC",
+    "year": "1996",
+    "genre": "RPG / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Diablo_Coverart.png/250px-Diablo_Coverart.png",
+    "comment": "Matar demônios nas catacumbas de Tristram. Clique clique clique no mouse até explodir. Addictivo demais. O começo de uma lendária série."
+  },
+  {
+    "id": 50,
+    "title": "Diablo II",
+    "platform": "PC",
+    "year": "2000",
+    "genre": "RPG / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/4/4c/Diablo_II_PC_capa.jpg",
+    "comment": "O opus máximo do gênero. 7 classes jogáveis, Baal, Sorceress com Frozen Orb e D2 roubava sua vida. Ainda é jogado em 2025."
+  },
+  {
+    "id": 51,
+    "title": "Quake 3 Arena",
+    "platform": "PC",
+    "year": "1999",
+    "genre": "FPS",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a1/Quake3Title.jpg",
+    "comment": "Arena shooter puro, rocket jump, railgun e aquele som de morte que ecoava na sua cabeça. Multiplayer insano."
+  },
+  {
+    "id": 52,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "platform": "Nintendo 64",
+    "year": "1998",
+    "genre": "Ação / Aventura",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/1/17/The_Legend_of_Zelda_Ocarina_of_Time_capa.png",
+    "comment": "Link em Hyrule em 3D. Ocarina tocando músicas, puzzles geniais, transformações em criatura e o melhor jogo de todos os tempos de acordo com a internet."
+  },
+  {
+    "id": 53,
+    "title": "Unreal Tournament 2004",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "FPS / Multiplayer",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/97/Unreal_Tournament_2004_Coverart.png",
+    "comment": "UT2K4: o FPS que combinava arte, velocidade e insanidade. Dodge jump, Flak Canon, mapa Onslaught. Pura adrenalina e pixel perfect."
+  },
+  {
+    "id": 54,
+    "title": "Age of Empires II",
+    "platform": "PC",
+    "year": "1999",
+    "genre": "RTS / Estratégia",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png",
+    "comment": "Construir cidades medievais, pesquisar tecnologias e mandar cavaleiros contra o inimigo. Campanhas históricas épicas. Clássico indiscutível."
+  },
+  {
+    "id": 55,
+    "title": "Guitar Hero",
+    "platform": "PlayStation 2",
+    "year": "2005",
+    "genre": "Música / Ritmo",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Guitarhero-cover.jpg/250px-Guitarhero-cover.jpg",
+    "comment": "Tocar guitarrinha de plástico no sofá e se sentir rockstar. Ligar hard mode e explodir sua performance. Boomtown Rats e Stevie Ray Vaughan na setlist."
+  },
+  {
+    "id": 56,
+    "title": "Abuse",
+    "platform": "PC",
+    "year": "1996",
+    "genre": "Ação / Plataforma",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/fa/Abuse_Coverart.png",
+    "comment": "Jogo eletrônico de ação e plataforma no estilo run and gun. Controle inovador com mouse, muita violência pixelada e um demônio irritante."
+  },
+  {
+    "id": 57,
+    "title": "Cave Story",
+    "platform": "PC",
+    "year": "2004",
+    "genre": "Ação / Plataforma",
+    "rating": 0,
+    "cover": "https://cdn1.epicgames.com/78473822f724474d8e436f6bde735623/offer/EGS_CaveStory_NicalisIncStudioPixel_S1-2560x1440-23b558de8df0be248f4a32654638ca19.jpg",
+    "comment": "Jogo de ação e plataforma 2D independente. Um clássico indie que marcou geração com história emocionante, gameplay genial e trilha sonora incrível."
+  },
+  {
+    "id": 58,
+    "title": "Soldat",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "Tiro / Plataforma",
+    "rating": 0,
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/638490/capsule_616x353.jpg?t\\u003d1756567404",
+    "comment": "Jogo de tiro e plataforma em 2D. Multiplayer caótico, física maluca, armas diversas e adrenalina pura em matches rápidos."
+  },
+  {
+    "id": 59,
+    "title": "Liero",
+    "platform": "MS-DOS / PC",
+    "year": "1998",
+    "genre": "Tiro / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/it/9/9d/Liero.png",
+    "comment": "Jogo eletrônico de tiro em tempo real. Combate subterrâneo entre duas minhocas armadas com física destrutível. Clássico cult finlandês criado por Joosa Riekkinen com partidas intensas."
+  },
+  {
+    "id": 60,
+    "title": "Liero X",
+    "platform": "PC",
+    "year": "2000",
+    "genre": "Tiro / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/commons/6/64/LieroGameplay.png",
+    "comment": "Continuação do clássico Liero. Mais armas, mais chaos, mais minhocas armadas se destruindo em batalhas épicas subterrâneas."
+  },
+  {
+    "id": 61,
+    "title": "Star Fox 64",
+    "platform": "Nintendo 64",
+    "year": "1997",
+    "genre": "Tiro / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/StarFox64_N64_Game_Box.jpg/250px-StarFox64_N64_Game_Box.jpg",
+    "comment": "Jogo de tiro em primeira/terceira pessoa no N64. Pilote a Arwing com Fox McCloud contra Andross. Ação rápida, múltiplas rotas e aquele joystick analógico revolucionário."
+  },
+  {
+    "id": 62,
+    "title": "Dungeon Siege",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "RPG / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/fb/DungeonSiegeBoxArt.jpg",
+    "comment": "RPG de ação em tempo real. Explorar masmorras épicas, recrutar heróis, derrotar monstros. Gameplay addictivo com câmera isométrica e clima de aventura medieval pura."
+  },
+  {
+    "id": 63,
+    "title": "Age of Mythology",
+    "platform": "PC",
+    "year": "2002",
+    "genre": "RTS / Estratégia",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9d/Age_of_Mythology_Liner.jpg",
+    "comment": "RTS de estratégia em tempo real. Construir cidades, comandar mitos e criaturas de Egípcios, Gregos, Nórdicos e Atlânticos. Campanha épica contra Kronos com gameplay viciante."
+  },
+  {
+    "id": 64,
+    "title": "Half-Life",
+    "platform": "PC",
+    "year": "1998",
+    "genre": "FPS / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+    "comment": "O FPS que revolucionou o gênero. Gordon Freeman em Black Mesa contra os Xen. Física inovadora, storytelling cinematográfico e mods infinitos. Obra-prima absoluta."
+  },
+  {
+    "id": 67,
+    "title": "Downhill Domination",
+    "platform": "PlayStation 2",
+    "year": "2005",
+    "genre": "Corrida / Esporte",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Downhill_Domination_Coverart.png/250px-Downhill_Domination_Coverart.png",
+    "comment": "Jogo de corrida de downhill no PlayStation 2. Pilote bikes em pistas alucinantes, customize seu equipamento, vença campeonatos. Adrenalina, velocidade e gravidade te esperando."
+  },
+  {
+    "id": 68,
+    "title": "CrossFire",
+    "platform": "PC",
+    "year": "2007",
+    "genre": "FPS / Tiro",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iie.webp",
+    "comment": "FPS gratuito do tipo pay-to-win que viciou milhões. Mercenários vs Black List, compre armas, customize personagem. Um clássico dos PC bangs brasileiros."
+  },
+  {
+    "id": 69,
+    "title": "Point Blank",
+    "platform": "PC",
+    "year": "2008",
+    "genre": "FPS / Tiro",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/az/b/b1/Point_Blank.jpg",
+    "comment": "FPS em primeira pessoa para lan houses. Modo Death Match, Bomb, Elimination. Jogo de tiro rápido que marcou gerações em cybercafés do Brasil."
+  },
+  {
+    "id": 70,
+    "title": "DDTank",
+    "platform": "Browser",
+    "year": "2008",
+    "genre": "Tiro / Ação",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqe.webp",
+    "comment": "Jogo de tiro por turnos cartunesco. Tanques combatendo em terrenos aleatórios, física divertida, muitos efeitos. Simples mas viciante para horas de jogo."
+  },
+  {
+    "id": 71,
+    "title": "GunZ: The Duel",
+    "platform": "PC",
+    "year": "2005",
+    "genre": "FPS / Ação",
+    "rating": 0,
+    "cover": "https://images.gog.com/7b003aac4ac8f8568f4b62ffca6ed411e2e1effb219d102f219e635c2c19dd7c_glx_vertical_cover.webp?namespace\\u003dgamesdb",
+    "comment": "FPS único com parkour e combate corpo-a-corpo. Wallrun, double jump, combate melee. Gameplay inovador que marcou épocas nos PC bangs asiáticos e brasileiros."
+  },
+  {
+    "id": 72,
+    "title": "GunBound",
+    "platform": "PC",
+    "year": "2003",
+    "genre": "RPG / Multiplayer",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b2/GunBound_World_Champion_%28title_screen%29.jpg",
+    "comment": "MMORPG casual e colorido. Missões fáceis, crafting, personalizações. Jogo descontraído perfeito para jogar enquanto faz outras coisas. Comunidade brasileira forte."
+  },
+  {
+    "id": 73,
+    "title": "Tibia",
+    "platform": "PC",
+    "year": "1997",
+    "genre": "MMORPG",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co255g.webp",
+    "comment": "Um dos primeiros MMORPGs da história. Mundo persistente isométrico, PvP aberto, farming infinito. Clássico que ainda está vivo em 2025 com comunidade fiel."
+  },
+  {
+    "id": 74,
+    "title": "Music Chase 1: The Music In Me",
+    "platform": "PC",
+    "year": "2010",
+    "genre": "Música / Ritmo",
+    "rating": 0,
+    "cover": "https://cdn.mobygames.com/covers/17146746-music-chase-1-the-music-in-me-windows-16-bit-front-cover.png",
+    "comment": "Jogo musical onde você segue a batida em partituras coloridas. Educativo e divertido, perfeito para aprender ritmo e música. Melhorias e músicas novas em cada sequência."
+  },
+  {
+    "id": 75,
+    "title": "Jackie Chan Stuntmaster",
+    "platform": "PlayStation",
+    "year": "2000",
+    "genre": "Beat em up / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/e/e6/JackieChanStuntmaster.jpg",
+    "comment": "Grande clássico do PS1 onde você controla o próprio Jackie Chan em porradarias épicas e acrobacias."
+  },
+  {
+    "id": 76,
+    "title": "Show do Milhão",
+    "platform": "PC CD-ROM",
+    "year": "2000",
+    "genre": "Trivia / Quiz",
+    "rating": 0,
+    "cover": "https://dn710607.ca.archive.org/0/items/showdomilhaovolume2/01.jpg",
+    "comment": "O clássico do SBT com o Silvio Santos. Você está certo disso?"
+  },
+  {
+    "id": 77,
+    "title": "Call of Duty: Warzone",
+    "platform": "PC",
+    "year": "2020",
+    "genre": "FPS / Battle Royale",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/65/COD_Warzone_Cover_Art.jpg",
+    "comment": "Battle Royale frenético no universo de Call of Duty. Verdansk, gulag e aquela tensão de ser o último sobrevivente."
+  },
+  {
+    "id": 78,
+    "title": "Marvel Rivals",
+    "platform": "PC",
+    "year": "2024",
+    "genre": "Hero Shooter",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/d/d1/Mrivals.png",
+    "comment": "Hero Shooter com os heróis e vilões da Marvel. Combates 6v6 dinâmicos e cenários destrutíveis."
+  },
+  {
+    "id": 79,
+    "title": "Overwatch 2",
+    "platform": "PC",
+    "year": "2022",
+    "genre": "Hero Shooter",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg",
+    "comment": "Evolução do hero shooter da Blizzard. Novos heróis, mapas e o modo 5v5 que mudou a dinâmica das partidas."
+  },
+  {
+    "id": 80,
+    "title": "skate.",
+    "platform": "PC",
+    "year": "2025",
+    "genre": "Esporte / Skate",
+    "rating": 0,
+    "cover": "https://pbs.twimg.com/media/GzIM2R2WsAAgGPl?format=jpg&name=900x900",
+    "comment": "O aguardado retorno da franquia Skate. Foco total em realismo, expressão e comunidade no San Vansterdam."
+  },
+  {
+    "id": 81,
+    "title": "Battlefield 6",
+    "platform": "PC",
+    "year": "2021",
+    "genre": "FPS / Guerra",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/87/Battlefield_6_cover_art.jpg",
+    "comment": "O sexto capítulo principal da série Battlefield, trazendo combates épicos em grande escala e destruição massiva."
+  },
+  {
+    "id": 82,
+    "title": "Hades",
+    "platform": "PC",
+    "year": "2020",
+    "genre": "Roguelike / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+    "comment": "Zagreus tentando escapar do submundo de seu pai. Um roguelike perfeito com narrativa envolvente e arte belíssima."
+  },
+  {
+    "id": 83,
+    "title": "Call of Duty: Black Ops Cold War",
+    "platform": "PC",
+    "year": "2020",
+    "genre": "FPS / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/3/31/BOCW_Cover_Art.jpg",
+    "comment": "Conspirações e espionagem durante a Guerra Fria. Campanha intensa, zumbis e o multiplayer clássico da Raven e Treyarch."
+  },
+  {
+    "id": 84,
+    "title": "Call of Duty: Modern Warfare II",
+    "platform": "PC",
+    "year": "2022",
+    "genre": "FPS / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/2/2e/Call_of_Duty_Modern_Warfare_II.jpg",
+    "comment": "Task Force 141 de volta em uma campanha global. Gráficos de ponta e uma jogabilidade refinada que definiu o novo padrão da série."
+  },
+  {
+    "id": 85,
+    "title": "Schedule I",
+    "platform": "PC",
+    "year": "2025",
+    "genre": "Simulação / Estratégia",
+    "rating": 0,
+    "cover": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2025/03/schedule-i-tag-page-cover-art.jpg?q=50&fit=contain&w=480&dpr=1.5",
+    "comment": "Um jogo de gerenciamento e estratégia que desafia suas habilidades de organização e planejamento."
+  },
+  {
+    "id": 86,
+    "title": "League of Legends",
+    "platform": "PC",
+    "year": "2009",
+    "genre": "MOBA",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobpn7.webp",
+    "comment": "O MOBA mais popular do mundo. Centenas de campeões, estratégia profunda e uma cena competitiva gigantesca."
+  },
+  {
+    "id": 87,
+    "title": "Alex Kidd in Miracle World",
+    "platform": "Master System",
+    "year": "1986",
+    "genre": "Plataforma",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/4/41/Alex_Kidd_in_Miracle_World.jpeg",
+    "comment": "O clássico mascote da Sega no Master System. Pular, dar socos e jogar Jokenpô com os chefões inesquecíveis."
+  },
+  {
+    "id": 88,
+    "title": "Golden Axe",
+    "platform": "Sega Genesis",
+    "year": "1989",
+    "genre": "Beat 'em up",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/ru/2/27/Golden_Axe_Coverart.png",
+    "comment": "Escolher entre o bárbaro, a amazona ou o anão e sair dando porrada e magia nos inimigos. Um clássico absoluto da Sega."
+  },
+  {
+    "id": 89,
+    "title": "The Lord of the Rings: Return to Moria",
+    "platform": "PC",
+    "year": "2023",
+    "genre": "Sobrevivência",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/c2/The_Lord_of_the_Rings_Return_to_Moria.png",
+    "comment": "Sobrevivência e construção nas Minas de Moria. Explore, minere e enfrente os perigos para retomar Khazad-dûm."
+  },
+  {
+    "id": 90,
+    "title": "Raft",
+    "platform": "PC",
+    "year": "2022",
+    "genre": "Sobrevivência",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/fa/Raft_cover.jpg",
+    "comment": "Sobrevivência oceânica cooperativa. Comece com um simples anzol e um pedaço de madeira, e construa uma mansão flutuante enquanto enfrenta tubarões e explora ilhas."
+  },
+  {
+    "id": 91,
+    "title": "It Takes Two",
+    "platform": "PC",
+    "year": "2021",
+    "genre": "Plataforma / Cooperativo",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
+    "comment": "Uma aventura de plataforma alucinante criada exclusivamente para ser jogada em modo cooperativo."
+  },
+  {
+    "id": 92,
+    "title": "Northgard: Definitive Edition",
+    "platform": "PC",
+    "year": "2018",
+    "genre": "RTS / Estratégia",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/07/Northgard_cover_art.jpg",
+    "comment": "Estratégia Viking em que você lidera o seu clã na descoberta de um novo continente misterioso e perigoso."
+  },
+  {
+    "id": 93,
+    "title": "Just Cause 3",
+    "platform": "PC",
+    "year": "2015",
+    "genre": "Ação / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/f2/Just_Cause_3_cover_art.jpg",
+    "comment": "Explosões em Medici. Rico Rodriguez destruindo ditaduras, planando de wingsuit e causando o absoluto caos."
+  },
+  {
+    "id": 94,
+    "title": "A Way Out",
+    "platform": "PC",
+    "year": "2018",
+    "genre": "Aventura / Cooperativo",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/83/A_Way_Out_Logo.jpg",
+    "comment": "Uma aventura cooperativa incrível que começa com uma fuga de prisão e se transforma em uma jornada emocionante e interconectada entre dois jogadores."
+  },
+  {
+    "id": 95,
+    "title": "Borderlands 2",
+    "platform": "PC",
+    "year": "2012",
+    "genre": "Looter Shooter",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/5/51/Borderlands_2_cover_art.png",
+    "comment": "Tiro, porrada e um bilhão de armas em Pandora. Enfrente Handsome Jack com seus amigos."
+  },
+  {
+    "id": 96,
+    "title": "Tribes of Midgard",
+    "platform": "PC",
+    "year": "2021",
+    "genre": "Sobrevivência / RPG",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/aa/Tribes_of_Midgard_cover_art.jpg",
+    "comment": "Sobreviva ao Ragnarök com sua tribo. Colete recursos durante o dia e defenda a Semente de Yggdrasil à noite."
+  },
+  {
+    "id": 97,
+    "title": "Trove",
+    "platform": "PC",
+    "year": "2015",
+    "genre": "MMO / Voxel",
+    "rating": 0,
+    "cover": "https://cdn.mobygames.com/covers/1831823-trove-xbox-one-front-cover.jpg",
+    "comment": "Aventuras em voxel. Minere, construa, derrote chefes em dungeons geradas proceduralmente com diversas classes únicas."
+  },
+  {
+    "id": 98,
+    "title": "Thronefall",
+    "platform": "PC",
+    "year": "2023",
+    "genre": "Estratégia / Defesa de Torre",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/7/7a/Thronefall_cover_art.jpg",
+    "comment": "Um jogo de construção e defesa de reino minimalista. Equilibre a economia de dia e defenda seu castelo à noite."
+  },
+  {
+    "id": 99,
+    "title": "Orcs Must Die!",
+    "platform": "PC",
+    "year": "2011",
+    "genre": "Defesa de Torre / Ação",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/89/Orcs_Must_Die_cover.png",
+    "comment": "Posicione armadilhas letais e use magia e armas para trucidar hordas de orcs e defender os Rifts (Fendas)."
+  },
+  {
+    "id": 100,
+    "title": "Magicka",
+    "platform": "PC",
+    "year": "2011",
+    "genre": "Ação / Aventura",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/ba/Magicka_box.jpg",
+    "comment": "Combine elementos para criar feitiços devastadores. Cuidado com o fogo amigo nesta hilária aventura mágica."
+  },
+  {
+    "id": 101,
+    "title": "Left 4 Dead 2",
+    "platform": "PC",
+    "year": "2009",
+    "genre": "FPS / Sobrevivência / Cooperativo",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/b/ba/Left4Dead2.jpg",
+    "comment": "Sobreviva ao apocalipse zumbi com seus amigos! Armas viscerais e um diretor de IA que garante que nenhuma partida seja igual a outra."
+  },
+  {
+    "id": 102,
+    "title": "Super Mario World",
+    "platform": "Super Nintendo",
+    "year": "1990",
+    "genre": "Plataforma",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/0/06/Super-Mario-World.jpg",
+    "comment": "Mario e Yoshi em Dinosaur Land. Fases secretas, Star Road e aquela sensação mágica de descobrir cada cantinho do mapa. O melhor plataforma de todos os tempos."
+  },
+  {
+    "id": 103,
+    "title": "DragonFable",
+    "platform": "Browser",
+    "year": "2006",
+    "genre": "RPG / Aventura",
+    "rating": 0,
+    "cover": "https://static.tvtropes.org/pmwiki/pub/images/DragonFable_8782.png",
+    "comment": "RPG single-player no navegador da Artix Entertainment. Aventuras épicas com dragões, classes variadas e aquela nostalgia dos jogos em Flash que marcaram uma geração."
+  },
+  {
+    "id": 104,
+    "title": "Tribal Wars",
+    "platform": "Browser",
+    "year": "2003",
+    "genre": "Estratégia / MMO",
+    "rating": 0,
+    "cover": "https://www.gamevicio.com/wp-content/uploads/2020/04/tribal-wars-cover-001715-2.webp",
+    "comment": "Estratégia medieval no navegador. Construir aldeias, recrutar tropas e conquistar territórios inimigos. Diplomacia, alianças e guerras que duravam semanas inteiras."
+  },
+  {
+    "id": 105,
+    "title": "BiteFight",
+    "platform": "Browser",
+    "year": "2006",
+    "genre": "RPG / MMO",
+    "rating": 0,
+    "cover": "https://cdn-1.webcatalog.io/catalog/bitefight/bitefight-icon-filled-256.webp?v=1714778099812",
+    "comment": "RPG de navegador onde você escolhe entre vampiros e lobisomens. Missões, PvP e evolução do personagem em um mundo sombrio e viciante."
+  },
+  {
+    "id": 106,
+    "title": "Ikariam",
+    "platform": "Browser",
+    "year": "2008",
+    "genre": "Estratégia / MMO",
+    "rating": 0,
+    "cover": "https://mmostats.com/images/games/ikariam/cover-ikariam.webp",
+    "comment": "Estratégia no navegador ambientada na Grécia Antiga. Construir cidades em ilhas, pesquisar tecnologias, formar alianças e dominar o mar Mediterrâneo."
+  },
+  {
+    "id": 107,
+    "title": "TheCrims",
+    "platform": "Browser",
+    "year": "2005",
+    "genre": "RPG / Crime",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4m89.webp",
+    "comment": "RPG de crime no navegador. Roube, trafique, suba na hierarquia do submundo e domine a cidade. Clássico dos jogos de browser que viciou muita gente."
+  },
+  {
+    "id": 108,
+    "title": "RuneScape",
+    "platform": "PC",
+    "year": "2001",
+    "genre": "MMORPG",
+    "rating": 0,
+    "cover": "https://scontent.fjdf2-2.fna.fbcdn.net/v/t39.30808-6/580696735_1326441539527805_8543420916438953018_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeE83gZek2uvgEM3VAtTL_HN4dKdlXl5jrTh0p2VeXmOtFhQ_mayJFYU4ve411HRK8l9vXrMnpeLpkSW3OzYh_mH&_nc_ohc=SzLI3sbJAOEQ7kNvwFZ2Y-M&_nc_oc=AdlYnYJExuIOP9FblhMzZSTQmWboMgURqNA67mrfdW4u05kHBnLjanUs2jawMT114iscTzcwwvWzjh522rd4mdw0&_nc_zt=23&_nc_ht=scontent.fjdf2-2.fna&_nc_gid=2AG-hfMaQSRjngRSxFUVHw&_nc_ss=8&oh=00_AfweScUeAozdI5FDtu5dXlz962QYysEOZUFoOQHBTHdEtg&oe=69B969E5",
+    "comment": "MMORPG clássico com mundo aberto, sistema de skills único e aventuras sem fim. Jogue no navegador ou baixe o cliente e explore Gielinor."
+  },
+  {
+    "id": 109,
+    "title": "Minecraft",
+    "platform": "PC",
+    "year": "2011",
+    "genre": "Sandbox / Sobrevivência",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png",
+    "comment": "O jogo que redefiniu uma geração. Minerar, construir, sobreviver e criar mundos infinitos bloco por bloco. De cavernas a castelos, tudo é possível."
+  },
+  {
+    "id": 110,
+    "title": "Habbo Hotel",
+    "platform": "Browser",
+    "year": "2000",
+    "genre": "Social / MMO",
+    "rating": 0,
+    "cover": "https://cdn.thegamesdb.net/images/original/boxart/front/17754-1.png",
+    "comment": "O hotel virtual que viciou milhões. Decorar quartos, fazer amigos, trocar moedas e curtir eventos. A rede social gamer antes das redes sociais."
+  },
+  {
+    "id": 111,
+    "title": "Grand Theft Auto V",
+    "platform": "PC",
+    "year": "2013",
+    "genre": "Ação / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png",
+    "comment": "Michael, Trevor e Franklin em Los Santos. Três protagonistas, um mundo gigantesco e o GTA Online que se tornou um fenômeno próprio."
+  },
+  {
+    "id": 112,
+    "title": "Adventure Quest Worlds",
+    "platform": "Browser",
+    "year": "2008",
+    "genre": "MMORPG",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7du9.webp",
+    "comment": "MMORPG no navegador da Artix Entertainment. Classes, quests épicas e batalhas em tempo real no universo de Lore. O irmão multiplayer do DragonFable."
+  },
+  {
+    "id": 113,
+    "title": "Brawl Stars",
+    "platform": "Mobile",
+    "year": "2018",
+    "genre": "Ação / Multiplayer",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/a/a4/Brawl_Stars_iOS_%C3%ADcone.jpg",
+    "comment": "O hit mobile da Supercell. Partidas rápidas 3v3, brawlers carismáticos e modos variados que viciam no celular. Competitivo e casual ao mesmo tempo."
+  },
+  {
+    "id": 114,
+    "title": "DotA (Defense of the Ancients)",
+    "platform": "PC",
+    "year": "2003",
+    "genre": "MOBA",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/2/28/Dota673-loading-screen.jpg",
+    "comment": "O mod de Warcraft III que criou o gênero MOBA. Escolher herói, farmar creeps, defender as torres e destruir a Ancient. O pai do League of Legends e do Dota 2."
+  },
+  {
+    "id": 115,
+    "title": "Valheim",
+    "platform": "PC",
+    "year": "2021",
+    "genre": "Sobrevivência / Mundo Aberto",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob24q.webp",
+    "comment": "Sobrevivência Viking cooperativa no purgatório nórdico. Construir bases épicas, derrotar chefões míticos e explorar biomas perigosos com os amigos. Fenômeno indie de 2021."
+  },
+  {
+    "id": 116,
+    "title": "Gladiatus",
+    "platform": "Browser",
+    "year": "2005",
+    "genre": "RPG / MMO",
+    "rating": 0,
+    "cover": "https://cdn.soft112.com/gladiatus-ios/00/00/0G/BI/00000GBIMA/pad_screenshot.jpg",
+    "comment": "RPG de gladiadores no navegador. Treinar personagem, lutar na arena, formar alianças e conquistar a glória em Roma Antiga."
+  },
+  {
+    "id": 117,
+    "title": "Altered Beast",
+    "platform": "Sega Genesis",
+    "year": "1989",
+    "genre": "Ação / Beat 'em up",
+    "rating": 0,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/6f/AlteredBeastFlyer.png",
+    "comment": "Um clássico do Mega Drive! Você é um guerreiro ressuscitado para salvar a filha do Zeus, se transformando em feras míticas pelo caminho. Power-ups, chefões gigantes e aquela nostalgia pura dos anos 90."
+  },
+  {
+    "id": 118,
+    "title": "Swords and Sandals 2",
+    "platform": "Browser",
+    "year": "2007",
+    "genre": "Luta / RPG",
+    "rating": 0,
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqi.webp",
+    "comment": "O clássico de gladiadores em Flash. Criar seu guerreiro, treinar atributos e duelar na arena até derrotar o imperador. Combate por turnos viciante que marcou toda uma geração de jogadores de browser."
+  }
+]

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Acervo Gamer</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #12122a;
+    --border: #2a2a5a;
+    --accent: #ff3c6e;
+    --accent2: #00e5ff;
+    --accent3: #ffe600;
+    --text: #e8e8f8;
+    --muted: #7070aa;
+    --star-on: #ffe600;
+    --star-off: #2a2a5a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeDown 0.8s ease both;
+  }
+
+  .header-tag {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    color: var(--accent2);
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+    display: block;
+    opacity: 0.7;
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(18px, 4vw, 28px);
+    color: var(--accent);
+    text-shadow:
+      0 0 20px rgba(255,60,110,0.6),
+      0 0 60px rgba(255,60,110,0.2),
+      4px 4px 0 #6b0028;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .header-sub {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .stats-bar {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 110px;
+  }
+
+  .stat-value {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    color: var(--accent2);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .btn-add {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 #6b0028;
+    transition: all 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .btn-add:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #6b0028; }
+  .btn-add:active { transform: translateY(2px); box-shadow: 0 2px 0 #6b0028; }
+
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 12px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-box:focus { border-color: var(--accent2); }
+  .search-box::placeholder { color: var(--muted); }
+
+  .filter-select {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    padding: 12px 14px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .pagination button {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+
+  .pagination button:hover {
+    background: var(--border);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+
+  .pagination button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,60,110,0.4);
+  }
+
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .pagination-info {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  #game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .game-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    gap: 16px;
+    align-items: start;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    animation: fadeUp 0.4s ease both;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .game-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--accent);
+    border-radius: 4px 0 0 4px;
+    z-index: 1;
+  }
+
+  .game-card:hover {
+    border-color: var(--accent2);
+    transform: translateX(4px);
+    box-shadow: -4px 0 20px rgba(0,229,255,0.1);
+  }
+
+  .game-cover {
+    width: 140px;
+    height: 200px;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(255,60,110,0.1), rgba(0,229,255,0.1));
+    border-right: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / span 2;
+  }
+
+  .game-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .game-main { grid-column: 2; padding: 20px 24px 20px 0; }
+
+  .game-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .game-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .tag-platform { background: rgba(0,229,255,0.12); color: var(--accent2); border: 1px solid rgba(0,229,255,0.25); }
+  .tag-genre    { background: rgba(255,230,0,0.10); color: var(--accent3); border: 1px solid rgba(255,230,0,0.2); }
+  .tag-year     { background: rgba(255,60,110,0.10); color: var(--accent); border: 1px solid rgba(255,60,110,0.2); }
+
+  .game-comment {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .game-actions {
+    padding-right: 20px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+  }
+
+  .star {
+    font-size: 16px;
+    color: var(--star-off);
+    cursor: pointer;
+    transition: color 0.1s, transform 0.1s;
+  }
+
+  .star.on {
+    color: var(--star-on);
+    transform: scale(1.2);
+  }
+
+  .card-btn-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn-edit, .btn-del {
+    font-size: 11px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-edit {
+    background: rgba(0,229,255,0.15);
+    color: var(--accent2);
+    border: 1px solid var(--accent2);
+  }
+
+  .btn-edit:hover { background: rgba(0,229,255,0.25); }
+
+  .btn-del {
+    background: rgba(255,60,110,0.15);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+
+  .btn-del:hover { background: rgba(255,60,110,0.25); }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+
+  .pixel-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    backdrop-filter: blur(2px);
+  }
+
+  .modal-overlay.hidden { display: none; }
+
+  .modal {
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: fadeUp 0.3s ease;
+  }
+
+  .modal h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    color: var(--text);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--accent2); }
+
+  .form-group textarea { resize: vertical; min-height: 70px; }
+
+  .star-picker {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .star-pick {
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--star-off);
+    transition: color 0.15s, transform 0.1s;
+    line-height: 1;
+  }
+
+  .star-pick:hover,
+  .star-pick.on { color: var(--star-on); transform: scale(1.2); }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+
+  .btn-save {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 #6b0028;
+    transition: all 0.1s;
+  }
+
+  .btn-save:hover { transform: translateY(-1px); }
+  .btn-save:active { transform: translateY(2px); box-shadow: none; }
+
+  .btn-cancel {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.15s;
+  }
+
+  .btn-cancel:hover { color: var(--text); border-color: var(--text); }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <span class="header-tag">// SAVE FILE LOADED //</span>
+    <h1>MEU ACERVO<br>GAMER</h1>
+    <p class="header-sub">Jogos que marcaram minha vida</p>
+  </header>
+
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat"><span class="stat-value" id="stat-total">0</span><span class="stat-label">Jogos</span></div>
+    <div class="stat"><span class="stat-value" id="stat-avg">—</span><span class="stat-label">Nota Média</span></div>
+    <div class="stat"><span class="stat-value" id="stat-platforms">0</span><span class="stat-label">Plataformas</span></div>
+  </div>
+
+  <div class="controls">
+    <button class="btn-add" onclick="openModal()">+ ADD JOGO</button>
+    <input type="text" class="search-box" placeholder="Buscar jogo..." id="search-input" oninput="renderList()">
+    <select class="filter-select" id="filter-platform" onchange="renderList()">
+      <option value="">Todas plataformas</option>
+    </select>
+    <select class="filter-select" id="filter-year" onchange="renderList()">
+      <option value="">Todos anos</option>
+    </select>
+  </div>
+
+  <div id="game-list"></div>
+  <div class="pagination-info" id="pagination-info"></div>
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay hidden" id="modal-overlay">
+  <div class="modal">
+    <h2 id="modal-title">NOVO JOGO</h2>
+    <div class="form-group">
+      <label>Título *</label>
+      <input type="text" id="f-title" placeholder="Ex: Ford Racing 3">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Plataforma</label>
+        <input type="text" id="f-platform" placeholder="Ex: PC, PS2, SNES">
+      </div>
+      <div class="form-group">
+        <label>Ano que jogou</label>
+        <input type="text" id="f-year" placeholder="Ex: 2005">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Gênero</label>
+      <input type="text" id="f-genre" placeholder="Ex: Corrida, Plataforma, RPG">
+    </div>
+    <div class="form-group">
+      <label>Nota (1–5)</label>
+      <div class="star-picker" id="star-picker">
+        <span class="star-pick" data-val="1">★</span>
+        <span class="star-pick" data-val="2">★</span>
+        <span class="star-pick" data-val="3">★</span>
+        <span class="star-pick" data-val="4">★</span>
+        <span class="star-pick" data-val="5">★</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Comentário / Memória</label>
+      <textarea id="f-comment" placeholder="O que esse jogo significa pra você?"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveGame()">SALVAR ►</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const colors = ["#FF6B35", "#4ECDC4", "#95E1D3", "#00D9FF", "#FF1744", "#8B0000", "#FF69B4", "#90EE90", "#FFD700", "#2F4F4F",
+    "#00BFFF", "#8B4513", "#DC143C", "#87CEEB", "#4B0082", "#FF4500", "#228B22", "#FF6347", "#FFB6C1", "#2F2F2F",
+    "#FFB6C1", "#C71585", "#8B0000", "#FFA500", "#00CED1", "#FFFF00", "#8B0000", "#3E0000", "#7851A9", "#FF6347",
+    "#FFFF00", "#FF69B4", "#4169E1", "#FF1493", "#FF8C00", "#FFD700", "#FF69B4", "#228B22", "#FF1493", "#8B4513",
+    "#FF4500", "#90EE90", "#FF6347", "#FFD700", "#FFA500", "#2F4F4F", "#8B008B", "#FF8C00", "#8B0000", "#DC143C",
+    "#FF4500", "#90EE90", "#FF1744", "#DAA520", "#FF6347"];
+
+  const titles = ["Ford Racing 3", "HappyLand", "Golden Axe", "Final Fantasy VII", "Doom", "Resident Evil 4", "Chrono Trigger",
+    "Zelda LTTP", "GTA III", "Metal Gear Solid", "Sonic", "Donkey Kong", "Mega Man X", "Link's Awakening",
+    "Castlevania IV", "Contra III", "Super Metroid", "FF VI", "Rocket Knight", "Ghouls 'n Ghosts", "Kirby",
+    "Street Fighter II", "Mortal Kombat", "Rocket League", "Tetris", "Pokemon Crystal", "Diablo III", "World of Warcraft",
+    "Baldur's Gate 3", "Mario Kart 64", "Pokemon Red", "Rayman 2", "Medal of Honor", "NFS Most Wanted", "NFS Underground 2",
+    "Simpsons", "GTA Vice City", "GTA San Andreas", "The Sims", "Stronghold", "MU Online", "Plants vs Zombies",
+    "Worms Armageddon", "Counter-Strike 1.6", "Half-Life 2", "Max Payne", "Warcraft III", "Tony Hawk's 3",
+    "Diablo", "Diablo II", "Quake", "Zelda OOT", "UT2004", "Age of Empires II", "Guitar Hero"];
+
+  function createSVGCover(id) {
+    const idx = id - 1;
+    const color = colors[idx];
+    const title = titles[idx];
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 200"><rect width="140" height="200" fill="${color}"/><rect width="140" height="200" fill="none" stroke="#fff" stroke-width="2"/><text x="70" y="100" font-family="Arial" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle" dominant-baseline="middle">${title}</text></svg>`;
+    const encoded = btoa(svg);
+    return `data:image/svg+xml;base64,${encoded}`;
+  }
+
+  let games = [
+    { id: 1, title: "Ford Racing 3", platform: "PC", year: "2004", genre: "Corrida", rating: 5, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjZCMzUiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Rm9yZCBSYWNpbmcgMzwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+", comment: "CD de demonstração que circulou por aí. Gráficos incríveis pra época, mais de 60 carros Ford!" },
+    { id: 2, title: "HappyLand Adventures", platform: "PC", year: "Anos 90", genre: "Plataforma", rating: 4, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM0RUNEQzQiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGFwcHlMYW5kIEFkdmVudHVyZXM8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==", comment: "Colorido, divertido e viciante. Um clássico que muita gente jogou no Brasil." },
+    { id: 11, title: "Sonic the Hedgehog", platform: "Sega Genesis", year: "1989", genre: "Plataforma", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMwMEJGRkYiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U29uaWMgdGhlIEhlZGdlaG9nPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=", comment: "Sonic em Hills Zone a toda velocidade. Emeralds, loops e aquele toque de nostalgia." },
+    { id: 22, title: "Street Fighter II", platform: "Super Nintendo", year: "1992", genre: "Luta", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNDNzE1ODUiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3RyZWV0IEZpZ2h0ZXIgSUk8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==", comment: "Ryu cobrando Hadouken contra Guile. O jogo de luta que viciou gerações." },
+    { id: 23, title: "Mortal Kombat", platform: "Sega Genesis", year: "1993", genre: "Luta", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM4QjAwMDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TW9ydGFsIEtvbWJhdDwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+", comment: "Luta sangrenta com fatalities. Johnny Cage contra Scorpion — atalho para o coração." },
+    { id: 26, title: "Pokemon Crystal", platform: "Game Boy Color", year: "2000", genre: "RPG", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkZGMDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9rZW1vbiBDcnlzdGFsPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=", comment: "Johto em toda sua glória. Lyra (ou Kris) em sua jornada. 16 badges, Ho-Oh esperando." },
+    { id: 28, title: "World of Warcraft", platform: "PC", year: "2004", genre: "MMORPG", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMzRTAwMDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V29ybGQgb2YgV2FyY3JhZnQ8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==", comment: "Azeroth. Raids, dungeons, PvP. 'For the Horde!' ou 'For the Alliance!'. Aquilo que roubou vidas." },
+    { id: 30, title: "Mario Kart 64", platform: "Nintendo 64", year: "1996", genre: "Corrida", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjYzNDciLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFyaW8gS2FydCA2NDwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+", comment: "Corrida com casca de banana, tartaruga vermelha e muito xingamento entre amigos. Rainbow Road era o terror de todo mundo." },
+    { id: 31, title: "Pokémon Red", platform: "Game Boy Color", year: "1996", genre: "RPG", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkZGMDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9rw6ltb24gUmVkPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=", comment: "O começo de tudo. Escolher entre Bulbasaur, Charmander e Squirtle e sair de Pallet Town para se tornar mestre Pokémon." },
+    { id: 32, title: "Rayman 2: The Great Escape", platform: "PC", year: "1999", genre: "Plataforma 3D", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tq2.jpg", comment: "Aventura incrível em 3D com o Rayman sem braços e pernas. Fases criativas, trilha sonora marcante e um dos melhores plataformas do PC." },
+    { id: 33, title: "Medal of Honor: Allied Assault", platform: "PC", year: "2002", genre: "FPS", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q3n.jpg", comment: "FPS de Segunda Guerra Mundial que definiu o gênero. O desembarque na Normandia era tenso e cinematográfico — inspirou até o próprio Call of Duty." },
+    { id: 34, title: "Need for Speed: Most Wanted", platform: "PC", year: "2005", genre: "Corrida", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pgm.jpg", comment: "Fugir da polícia em mundo aberto com o BMW M3 GTR. A lista negra dos 15 rivais e aquela perseguição épica final — um dos melhores jogos de corrida já feitos." },
+    { id: 35, title: "Need for Speed: Underground 2", platform: "PC", year: "2004", genre: "Corrida", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pp1.jpg", comment: "Tunar o carro do zero, mundo aberto à noite e trilha sonora incrível. Colocar aerofólio, neon e vinils era quase tão divertido quanto as corridas." },
+    { id: 36, title: "The Simpsons: Hit & Run", platform: "PC / PS2", year: "2003", genre: "Ação / Mundo Aberto", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vjn.jpg", comment: "GTA dos Simpsons em Springfield. Cada personagem com seu próprio capítulo, diálogos hilários e horas explorando a cidade." },
+    { id: 37, title: "GTA: Vice City", platform: "PC / PS2", year: "2002", genre: "Ação / Mundo Aberto", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qyy.jpg", comment: "Tommy Vercetti em Miami nos anos 80. Trilha sonora icônica no rádio, neon, palmeiras e aquela sensação de liberdade total." },
+    { id: 38, title: "GTA: San Andreas", platform: "PC / PS2", year: "2004", genre: "Ação / Mundo Aberto", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r0l.jpg", comment: "CJ, Grove Street e um mapa gigantesco com três cidades. O jogo que todo mundo jogou por centenas de horas e ainda tem histórias pra contar." },
+    { id: 39, title: "The Sims", platform: "PC", year: "2000", genre: "Simulação de Vida", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1udc.jpg", comment: "Criar uma família, construir a casa dos sonhos e às vezes tirar a escada da piscina. O jogo que capturou jogadores de todos os perfis." },
+    { id: 40, title: "Stronghold", platform: "PC", year: "2001", genre: "Estratégia / Simulação", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1syl.jpg", comment: "Construir castelos medievais, gerenciar o povo e defender o reino de invasões. O Lorde Rat e o Snake eram vilões memoráveis." },
+    { id: 41, title: "MU Online", platform: "PC", year: "2003", genre: "MMORPG", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1jqc.jpg", comment: "MMORPG coreano que viciou o Brasil inteiro. Farmar experiência por horas, subir de classe e exibir o equipamento raro era a vida." },
+    { id: 42, title: "Plants vs. Zombies", platform: "PC", year: "2009", genre: "Tower Defense", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mcq.jpg", comment: "Defender a casa dos zumbis com ervilhas, girassóis e cogumelos. Simples, genial e impossível de largar." },
+    { id: 43, title: "Worms Armageddon", platform: "PC", year: "1999", genre: "Estratégia / Tático", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ueb.jpg", comment: "Minhocas armadas com granadas, bazucas e ovelhas explosivas. No multiplayer local era pura gritaria e risada." },
+    { id: 44, title: "Counter-Strike 1.6", platform: "PC", year: "2000", genre: "FPS / Tático", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkQ3MDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q291bnRlci1TdHJpa2UgMS42PC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=", comment: "O FPS que viciou gerações de PC gamers no Brasil. Lan houses, m4a1 silenciada, e aquele eco do silenciador da Glock. Clássico absoluto." },
+    { id: 45, title: "Half-Life 2", platform: "PC", year: "2004", genre: "FPS / Ação", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkE1MDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGFsZi1MaWZlIDI8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==", comment: "Gordon Freeman em City 17 contra a Combine. Câmaras de testes, gravgun revolucionária e aquele episódio de trem que te deixava tenso." },
+    { id: 46, title: "Max Payne", platform: "PC / PS2", year: "2001", genre: "Ação / Noir", rating: 0, cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyRjRGNEYiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWF4IFBheW5lPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=", comment: "Max sofrendo em New York enquanto você dispara em câmera lenta em dramatic poses. Noir noir noir. Quadrinhos como cinemática. Obra de arte sombria." },
+    { id: 47, title: "Warcraft III: Reign of Chaos", platform: "PC", year: "2002", genre: "RTS / Estratégia", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8d.jpg", comment: "O RTS que dividiu a história dos e-sports. Arthas, Illidan, Tyrande. Modo campanha com cinemáticas épicas. Customizável para mods infinitos." },
+    { id: 48, title: "Tony Hawk's Pro Skater 3", platform: "PC / PS1", year: "2001", genre: "Esporte / Ação", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1slo.jpg", comment: "Fazer combos infinitos descendo ladeiras, espiral no corrimão e aquela satisfação de o contador de pontos virar vermelho de tão alto." },
+    { id: 49, title: "Diablo", platform: "PC", year: "1996", genre: "RPG / Ação", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p0t.jpg", comment: "Matar demônios nas catacumbas de Tristram. Clique clique clique no mouse até explodir. Addictivo demais. O começo de uma lendária série." },
+    { id: 50, title: "Diablo II", platform: "PC", year: "2000", genre: "RPG / Ação", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p0v.jpg", comment: "O opus máximo do gênero. 7 classes jogáveis, Baal, Sorceress com Frozen Orb e D2 roubava sua vida. Ainda é jogado em 2025." },
+    { id: 51, title: "Quake", platform: "PC", year: "1996", genre: "FPS", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1poy.jpg", comment: "O avô dos FPS modernos. Giblets voando, rocket jump no multiplayer e aquele design 3D poligonal super futurista pra época." },
+    { id: 52, title: "The Legend of Zelda: Ocarina of Time", platform: "Nintendo 64", year: "1998", genre: "Ação / Aventura", rating: 0, cover: "", comment: "Link em Hyrule em 3D. Ocarina tocando músicas, puzzles geniais, transformações em criatura e o melhor jogo de todos os tempos de acordo com a internet." },
+    { id: 53, title: "Unreal Tournament 2004", platform: "PC", year: "2004", genre: "FPS / Multiplayer", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1t35.jpg", comment: "UT2K4: o FPS que combinava arte, velocidade e insanidade. Dodge jump, Flak Canon, mapa Onslaught. Pura adrenalina e pixel perfect." },
+    { id: 54, title: "Age of Empires II", platform: "PC", year: "1999", genre: "RTS / Estratégia", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1snn.jpg", comment: "Construir cidades medievais, pesquisar tecnologias e mandar cavaleiros contra o inimigo. Campanhas históricas épicas. Clássico indiscutível." },
+    { id: 55, title: "Guitar Hero", platform: "PlayStation 2", year: "2005", genre: "Música / Ritmo", rating: 0, cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p8g.jpg", comment: "Tocar guitarrinha de plástico no sofá e se sentir rockstar. Ligar hard mode e explodir sua performance. Boomtown Rats e Stevie Ray Vaughan na setlist." },    {
+      id: 56,
+      title: "Abuse",
+      platform: "PC",
+      year: "1996",
+      genre: "Ação / Plataforma",
+      rating: 0,
+      cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mse.jpg",
+      comment: "Jogo eletrônico de ação e plataforma no estilo run and gun. Controle inovador com mouse, muita violência pixelada e um demônio irritante."
+    },
+    {
+      id: 57,
+      title: "Cave Story",
+      platform: "PC",
+      year: "2004",
+      genre: "Ação / Plataforma",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjY5QjQiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2F2ZSBTdG9yeTwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+",
+      comment: "Jogo de ação e plataforma 2D independente. Um clássico indie que marcou geração com história emocionante, gameplay genial e trilha sonora incrível."
+    },
+    {
+      id: 58,
+      title: "Soldat",
+      platform: "PC",
+      year: "2002",
+      genre: "Tiro / Plataforma",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM0MTY5RTEiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U29sZGF0PC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "Jogo de tiro e plataforma em 2D. Multiplayer caótico, física maluca, armas diversas e adrenalina pura em matches rápidos."
+    },
+    {
+      id: 59,
+      title: "Liero",
+      platform: "MS-DOS / PC",
+      year: "1998",
+      genre: "Tiro / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM4QjQ1MTMiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TGllcm88L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "Jogo eletrônico de tiro em tempo real. Combate subterrâneo entre duas minhocas armadas com física destrutível. Clássico cult finlandês criado por Joosa Riekkinen com partidas intensas."
+    },
+    {
+      id: 60,
+      title: "Liero X",
+      platform: "PC",
+      year: "2000",
+      genre: "Tiro / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNEQzE0M0MiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TGllcm8gWDwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+",
+      comment: "Continuação do clássico Liero. Mais armas, mais chaos, mais minhocas armadas se destruindo em batalhas épicas subterrâneas."
+    },
+    {
+      id: 61,
+      title: "Star Fox 64",
+      platform: "Nintendo 64",
+      year: "1997",
+      genre: "Tiro / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjE3NDQiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3RhciBGb3ggNjQ8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "Jogo de tiro em primeira/terceira pessoa no N64. Pilote a Arwing com Fox McCloud contra Andross. Ação rápida, múltiplas rotas e aquele joystick analógico revolucionário."
+    },
+    {
+      id: 62,
+      title: "Dungeon Siege",
+      platform: "PC",
+      year: "2002",
+      genre: "RPG / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM3ODUxQTkiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RHVuZ2VvbiBTaWVnZTwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+",
+      comment: "RPG de ação em tempo real. Explorar masmorras épicas, recrutar heróis, derrotar monstros. Gameplay addictivo com câmera isométrica e clima de aventura medieval pura."
+    },
+    {
+      id: 63,
+      title: "Age of Mythology",
+      platform: "PC",
+      year: "2002",
+      genre: "RTS / Estratégia",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNEQUE1MjAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QWdlIG9mIE15dGhvbG9neTwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+",
+      comment: "RTS de estratégia em tempo real. Construir cidades, comandar mitos e criaturas de Egípcios, Gregos, Nórdicos e Atlânticos. Campanha épica contra Kronos com gameplay viciante."
+    },
+    {
+      id: 64,
+      title: "Half-Life",
+      platform: "PC",
+      year: "1998",
+      genre: "FPS / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjhDMDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGFsZi1MaWZlPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "O FPS que revolucionou o gênero. Gordon Freeman em Black Mesa contra os Xen. Física inovadora, storytelling cinematográfico e mods infinitos. Obra-prima absoluta."
+    },
+    {
+      id: 65,
+      title: "Warcraft: Orcs & Humans",
+      platform: "PC",
+      year: "1994",
+      genre: "RTS / Estratégia",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM4QjAwOEIiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V2FyY3JhZnQ6IE9yY3MgJiBIdW1hbnM8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "O primeiro Warcraft que criou a série. Escolha entre Humanos ou Orcs, construa bases, recrute tropas. RTS que revolucionou o gênero com gameplay viciante e mundo imersivo."
+    },
+    {
+      id: 66,
+      title: "Warcraft II: Tides of Darkness",
+      platform: "PC",
+      year: "1995",
+      genre: "RTS / Estratégia",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM5OTMyQ0MiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V2FyY3JhZnQgSUk6IFRpZGVzIG9mIERhcmtuZXNzPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "Sequência épica do Warcraft. Gráficos melhorados, mais unidades, campanhas maiores. Humanos vs Orcs em Azeroth com gameplay que definiu os RTS da era."
+    },
+    {
+      id: 67,
+      title: "Downhill Domination",
+      platform: "PlayStation 2",
+      year: "2005",
+      genre: "Corrida / Esporte",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyMjhCMjIiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RG93bmhpbGwgRG9taW5hdGlvbjwvdGV4dD4KPHRleHQgeD0iNzAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuNyI+8J+OrjwvdGV4dD4KPC9zdmc+",
+      comment: "Jogo de corrida de downhill no PS2. Pilote bikes em pistas alucinantes, customize seu equipamento, vença campeonatos. Adrenalina, velocidade e gravidade te esperando."
+    },
+    {
+      id: 68,
+      title: "CrossFire",
+      platform: "PC",
+      year: "2007",
+      genre: "FPS / Tiro",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjQ1MDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3Jvc3NGaXJlPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "FPS gratuito do tipo pay-to-win que viciou milhões. Mercenários vs Black List, compre armas, customize personagem. Um clássico dos PC bangs brasileiros."
+    },
+    {
+      id: 69,
+      title: "Point Blank",
+      platform: "PC",
+      year: "2002",
+      genre: "FPS / Tiro",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkQ3MDAiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9pbnQgQmxhbms8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "FPS em primeira pessoa para lan houses. Modo Death Match, Bomb, Elimination. Jogo de tiro rápido que marcou gerações em cybercafés do Brasil."
+    },
+    {
+      id: 70,
+      title: "DDTank",
+      platform: "PC / Browser",
+      year: "2008",
+      genre: "Tiro / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMwMENFRDEiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RERUYW5rPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "Jogo de tiro por turnos cartunesco. Tanques combatendo em terrenos aleatórios, física divertida, muitos efeitos. Simples mas viciante para horas de jogo."
+    },
+    {
+      id: 71,
+      title: "GunZ: The Duel",
+      platform: "PC",
+      year: "2005",
+      genre: "FPS / Ação",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjE0OTMiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3VuWjogVGhlIER1ZWw8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "FPS único com parkour e combate corpo-a-corpo. Wallrun, double jump, combate melee. Gameplay inovador que marcou épocas nos PC bangs asiáticos e brasileiros."
+    },
+    {
+      id: 72,
+      title: "Ganbound",
+      platform: "PC / Browser",
+      year: "2010",
+      genre: "RPG / Multiplayer",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM5MzcwREIiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R2FuYm91bmQ8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "MMORPG casual e colorido. Missões fáceis, crafting, personalizações. Jogo descontraído perfeito para jogar enquanto faz outras coisas. Comunidade brasileira forte."
+    },
+    {
+      id: 73,
+      title: "Tibia",
+      platform: "PC / Browser",
+      year: "1997",
+      genre: "MMORPG",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyMjhCMjIiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VGliaWE8L3RleHQ+Cjx0ZXh0IHg9IjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjciPvCfjq48L3RleHQ+Cjwvc3ZnPg==",
+      comment: "Um dos primeiros MMORPGs da história. Mundo persistente isométrico, PvP aberto, farming infinito. Clássico que ainda está vivo em 2025 com comunidade fiel."
+    },
+    {
+      id: 74,
+      title: "Music Chase 1: The Music In Me",
+      platform: "PC",
+      year: "2010",
+      genre: "Música / Ritmo",
+      rating: 0,
+      cover: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjAwIj4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjY5QjQiLz4KPHJlY3Qgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjcwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TXVzaWMgQ2hhc2UgMTogVGhlIE11c2ljIEluIE1lPC90ZXh0Pgo8dGV4dCB4PSI3MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC43Ij7wn46uPC90ZXh0Pgo8L3N2Zz4=",
+      comment: "Jogo musical onde você segue a batida em partituras coloridas. Educativo e divertido, perfeito para aprender ritmo e música. Melhorias e músicas novas em cada sequência."
+    }
+  ];
+
+  // Gerar covers para todos os jogos
+  games.forEach(game => {
+    game.cover = createSVGCover(game.id);
+  });
+
+  let editingId = null;
+  let selectedRating = 0;
+  let currentPage = 1;
+  const itemsPerPage = 5;
+
+  function nextId() {
+    return games.length ? Math.max(...games.map(g => g.id)) + 1 : 1;
+  }
+
+  function renderList() {
+    const search = document.getElementById('search-input').value.toLowerCase();
+    const filterPlatform = document.getElementById('filter-platform').value;
+    const filterYear = document.getElementById('filter-year').value;
+    const list = document.getElementById('game-list');
+
+    let filtered = games.filter(g => {
+      const matchSearch = !search || g.title.toLowerCase().includes(search) || (g.comment||'').toLowerCase().includes(search);
+      const matchPlatform = !filterPlatform || g.platform === filterPlatform;
+      const matchYear = !filterYear || g.year === filterYear;
+      return matchSearch && matchPlatform && matchYear;
+    });
+
+    // Se mudou o filtro, voltar para página 1
+    if (filtered.length > 0 && (currentPage - 1) * itemsPerPage >= filtered.length) {
+      currentPage = 1;
+    }
+
+    if (!filtered.length) {
+      list.innerHTML = `<div class="empty-state"><span class="pixel-icon">👾</span><p>Nenhum jogo encontrado.<br>Adicione seu primeiro jogo!</p></div>`;
+      document.getElementById('pagination-info').innerHTML = '';
+      document.getElementById('pagination').innerHTML = '';
+      return;
+    }
+
+    // Calcular paginação
+    const totalPages = Math.ceil(filtered.length / itemsPerPage);
+    const startIdx = (currentPage - 1) * itemsPerPage;
+    const endIdx = startIdx + itemsPerPage;
+    const pageGames = filtered.slice(startIdx, endIdx);
+
+    // Renderizar jogos da página
+    list.innerHTML = pageGames.map((g, i) => `
+      <div class="game-card" style="animation-delay:${i * 0.06}s">
+        <div class="game-cover">
+          <img src="${g.cover}" alt="${g.title}" onerror="this.parentElement.innerHTML='📦'">
+        </div>
+        <div class="game-main">
+          <div class="game-title">${g.title}</div>
+          <div class="game-meta">
+            ${g.platform ? `<span class="tag tag-platform">${g.platform}</span>` : ''}
+            ${g.year     ? `<span class="tag tag-year">${g.year}</span>` : ''}
+            ${g.genre    ? `<span class="tag tag-genre">${g.genre}</span>` : ''}
+          </div>
+          ${g.comment ? `<div class="game-comment">${g.comment}</div>` : ''}
+        </div>
+        <div class="game-actions">
+          <div class="stars">${renderStars(g.rating)}</div>
+          <div class="card-btn-row">
+            <button class="btn-edit" onclick="editGame(${g.id})">Editar</button>
+            <button class="btn-del"  onclick="deleteGame(${g.id})">✕</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    // Informação de paginação
+    const infoText = `Mostrando ${startIdx + 1}-${Math.min(endIdx, filtered.length)} de ${filtered.length} jogos`;
+    document.getElementById('pagination-info').innerHTML = infoText;
+
+    // Renderizar botões de paginação
+    let paginationHTML = '';
+    
+    // Botão anterior
+    if (currentPage > 1) {
+      paginationHTML += `<button class="pagination-btn" onclick="window.goToPage(${currentPage - 1})">← Anterior</button>`;
+    }
+    
+    // Botões de páginas
+    for (let i = 1; i <= totalPages; i++) {
+      const isActive = i === currentPage ? 'active' : '';
+      paginationHTML += `<button class="pagination-btn ${isActive}" onclick="window.goToPage(${i})">${i}</button>`;
+    }
+    
+    // Botão próxima
+    if (currentPage < totalPages) {
+      paginationHTML += `<button class="pagination-btn" onclick="window.goToPage(${currentPage + 1})">Próxima →</button>`;
+    }
+    
+    document.getElementById('pagination').innerHTML = paginationHTML;
+
+    updateStats();
+    updatePlatformFilter();
+    updateYearFilter();
+  }
+
+  function renderStars(rating) {
+    return [1,2,3,4,5].map(i => `<span class="star ${i <= rating ? 'on' : ''}">★</span>`).join('');
+  }
+
+  function updateStats() {
+    document.getElementById('stat-total').textContent = games.length;
+    const rated = games.filter(g => g.rating > 0);
+    const avg = rated.length ? (rated.reduce((a,g) => a + g.rating, 0) / rated.length).toFixed(1) : '—';
+    document.getElementById('stat-avg').textContent = avg;
+    const platforms = new Set(games.map(g => g.platform).filter(Boolean));
+    document.getElementById('stat-platforms').textContent = platforms.size;
+  }
+
+  function updatePlatformFilter() {
+    const sel = document.getElementById('filter-platform');
+    const current = sel.value;
+    const platforms = [...new Set(games.map(g => g.platform).filter(Boolean))].sort();
+    sel.innerHTML = `<option value="">Todas plataformas</option>` +
+      platforms.map(p => `<option value="${p}" ${p===current?'selected':''}>${p}</option>`).join('');
+  }
+
+  function updateYearFilter() {
+    const sel = document.getElementById('filter-year');
+    const current = sel.value;
+    const years = [...new Set(games.map(g => g.year).filter(Boolean))].sort((a, b) => {
+      // Ordenar anos numericamente, mas deixar "Anos 90" etc no final
+      const aNum = parseInt(a);
+      const bNum = parseInt(b);
+      if (isNaN(aNum) && isNaN(bNum)) return a.localeCompare(b);
+      if (isNaN(aNum)) return 1;
+      if (isNaN(bNum)) return -1;
+      return aNum - bNum;
+    });
+    sel.innerHTML = `<option value="">Todos anos</option>` +
+      years.map(y => `<option value="${y}" ${y===current?'selected':''}>${y}</option>`).join('');
+  }
+
+  function openModal(game = null) {
+    editingId = game ? game.id : null;
+    document.getElementById('modal-title').textContent = game ? 'EDITAR JOGO' : 'NOVO JOGO';
+    document.getElementById('f-title').value    = game?.title    || '';
+    document.getElementById('f-platform').value = game?.platform || '';
+    document.getElementById('f-year').value     = game?.year     || '';
+    document.getElementById('f-genre').value    = game?.genre    || '';
+    document.getElementById('f-comment').value  = game?.comment  || '';
+    selectedRating = game?.rating || 0;
+    updateStarPicker();
+    document.getElementById('modal-overlay').classList.remove('hidden');
+    document.getElementById('f-title').focus();
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.add('hidden');
+    editingId = null;
+  }
+
+  function saveGame() {
+    const title = document.getElementById('f-title').value.trim();
+    if (!title) { document.getElementById('f-title').focus(); return; }
+
+    const game = {
+      id: editingId || nextId(),
+      title,
+      platform: document.getElementById('f-platform').value.trim(),
+      year:     document.getElementById('f-year').value.trim(),
+      genre:    document.getElementById('f-genre').value.trim(),
+      rating:   selectedRating,
+      comment:  document.getElementById('f-comment').value.trim(),
+      cover:    editingId ? games.find(g => g.id === editingId).cover : createSVGCover(nextId())
+    };
+
+    if (editingId) {
+      const idx = games.findIndex(g => g.id === editingId);
+      games[idx] = game;
+    } else {
+      games.push(game);
+    }
+
+    closeModal();
+    renderList();
+  }
+
+  function editGame(id) {
+    openModal(games.find(g => g.id === id));
+  }
+
+  function deleteGame(id) {
+    if (confirm('Remover esse jogo do acervo?')) {
+      games = games.filter(g => g.id !== id);
+      renderList();
+    }
+  }
+
+  function goToPage(page) {
+    currentPage = page;
+    renderList();
+    document.getElementById('game-list').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Expor globalmente
+  window.goToPage = goToPage;
+
+  document.getElementById('star-picker').addEventListener('click', e => {
+    const s = e.target.closest('.star-pick');
+    if (!s) return;
+    selectedRating = parseInt(s.dataset.val);
+    updateStarPicker();
+  });
+
+  function updateStarPicker() {
+    document.querySelectorAll('.star-pick').forEach(s => {
+      s.classList.toggle('on', parseInt(s.dataset.val) <= selectedRating);
+    });
+  }
+
+  document.getElementById('modal-overlay').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Enter' && !document.getElementById('modal-overlay').classList.contains('hidden')) saveGame();
+  });
+
+  renderList();
+</script>
+</body>
+</html>
