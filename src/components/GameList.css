@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 2rem;
 }
 
 .controls-bar {
