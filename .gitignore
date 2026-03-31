@@ -1,0 +1,83 @@
+# 📦 Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 🔨 Build outputs
+dist/
+dist-ssr/
+build/
+*.local
+*.tsbuildinfo
+
+# ⚡ Vite & Build tools cache
+.vite/
+.vitepress/
+.turbo/
+.cache/
+
+# 🔒 Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# 💻 IDE & Editor
+.vscode/
+.idea/
+.vscode-test/
+*.iml
+*.swp
+*.swo
+*~
+.eslintcache
+.stylelintcache
+.prettierignore
+.prettierrc
+
+# 🖥️ OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# 📝 Logs & Testing
+logs/
+*.log
+coverage/
+.nyc_output/
+*.lcov
+.jest_cache/
+test-results/
+.history
+
+# 🔧 Temporary & Generated files
+*.tmp
+*.temp
+tmp/
+temp/
+.npm/
+.node_repl_history
+*.generated.*
+
+# 📦 Package artifacts
+*.tgz
+.turbo/
+.next/
+out/
+
+# 🧪 Test coverage
+.coverage/
+htmlcov/
