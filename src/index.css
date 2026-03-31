@@ -72,10 +72,19 @@ body::after {
 .app-container {
   display: flex;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 1.5rem;
   gap: 1.5rem;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 5rem; /* Space for bottom nav */
+    gap: 1rem;
+  }
 }
 
 /* Scrollbar */

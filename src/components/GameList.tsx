@@ -17,7 +17,7 @@ export function GameList({ games, onUpdateRating, onImageError, currentPage, set
   const [search, setSearch] = useState('');
   const [platformFilter, setPlatformFilter] = useState('');
   const [yearFilter, setYearFilter] = useState('');
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
 
   const platforms = useMemo(() => {
     return Array.from(new Set(games.map(g => g.platform).filter(Boolean))).sort();
