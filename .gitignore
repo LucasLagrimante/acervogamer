@@ -5,11 +5,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-package-lock.json
 pnpm-lock.yaml
 yarn.lock
 
 # 🔨 Build outputs
+dist/
 dist-ssr/
 build/
 *.local

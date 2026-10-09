@@ -7,10 +7,24 @@ interface DashboardProps {
   games: Game[];
 }
 
-const COLORS = {
-  game: '#ff2a6d', // var(--neon-pink)
-  platform: '#05d9e8', // var(--neon-blue)
-  genre: '#fcee0a' // var(--neon-yellow)
+type NodeType = 'game' | 'platform' | 'genre';
+
+interface GraphNode {
+  id: string;
+  name: string;
+  type: NodeType;
+  val: number;
+}
+
+interface GraphLink {
+  source: string;
+  target: string;
+}
+
+const COLORS: Record<NodeType, string> = {
+  game: '#ff2a6d',
+  platform: '#05d9e8',
+  genre: '#fcee0a',
 };
 
 export function Dashboard({ games }: DashboardProps) {
@@ -37,16 +51,14 @@ export function Dashboard({ games }: DashboardProps) {
   }, [games]);
 
   const graphData = useMemo(() => {
-    const nodes: any[] = [];
-    const links: any[] = [];
+    const nodes: GraphNode[] = [];
+    const links: GraphLink[] = [];
     const addedPlats = new Set<string>();
     const addedGenres = new Set<string>();
 
     games.forEach(game => {
-      // Game Node
       nodes.push({ id: `game-${game.id}`, name: game.title, type: 'game', val: 3 });
 
-      // Platform Node & Link
       if (game.platform) {
         if (!addedPlats.has(game.platform)) {
           addedPlats.add(game.platform);
@@ -55,7 +67,6 @@ export function Dashboard({ games }: DashboardProps) {
         links.push({ source: `game-${game.id}`, target: `plat-${game.platform}` });
       }
 
-      // Genre Node & Link
       if (game.genre) {
         if (!addedGenres.has(game.genre)) {
           addedGenres.add(game.genre);
@@ -105,7 +116,7 @@ export function Dashboard({ games }: DashboardProps) {
               height={dimensions.height}
               graphData={graphData}
               nodeLabel="name"
-              nodeColor={(node: any) => COLORS[node.type as keyof typeof COLORS] || '#ffffff'}
+              nodeColor={(node: object) => COLORS[(node as GraphNode).type] ?? '#ffffff'}
               linkColor={() => 'rgba(255, 255, 255, 0.15)'}
               backgroundColor="transparent"
               nodeRelSize={4}

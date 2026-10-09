@@ -63,8 +63,10 @@ export function GameList({ games, onUpdateRating, onImageError, currentPage, set
     currentPage * itemsPerPage
   );
 
-  // Reset page when filters change
-  useEffect(() => { setCurrentPage(1); }, [search, platformFilter, yearFilter]);
+  // Filtros alterados invalidam a página atual: volta para a primeira
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [search, platformFilter, yearFilter, setCurrentPage]);
 
   return (
     <div className="game-list-container animate-in">

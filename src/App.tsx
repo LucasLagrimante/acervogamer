@@ -12,8 +12,8 @@ import gamesData from './data/games.json';
 const TABS = ['library', 'dashboard'] as const;
 
 function App() {
-  const [currentTab, setCurrentTab] = useState('library');
-  const [games, setGames] = useState<Game[]>([]);
+  const [currentTab, setCurrentTab] = useState<string>('library');
+  const [games, setGames] = useState<Game[]>(() => gamesData as Game[]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
@@ -30,11 +30,6 @@ function App() {
   const handleImageError = useCallback((gameTitle: string) => {
     addToast(`⚠ Imagem quebrada: "${gameTitle}"`);
   }, [addToast]);
-
-  useEffect(() => {
-    // Simulated load to fetch the extracted games
-    setGames(gamesData as unknown as Game[]);
-  }, []);
 
   const updateGameRating = (id: number, newRating: number) => {
     setGames(prev => prev.map(g => g.id === id ? { ...g, rating: newRating } : g));
