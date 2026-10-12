@@ -1,0 +1,1703 @@
+[
+  {
+    "id": 1,
+    "title": "Ford Racing 3",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/2/2e/Ford_Racing_3_%28PS2_cover%29.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/2/2e/Ford_Racing_3_%28PS2_cover%29.jpg",
+    "originalBytes": 51987,
+    "originalDimensions": [
+      260,
+      367
+    ],
+    "localFile": "/covers/1.webp",
+    "localBytes": 24876,
+    "localDimensions": [
+      260,
+      367
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 2,
+    "title": "HappyLand Adventures",
+    "originalSource": "https://playclassic.games/wp-content/uploads/2019/04/HappyLand-Adventures.jpg",
+    "sourcePage": "https://playclassic.games/wp-content/uploads/2019/04/HappyLand-Adventures.jpg",
+    "originalBytes": 22013,
+    "originalDimensions": [
+      300,
+      381
+    ],
+    "localFile": "/covers/2.webp",
+    "localBytes": 13938,
+    "localDimensions": [
+      300,
+      381
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 11,
+    "title": "Sonic the Hedgehog",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg",
+    "originalBytes": 30618,
+    "originalDimensions": [
+      249,
+      359
+    ],
+    "localFile": "/covers/11.webp",
+    "localBytes": 22720,
+    "localDimensions": [
+      249,
+      359
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 22,
+    "title": "Street Fighter II",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/0/06/Street_fighter_II_cover_SNES.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/0/06/Street_fighter_II_cover_SNES.jpg",
+    "originalBytes": 342207,
+    "originalDimensions": [
+      500,
+      366
+    ],
+    "localFile": "/covers/22.webp",
+    "localBytes": 43722,
+    "localDimensions": [
+      500,
+      366
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 23,
+    "title": "Mortal Kombat",
+    "originalSource": "http://flipjeuxvideo.com/cdn/shop/files/1600_35bc7f19-2a75-4b5c-b8da-1c7e8b846ec5.jpg?v=1718297766",
+    "sourcePage": "http://flipjeuxvideo.com/cdn/shop/files/1600_35bc7f19-2a75-4b5c-b8da-1c7e8b846ec5.jpg?v=1718297766",
+    "originalBytes": 86320,
+    "originalDimensions": [
+      640,
+      893
+    ],
+    "localFile": "/covers/23.webp",
+    "localBytes": 42268,
+    "localDimensions": [
+      500,
+      698
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 26,
+    "title": "Pokemon Crystal",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/1/19/Pok%C3%A9mon_Crystal_cover.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/1/19/Pok%C3%A9mon_Crystal_cover.png",
+    "originalBytes": 148825,
+    "originalDimensions": [
+      264,
+      266
+    ],
+    "localFile": "/covers/26.webp",
+    "localBytes": 18716,
+    "localDimensions": [
+      264,
+      266
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 28,
+    "title": "World of Warcraft",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png",
+    "originalBytes": 267121,
+    "originalDimensions": [
+      264,
+      378
+    ],
+    "localFile": "/covers/28.webp",
+    "localBytes": 31456,
+    "localDimensions": [
+      264,
+      378
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 30,
+    "title": "Mario Kart 64",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg",
+    "originalBytes": 109221,
+    "originalDimensions": [
+      378,
+      264
+    ],
+    "localFile": "/covers/30.webp",
+    "localBytes": 23522,
+    "localDimensions": [
+      378,
+      264
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 31,
+    "title": "Pokémon Red",
+    "originalSource": "https://m.media-amazon.com/images/I/71aow5iRsfL._AC_UF350,350_QL50_.jpg",
+    "sourcePage": "https://m.media-amazon.com/images/I/71aow5iRsfL._AC_UF350,350_QL50_.jpg",
+    "originalBytes": 21348,
+    "originalDimensions": [
+      349,
+      350
+    ],
+    "localFile": "/covers/31.webp",
+    "localBytes": 31452,
+    "localDimensions": [
+      349,
+      350
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 32,
+    "title": "Rayman 2: The Great Escape",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/6/61/Rayman_2.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/6/61/Rayman_2.jpg",
+    "originalBytes": 59176,
+    "originalDimensions": [
+      280,
+      357
+    ],
+    "localFile": "/covers/32.webp",
+    "localBytes": 23576,
+    "localDimensions": [
+      280,
+      357
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 33,
+    "title": "Medal of Honor: Allied Assault",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/d/d9/Medal_of_Honor_-_Allied_Assault_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/d/d9/Medal_of_Honor_-_Allied_Assault_Coverart.png",
+    "originalBytes": 187057,
+    "originalDimensions": [
+      256,
+      363
+    ],
+    "localFile": "/covers/33.webp",
+    "localBytes": 24044,
+    "localDimensions": [
+      256,
+      363
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 34,
+    "title": "Need for Speed: Most Wanted",
+    "originalSource": "https://i.redd.it/jcd0799d5vd21.jpg",
+    "sourcePage": "https://i.redd.it/jcd0799d5vd21.jpg",
+    "originalBytes": 2793318,
+    "originalDimensions": [
+      4593,
+      5799
+    ],
+    "localFile": "/covers/34.webp",
+    "localBytes": 75606,
+    "localDimensions": [
+      500,
+      631
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 35,
+    "title": "Need for Speed: Underground 2",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/1/10/Nfsu2-win-cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/1/10/Nfsu2-win-cover.jpg",
+    "originalBytes": 103086,
+    "originalDimensions": [
+      255,
+      390
+    ],
+    "localFile": "/covers/35.webp",
+    "localBytes": 21776,
+    "localDimensions": [
+      255,
+      390
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 36,
+    "title": "The Simpsons: Hit & Run",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/5/5f/The_Simpsons_Hit_and_Run_cover.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/5/5f/The_Simpsons_Hit_and_Run_cover.png",
+    "originalBytes": 223126,
+    "originalDimensions": [
+      250,
+      316
+    ],
+    "localFile": "/covers/36.webp",
+    "localBytes": 24724,
+    "localDimensions": [
+      250,
+      316
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 37,
+    "title": "Grand Theft Auto: Vice City",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/c/ce/Vice-city-cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/c/ce/Vice-city-cover.jpg",
+    "originalBytes": 105208,
+    "originalDimensions": [
+      256,
+      325
+    ],
+    "localFile": "/covers/37.webp",
+    "localBytes": 26374,
+    "localDimensions": [
+      256,
+      325
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 38,
+    "title": "Grand Theft Auto: San Andreas",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/d/d3/Grand_Theft_Auto_San_Andreas_capa.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/d/d3/Grand_Theft_Auto_San_Andreas_capa.png",
+    "originalBytes": 305997,
+    "originalDimensions": [
+      398,
+      498
+    ],
+    "localFile": "/covers/38.webp",
+    "localBytes": 44614,
+    "localDimensions": [
+      398,
+      498
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 39,
+    "title": "The Sims",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/5/5f/Capa_TS.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/5/5f/Capa_TS.jpg",
+    "originalBytes": 26230,
+    "originalDimensions": [
+      300,
+      360
+    ],
+    "localFile": "/covers/39.webp",
+    "localBytes": 23244,
+    "localDimensions": [
+      300,
+      360
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 40,
+    "title": "Stronghold",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/0/0c/Stronghold_%282001%29_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/0/0c/Stronghold_%282001%29_Coverart.png",
+    "originalBytes": 207968,
+    "originalDimensions": [
+      267,
+      374
+    ],
+    "localFile": "/covers/40.webp",
+    "localBytes": 26710,
+    "localDimensions": [
+      267,
+      374
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 41,
+    "title": "MU Online",
+    "originalSource": "https://img.hype.games/cdn/95aff532-8383-42a6-9fd8-2bb08ca20085mu-cover.jpg",
+    "sourcePage": "https://img.hype.games/cdn/95aff532-8383-42a6-9fd8-2bb08ca20085mu-cover.jpg",
+    "originalBytes": 404146,
+    "originalDimensions": [
+      1920,
+      1200
+    ],
+    "localFile": "/covers/41.webp",
+    "localBytes": 34556,
+    "localDimensions": [
+      500,
+      313
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 42,
+    "title": "Plants vs. Zombies",
+    "originalSource": "https://plantsvszombies.wiki.gg/images/thumb/Plantsvs.ZombiesGOTYPC.jpg/300px-Plantsvs.ZombiesGOTYPC.jpg?75f129",
+    "sourcePage": "https://plantsvszombies.wiki.gg/images/thumb/Plantsvs.ZombiesGOTYPC.jpg/300px-Plantsvs.ZombiesGOTYPC.jpg?75f129",
+    "originalBytes": 44690,
+    "originalDimensions": [
+      300,
+      429
+    ],
+    "localFile": "/covers/42.webp",
+    "localBytes": 41122,
+    "localDimensions": [
+      300,
+      429
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 43,
+    "title": "Worms Armageddon",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/e/e5/Wa-win-cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/e/e5/Wa-win-cover.jpg",
+    "originalBytes": 53970,
+    "originalDimensions": [
+      256,
+      330
+    ],
+    "localFile": "/covers/43.webp",
+    "localBytes": 20606,
+    "localDimensions": [
+      256,
+      330
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 44,
+    "title": "Counter-Strike 1.6",
+    "originalSource": "https://ih1.redbubble.net/image.1123456637.4226/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg",
+    "sourcePage": "https://ih1.redbubble.net/image.1123456637.4226/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg",
+    "originalBytes": 260922,
+    "originalDimensions": [
+      750,
+      1000
+    ],
+    "localFile": "/covers/44.webp",
+    "localBytes": 80286,
+    "localDimensions": [
+      500,
+      667
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 45,
+    "title": "Half-Life 2",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/25/Half-Life_2_cover.jpg/250px-Half-Life_2_cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/25/Half-Life_2_cover.jpg/250px-Half-Life_2_cover.jpg",
+    "originalBytes": 29826,
+    "originalDimensions": [
+      250,
+      357
+    ],
+    "localFile": "/covers/45.webp",
+    "localBytes": 19684,
+    "localDimensions": [
+      250,
+      357
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 46,
+    "title": "Max Payne",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/4/4c/Maxpaynebox.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/4/4c/Maxpaynebox.jpg",
+    "originalBytes": 58193,
+    "originalDimensions": [
+      284,
+      350
+    ],
+    "localFile": "/covers/46.webp",
+    "localBytes": 23484,
+    "localDimensions": [
+      284,
+      350
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 47,
+    "title": "Warcraft III: Reign of Chaos",
+    "originalSource": "https://http2.mlstatic.com/D_NQ_NP_817325-MLU78938092165_092024-O.webp",
+    "sourcePage": "https://http2.mlstatic.com/D_NQ_NP_817325-MLU78938092165_092024-O.webp",
+    "originalBytes": 30674,
+    "originalDimensions": [
+      355,
+      500
+    ],
+    "localFile": "/covers/47.webp",
+    "localBytes": 30000,
+    "localDimensions": [
+      355,
+      500
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 48,
+    "title": "Tony Hawk's Pro Skater 3",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/2/2b/Tony_Hawk%27s_Pro_Skater_3_Coverart.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/2/2b/Tony_Hawk%27s_Pro_Skater_3_Coverart.jpg",
+    "originalBytes": 21821,
+    "originalDimensions": [
+      256,
+      328
+    ],
+    "localFile": "/covers/48.webp",
+    "localBytes": 18564,
+    "localDimensions": [
+      256,
+      328
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 49,
+    "title": "Diablo",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Diablo_Coverart.png/250px-Diablo_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Diablo_Coverart.png/250px-Diablo_Coverart.png",
+    "originalBytes": 50707,
+    "originalDimensions": [
+      250,
+      375
+    ],
+    "localFile": "/covers/49.webp",
+    "localBytes": 6460,
+    "localDimensions": [
+      250,
+      375
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 50,
+    "title": "Diablo II",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/4/4c/Diablo_II_PC_capa.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/4/4c/Diablo_II_PC_capa.jpg",
+    "originalBytes": 41551,
+    "originalDimensions": [
+      405,
+      500
+    ],
+    "localFile": "/covers/50.webp",
+    "localBytes": 32274,
+    "localDimensions": [
+      405,
+      500
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 51,
+    "title": "Quake 3 Arena",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/a/a1/Quake3Title.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/a/a1/Quake3Title.jpg",
+    "originalBytes": 61952,
+    "originalDimensions": [
+      258,
+      387
+    ],
+    "localFile": "/covers/51.webp",
+    "localBytes": 28590,
+    "localDimensions": [
+      258,
+      387
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 52,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/1/17/The_Legend_of_Zelda_Ocarina_of_Time_capa.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/1/17/The_Legend_of_Zelda_Ocarina_of_Time_capa.png",
+    "originalBytes": 311169,
+    "originalDimensions": [
+      567,
+      394
+    ],
+    "localFile": "/covers/52.webp",
+    "localBytes": 21034,
+    "localDimensions": [
+      500,
+      347
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 53,
+    "title": "Unreal Tournament 2004",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/9/97/Unreal_Tournament_2004_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/9/97/Unreal_Tournament_2004_Coverart.png",
+    "originalBytes": 189114,
+    "originalDimensions": [
+      256,
+      359
+    ],
+    "localFile": "/covers/53.webp",
+    "localBytes": 25398,
+    "localDimensions": [
+      256,
+      359
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 54,
+    "title": "Age of Empires II",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png",
+    "originalBytes": 169546,
+    "originalDimensions": [
+      252,
+      297
+    ],
+    "localFile": "/covers/54.webp",
+    "localBytes": 26284,
+    "localDimensions": [
+      252,
+      297
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 55,
+    "title": "Guitar Hero",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Guitarhero-cover.jpg/250px-Guitarhero-cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Guitarhero-cover.jpg/250px-Guitarhero-cover.jpg",
+    "originalBytes": 27397,
+    "originalDimensions": [
+      250,
+      352
+    ],
+    "localFile": "/covers/55.webp",
+    "localBytes": 17434,
+    "localDimensions": [
+      250,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 56,
+    "title": "Abuse",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/f/fa/Abuse_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/f/fa/Abuse_Coverart.png",
+    "originalBytes": 173923,
+    "originalDimensions": [
+      256,
+      327
+    ],
+    "localFile": "/covers/56.webp",
+    "localBytes": 22622,
+    "localDimensions": [
+      256,
+      327
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 57,
+    "title": "Cave Story",
+    "originalSource": "https://cdn1.epicgames.com/78473822f724474d8e436f6bde735623/offer/EGS_CaveStory_NicalisIncStudioPixel_S1-2560x1440-23b558de8df0be248f4a32654638ca19.jpg",
+    "sourcePage": "https://cdn1.epicgames.com/78473822f724474d8e436f6bde735623/offer/EGS_CaveStory_NicalisIncStudioPixel_S1-2560x1440-23b558de8df0be248f4a32654638ca19.jpg",
+    "originalBytes": 653310,
+    "originalDimensions": [
+      2560,
+      1440
+    ],
+    "localFile": "/covers/57.webp",
+    "localBytes": 29210,
+    "localDimensions": [
+      500,
+      281
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 58,
+    "title": "Soldat",
+    "originalSource": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/638490/capsule_616x353.jpg?t=1756567404",
+    "sourcePage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/638490/capsule_616x353.jpg?t=1756567404",
+    "originalBytes": 103316,
+    "originalDimensions": [
+      616,
+      353
+    ],
+    "localFile": "/covers/58.webp",
+    "localBytes": 30532,
+    "localDimensions": [
+      500,
+      287
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 59,
+    "title": "Liero",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/it/9/9d/Liero.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/it/9/9d/Liero.png",
+    "originalBytes": 55179,
+    "originalDimensions": [
+      626,
+      391
+    ],
+    "localFile": "/covers/59.webp",
+    "localBytes": 20204,
+    "localDimensions": [
+      500,
+      312
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 60,
+    "title": "Liero X",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/commons/6/64/LieroGameplay.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/commons/6/64/LieroGameplay.png",
+    "originalBytes": 19876,
+    "originalDimensions": [
+      316,
+      316
+    ],
+    "localFile": "/covers/60.webp",
+    "localBytes": 9460,
+    "localDimensions": [
+      316,
+      316
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 61,
+    "title": "Star Fox 64",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/StarFox64_N64_Game_Box.jpg/250px-StarFox64_N64_Game_Box.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/StarFox64_N64_Game_Box.jpg/250px-StarFox64_N64_Game_Box.jpg",
+    "originalBytes": 22459,
+    "originalDimensions": [
+      250,
+      174
+    ],
+    "localFile": "/covers/61.webp",
+    "localBytes": 15630,
+    "localDimensions": [
+      250,
+      174
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 62,
+    "title": "Dungeon Siege",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/f/fb/DungeonSiegeBoxArt.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/f/fb/DungeonSiegeBoxArt.jpg",
+    "originalBytes": 31425,
+    "originalDimensions": [
+      286,
+      348
+    ],
+    "localFile": "/covers/62.webp",
+    "localBytes": 30750,
+    "localDimensions": [
+      286,
+      348
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 63,
+    "title": "Age of Mythology",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/9/9d/Age_of_Mythology_Liner.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/9/9d/Age_of_Mythology_Liner.jpg",
+    "originalBytes": 52108,
+    "originalDimensions": [
+      256,
+      398
+    ],
+    "localFile": "/covers/63.webp",
+    "localBytes": 31540,
+    "localDimensions": [
+      256,
+      398
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 64,
+    "title": "Half-Life",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+    "originalBytes": 116205,
+    "originalDimensions": [
+      268,
+      385
+    ],
+    "localFile": "/covers/64.webp",
+    "localBytes": 26602,
+    "localDimensions": [
+      268,
+      385
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 67,
+    "title": "Downhill Domination",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Downhill_Domination_Coverart.png/250px-Downhill_Domination_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Downhill_Domination_Coverart.png/250px-Downhill_Domination_Coverart.png",
+    "originalBytes": 178418,
+    "originalDimensions": [
+      250,
+      354
+    ],
+    "localFile": "/covers/67.webp",
+    "localBytes": 25920,
+    "localDimensions": [
+      250,
+      354
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 68,
+    "title": "CrossFire",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iie.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iie.webp",
+    "originalBytes": 17082,
+    "originalDimensions": [
+      264,
+      351
+    ],
+    "localFile": "/covers/68.webp",
+    "localBytes": 16188,
+    "localDimensions": [
+      264,
+      351
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 69,
+    "title": "Point Blank",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/az/b/b1/Point_Blank.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/az/b/b1/Point_Blank.jpg",
+    "originalBytes": 106146,
+    "originalDimensions": [
+      245,
+      327
+    ],
+    "localFile": "/covers/69.webp",
+    "localBytes": 15860,
+    "localDimensions": [
+      245,
+      327
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 70,
+    "title": "DDTank",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqe.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqe.webp",
+    "originalBytes": 20990,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/70.webp",
+    "localBytes": 20530,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 71,
+    "title": "GunZ: The Duel",
+    "originalSource": "https://images.gog.com/7b003aac4ac8f8568f4b62ffca6ed411e2e1effb219d102f219e635c2c19dd7c_glx_vertical_cover.webp?namespace=gamesdb",
+    "sourcePage": "https://images.gog.com/7b003aac4ac8f8568f4b62ffca6ed411e2e1effb219d102f219e635c2c19dd7c_glx_vertical_cover.webp?namespace=gamesdb",
+    "originalBytes": 25466,
+    "originalDimensions": [
+      342,
+      482
+    ],
+    "localFile": "/covers/71.webp",
+    "localBytes": 21480,
+    "localDimensions": [
+      342,
+      482
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 72,
+    "title": "GunBound",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/b/b2/GunBound_World_Champion_%28title_screen%29.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/b/b2/GunBound_World_Champion_%28title_screen%29.jpg",
+    "originalBytes": 43421,
+    "originalDimensions": [
+      220,
+      165
+    ],
+    "localFile": "/covers/72.webp",
+    "localBytes": 10614,
+    "localDimensions": [
+      220,
+      165
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 73,
+    "title": "Tibia",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co255g.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co255g.webp",
+    "originalBytes": 29562,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/73.webp",
+    "localBytes": 28100,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 74,
+    "title": "Music Chase 1: The Music In Me",
+    "originalSource": "https://cdn.mobygames.com/covers/17146746-music-chase-1-the-music-in-me-windows-16-bit-front-cover.png",
+    "sourcePage": "https://cdn.mobygames.com/covers/17146746-music-chase-1-the-music-in-me-windows-16-bit-front-cover.png",
+    "originalBytes": 722104,
+    "originalDimensions": [
+      576,
+      800
+    ],
+    "localFile": "/covers/74.webp",
+    "localBytes": 51842,
+    "localDimensions": [
+      500,
+      694
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 75,
+    "title": "Jackie Chan Stuntmaster",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/e/e6/JackieChanStuntmaster.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/e/e6/JackieChanStuntmaster.jpg",
+    "originalBytes": 94987,
+    "originalDimensions": [
+      252,
+      242
+    ],
+    "localFile": "/covers/75.webp",
+    "localBytes": 13508,
+    "localDimensions": [
+      252,
+      242
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 76,
+    "title": "Show do Milhão",
+    "originalSource": "https://dn710607.ca.archive.org/0/items/showdomilhaovolume2/01.jpg",
+    "sourcePage": "https://dn710607.ca.archive.org/0/items/showdomilhaovolume2/01.jpg",
+    "originalBytes": 1425109,
+    "originalDimensions": [
+      1402,
+      1409
+    ],
+    "localFile": "/covers/76.webp",
+    "localBytes": 57818,
+    "localDimensions": [
+      500,
+      502
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 77,
+    "title": "Call of Duty: Warzone",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/6/65/COD_Warzone_Cover_Art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/6/65/COD_Warzone_Cover_Art.jpg",
+    "originalBytes": 46730,
+    "originalDimensions": [
+      290,
+      344
+    ],
+    "localFile": "/covers/77.webp",
+    "localBytes": 19328,
+    "localDimensions": [
+      290,
+      344
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 78,
+    "title": "Marvel Rivals",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/d/d1/Mrivals.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/d/d1/Mrivals.png",
+    "originalBytes": 186388,
+    "originalDimensions": [
+      270,
+      360
+    ],
+    "localFile": "/covers/78.webp",
+    "localBytes": 22766,
+    "localDimensions": [
+      270,
+      360
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 79,
+    "title": "Overwatch 2",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg",
+    "originalBytes": 96173,
+    "originalDimensions": [
+      258,
+      387
+    ],
+    "localFile": "/covers/79.webp",
+    "localBytes": 18428,
+    "localDimensions": [
+      258,
+      387
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 80,
+    "title": "skate.",
+    "originalSource": "https://pbs.twimg.com/media/GzIM2R2WsAAgGPl?format=jpg&name=900x900",
+    "sourcePage": "https://pbs.twimg.com/media/GzIM2R2WsAAgGPl?format=jpg&name=900x900",
+    "originalBytes": 143987,
+    "originalDimensions": [
+      600,
+      800
+    ],
+    "localFile": "/covers/80.webp",
+    "localBytes": 58182,
+    "localDimensions": [
+      500,
+      667
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 81,
+    "title": "Battlefield 6",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/8/87/Battlefield_6_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/8/87/Battlefield_6_cover_art.jpg",
+    "originalBytes": 84510,
+    "originalDimensions": [
+      273,
+      365
+    ],
+    "localFile": "/covers/81.webp",
+    "localBytes": 14688,
+    "localDimensions": [
+      273,
+      365
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 82,
+    "title": "Hades",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+    "originalBytes": 105044,
+    "originalDimensions": [
+      273,
+      365
+    ],
+    "localFile": "/covers/82.webp",
+    "localBytes": 23644,
+    "localDimensions": [
+      273,
+      365
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 83,
+    "title": "Call of Duty: Black Ops Cold War",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/3/31/BOCW_Cover_Art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/3/31/BOCW_Cover_Art.jpg",
+    "originalBytes": 55233,
+    "originalDimensions": [
+      270,
+      371
+    ],
+    "localFile": "/covers/83.webp",
+    "localBytes": 25338,
+    "localDimensions": [
+      270,
+      371
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 84,
+    "title": "Call of Duty: Modern Warfare II",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/2/2e/Call_of_Duty_Modern_Warfare_II.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/2/2e/Call_of_Duty_Modern_Warfare_II.jpg",
+    "originalBytes": 87857,
+    "originalDimensions": [
+      282,
+      353
+    ],
+    "localFile": "/covers/84.webp",
+    "localBytes": 21054,
+    "localDimensions": [
+      282,
+      353
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 85,
+    "title": "Schedule I",
+    "originalSource": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2025/03/schedule-i-tag-page-cover-art.jpg?q=50&fit=contain&w=480&dpr=1.5",
+    "sourcePage": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2025/03/schedule-i-tag-page-cover-art.jpg?q=50&fit=contain&w=480&dpr=1.5",
+    "originalBytes": 52036,
+    "originalDimensions": [
+      480,
+      720
+    ],
+    "localFile": "/covers/85.webp",
+    "localBytes": 45954,
+    "localDimensions": [
+      480,
+      720
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 86,
+    "title": "League of Legends",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobpn7.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobpn7.webp",
+    "originalBytes": 23078,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/86.webp",
+    "localBytes": 22536,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 87,
+    "title": "Alex Kidd in Miracle World",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/4/41/Alex_Kidd_in_Miracle_World.jpeg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/4/41/Alex_Kidd_in_Miracle_World.jpeg",
+    "originalBytes": 17051,
+    "originalDimensions": [
+      191,
+      265
+    ],
+    "localFile": "/covers/87.webp",
+    "localBytes": 19108,
+    "localDimensions": [
+      191,
+      265
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 88,
+    "title": "Golden Axe",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/ru/2/27/Golden_Axe_Coverart.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/ru/2/27/Golden_Axe_Coverart.png",
+    "originalBytes": 4500478,
+    "originalDimensions": [
+      1460,
+      2000
+    ],
+    "localFile": "/covers/88.webp",
+    "localBytes": 72410,
+    "localDimensions": [
+      500,
+      685
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 89,
+    "title": "The Lord of the Rings: Return to Moria",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/c/c2/The_Lord_of_the_Rings_Return_to_Moria.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/c/c2/The_Lord_of_the_Rings_Return_to_Moria.png",
+    "originalBytes": 174488,
+    "originalDimensions": [
+      273,
+      365
+    ],
+    "localFile": "/covers/89.webp",
+    "localBytes": 21224,
+    "localDimensions": [
+      273,
+      365
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 90,
+    "title": "Raft",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/f/fa/Raft_cover.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/f/fa/Raft_cover.jpg",
+    "originalBytes": 40011,
+    "originalDimensions": [
+      421,
+      237
+    ],
+    "localFile": "/covers/90.webp",
+    "localBytes": 28996,
+    "localDimensions": [
+      421,
+      237
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 91,
+    "title": "It Takes Two",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
+    "originalBytes": 191266,
+    "originalDimensions": [
+      280,
+      356
+    ],
+    "localFile": "/covers/91.webp",
+    "localBytes": 19594,
+    "localDimensions": [
+      280,
+      356
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 92,
+    "title": "Northgard: Definitive Edition",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/0/07/Northgard_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/0/07/Northgard_cover_art.jpg",
+    "originalBytes": 57368,
+    "originalDimensions": [
+      273,
+      365
+    ],
+    "localFile": "/covers/92.webp",
+    "localBytes": 8216,
+    "localDimensions": [
+      273,
+      365
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 93,
+    "title": "Just Cause 3",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/f/f2/Just_Cause_3_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/f/f2/Just_Cause_3_cover_art.jpg",
+    "originalBytes": 174298,
+    "originalDimensions": [
+      275,
+      328
+    ],
+    "localFile": "/covers/93.webp",
+    "localBytes": 25904,
+    "localDimensions": [
+      275,
+      328
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 94,
+    "title": "A Way Out",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/8/83/A_Way_Out_Logo.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/8/83/A_Way_Out_Logo.jpg",
+    "originalBytes": 43361,
+    "originalDimensions": [
+      267,
+      374
+    ],
+    "localFile": "/covers/94.webp",
+    "localBytes": 15566,
+    "localDimensions": [
+      267,
+      374
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 95,
+    "title": "Borderlands 2",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/5/51/Borderlands_2_cover_art.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/5/51/Borderlands_2_cover_art.png",
+    "originalBytes": 63853,
+    "originalDimensions": [
+      273,
+      366
+    ],
+    "localFile": "/covers/95.webp",
+    "localBytes": 40934,
+    "localDimensions": [
+      273,
+      366
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 96,
+    "title": "Tribes of Midgard",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/a/aa/Tribes_of_Midgard_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/a/aa/Tribes_of_Midgard_cover_art.jpg",
+    "originalBytes": 118953,
+    "originalDimensions": [
+      316,
+      316
+    ],
+    "localFile": "/covers/96.webp",
+    "localBytes": 26638,
+    "localDimensions": [
+      316,
+      316
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 97,
+    "title": "Trove",
+    "originalSource": "https://cdn.mobygames.com/covers/1831823-trove-xbox-one-front-cover.jpg",
+    "sourcePage": "https://cdn.mobygames.com/covers/1831823-trove-xbox-one-front-cover.jpg",
+    "originalBytes": 65681,
+    "originalDimensions": [
+      533,
+      800
+    ],
+    "localFile": "/covers/97.webp",
+    "localBytes": 39914,
+    "localDimensions": [
+      500,
+      750
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 98,
+    "title": "Thronefall",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/7/7a/Thronefall_cover_art.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/7/7a/Thronefall_cover_art.jpg",
+    "originalBytes": 100212,
+    "originalDimensions": [
+      258,
+      387
+    ],
+    "localFile": "/covers/98.webp",
+    "localBytes": 21614,
+    "localDimensions": [
+      258,
+      387
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 99,
+    "title": "Orcs Must Die!",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/8/89/Orcs_Must_Die_cover.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/8/89/Orcs_Must_Die_cover.png",
+    "originalBytes": 195021,
+    "originalDimensions": [
+      288,
+      345
+    ],
+    "localFile": "/covers/99.webp",
+    "localBytes": 26774,
+    "localDimensions": [
+      288,
+      345
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 100,
+    "title": "Magicka",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/b/ba/Magicka_box.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/b/ba/Magicka_box.jpg",
+    "originalBytes": 49018,
+    "originalDimensions": [
+      250,
+      353
+    ],
+    "localFile": "/covers/100.webp",
+    "localBytes": 32124,
+    "localDimensions": [
+      250,
+      353
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 101,
+    "title": "Left 4 Dead 2",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/b/ba/Left4Dead2.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/b/ba/Left4Dead2.jpg",
+    "originalBytes": 86138,
+    "originalDimensions": [
+      258,
+      351
+    ],
+    "localFile": "/covers/101.webp",
+    "localBytes": 23336,
+    "localDimensions": [
+      258,
+      351
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 102,
+    "title": "Super Mario World",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/0/06/Super-Mario-World.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/0/06/Super-Mario-World.jpg",
+    "originalBytes": 88095,
+    "originalDimensions": [
+      500,
+      364
+    ],
+    "localFile": "/covers/102.webp",
+    "localBytes": 30570,
+    "localDimensions": [
+      500,
+      364
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 103,
+    "title": "DragonFable",
+    "originalSource": "https://static.tvtropes.org/pmwiki/pub/images/DragonFable_8782.png",
+    "sourcePage": "https://static.tvtropes.org/pmwiki/pub/images/DragonFable_8782.png",
+    "originalBytes": 21156,
+    "originalDimensions": [
+      220,
+      285
+    ],
+    "localFile": "/covers/103.webp",
+    "localBytes": 18368,
+    "localDimensions": [
+      220,
+      285
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 104,
+    "title": "Tribal Wars",
+    "originalSource": "https://www.gamevicio.com/wp-content/uploads/2020/04/tribal-wars-cover-001715-2.webp",
+    "sourcePage": "https://www.gamevicio.com/wp-content/uploads/2020/04/tribal-wars-cover-001715-2.webp",
+    "originalBytes": 28838,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/104.webp",
+    "localBytes": 25910,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 105,
+    "title": "BiteFight",
+    "originalSource": "https://cdn-1.webcatalog.io/catalog/bitefight/bitefight-icon-filled-256.webp?v=1714778099812",
+    "sourcePage": "https://cdn-1.webcatalog.io/catalog/bitefight/bitefight-icon-filled-256.webp?v=1714778099812",
+    "originalBytes": 2380,
+    "originalDimensions": [
+      256,
+      256
+    ],
+    "localFile": "/covers/105.webp",
+    "localBytes": 2342,
+    "localDimensions": [
+      256,
+      256
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 106,
+    "title": "Ikariam",
+    "originalSource": "https://secure-asset-delivery.gameforge.com/partnersite_live_product/6a171b2f-0bf8-476e-9f99-fd0c8046fe9b/64ePhFIKUA4_big.jpg",
+    "sourcePage": "https://gameforge.com/en-GB/play/ikariam",
+    "originalBytes": 88406,
+    "originalDimensions": [
+      1280,
+      720
+    ],
+    "localFile": "/covers/106.webp",
+    "localBytes": 19172,
+    "localDimensions": [
+      500,
+      281
+    ],
+    "acquisition": "downloaded from source asset URL",
+    "previousSource": "https://mmostats.com/images/games/ikariam/cover-ikariam.webp",
+    "previousSourceStatus": 404,
+    "validationIssue": "URL retornava HTTP 404; substituída por arte promocional oficial da Gameforge."
+  },
+  {
+    "id": 107,
+    "title": "TheCrims",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4m89.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4m89.webp",
+    "originalBytes": 13510,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/107.webp",
+    "localBytes": 3636,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 108,
+    "title": "RuneScape",
+    "originalSource": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1343400/library_600x900.jpg",
+    "sourcePage": "https://store.steampowered.com/app/1343400/RuneScape/",
+    "originalBytes": 63308,
+    "originalDimensions": [
+      300,
+      450
+    ],
+    "localFile": "/covers/108.webp",
+    "localBytes": 25910,
+    "localDimensions": [
+      300,
+      450
+    ],
+    "acquisition": "downloaded from source asset URL",
+    "previousSourceHost": "scontent.fjdf2-2.fna.fbcdn.net",
+    "previousSourceStatus": 403,
+    "validationIssue": "CDN do Facebook recusava a imagem com HTTP 403; substituída por arte Steam da versão atual RuneScape, não Old School."
+  },
+  {
+    "id": 109,
+    "title": "Minecraft",
+    "originalSource": "https://minecraft.wiki/images/MC_DX_vertical_key_art_2024.jpg?97caf",
+    "sourcePage": "https://minecraft.wiki/w/File:MC_DX_vertical_key_art_2024.jpg",
+    "originalBytes": 868129,
+    "originalDimensions": [
+      720,
+      1080
+    ],
+    "localFile": "/covers/109.webp",
+    "localBytes": 51194,
+    "localDimensions": [
+      500,
+      750
+    ],
+    "acquisition": "rendered locally via headless Chrome after origin denied direct CLI access",
+    "previousSource": "https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png",
+    "previousSourceStatus": 404,
+    "validationIssue": "URL retornava HTTP 404; substituída por arte vertical Minecraft Deluxe Collection."
+  },
+  {
+    "id": 110,
+    "title": "Habbo Hotel",
+    "originalSource": "https://cdn.thegamesdb.net/images/original/boxart/front/17754-1.png",
+    "sourcePage": "https://cdn.thegamesdb.net/images/original/boxart/front/17754-1.png",
+    "originalBytes": 65787,
+    "originalDimensions": [
+      449,
+      598
+    ],
+    "localFile": "/covers/110.webp",
+    "localBytes": 43202,
+    "localDimensions": [
+      449,
+      598
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 111,
+    "title": "Grand Theft Auto V",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png",
+    "originalBytes": 348108,
+    "originalDimensions": [
+      391,
+      479
+    ],
+    "localFile": "/covers/111.webp",
+    "localBytes": 51036,
+    "localDimensions": [
+      391,
+      479
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 112,
+    "title": "Adventure Quest Worlds",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7du9.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7du9.webp",
+    "originalBytes": 22868,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/112.webp",
+    "localBytes": 20838,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 113,
+    "title": "Brawl Stars",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/a/a4/Brawl_Stars_iOS_%C3%ADcone.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/a/a4/Brawl_Stars_iOS_%C3%ADcone.jpg",
+    "originalBytes": 24535,
+    "originalDimensions": [
+      500,
+      500
+    ],
+    "localFile": "/covers/113.webp",
+    "localBytes": 13826,
+    "localDimensions": [
+      500,
+      500
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 114,
+    "title": "DotA (Defense of the Ancients)",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/2/28/Dota673-loading-screen.jpg",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/2/28/Dota673-loading-screen.jpg",
+    "originalBytes": 140565,
+    "originalDimensions": [
+      556,
+      417
+    ],
+    "localFile": "/covers/114.webp",
+    "localBytes": 55158,
+    "localDimensions": [
+      500,
+      375
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 115,
+    "title": "Valheim",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob24q.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob24q.webp",
+    "originalBytes": 13376,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/115.webp",
+    "localBytes": 12460,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 116,
+    "title": "Gladiatus",
+    "originalSource": "https://cdn.soft112.com/gladiatus-ios/00/00/0G/BI/00000GBIMA/pad_screenshot.jpg",
+    "sourcePage": "https://cdn.soft112.com/gladiatus-ios/00/00/0G/BI/00000GBIMA/pad_screenshot.jpg",
+    "originalBytes": 55293,
+    "originalDimensions": [
+      367,
+      480
+    ],
+    "localFile": "/covers/116.webp",
+    "localBytes": 21524,
+    "localDimensions": [
+      367,
+      480
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 117,
+    "title": "Altered Beast",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/6/6f/AlteredBeastFlyer.png",
+    "sourcePage": "https://upload.wikimedia.org/wikipedia/en/6/6f/AlteredBeastFlyer.png",
+    "originalBytes": 192639,
+    "originalDimensions": [
+      265,
+      376
+    ],
+    "localFile": "/covers/117.webp",
+    "localBytes": 27184,
+    "localDimensions": [
+      265,
+      376
+    ],
+    "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 118,
+    "title": "Swords and Sandals 2",
+    "originalSource": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqi.webp",
+    "sourcePage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vqi.webp",
+    "originalBytes": 22198,
+    "originalDimensions": [
+      264,
+      352
+    ],
+    "localFile": "/covers/118.webp",
+    "localBytes": 19914,
+    "localDimensions": [
+      264,
+      352
+    ],
+    "acquisition": "downloaded from source asset URL"
+  }
+]

@@ -7,9 +7,10 @@ interface GameCardProps {
   game: Game;
   onUpdateRating?: (id: number, rating: number) => void;
   onImageError?: (gameTitle: string) => void;
+  priority?: boolean;
 }
 
-export function GameCard({ game, onUpdateRating, onImageError }: GameCardProps) {
+export function GameCard({ game, onUpdateRating, onImageError, priority = false }: GameCardProps) {
   const [hoverRating, setHoverRating] = useState<number | null>(null);
   const [imgFailed, setImgFailed] = useState(false);
 
@@ -42,7 +43,14 @@ export function GameCard({ game, onUpdateRating, onImageError }: GameCardProps) 
     <div className="game-card">
       <div className="card-glint" />
       <div className="cover-wrapper">
-        <img src={game.cover} alt={game.title} className="game-cover img-load" onError={handleImgError} />
+        <img
+          src={game.cover}
+          alt={game.title}
+          className="game-cover img-load"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : 'auto'}
+          onError={handleImgError}
+        />
         <div className="cover-overlay" />
       </div>
       

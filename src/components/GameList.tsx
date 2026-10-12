@@ -115,8 +115,8 @@ export function GameList({ games, onUpdateRating, onImageError, currentPage, set
 
       {filteredGames.length > 0 ? (
         <div className="games-grid">
-          {currentGames.map((game) => (
-            <GameCard key={game.id} game={game} onUpdateRating={onUpdateRating} onImageError={onImageError} />
+          {currentGames.map((game, index) => (
+            <GameCard key={game.id} game={game} onUpdateRating={onUpdateRating} onImageError={onImageError} priority={index === 0} />
           ))}
         </div>
       ) : (
