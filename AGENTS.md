@@ -18,28 +18,43 @@ só geraria edição no arquivo errado.
 
 ## O que é este repositório
 
-SPA de coleção pessoal de jogos, **Vite + React 19 + TypeScript**, sem backend. Os dados
-são um JSON versionado — não há API em runtime.
+SPA de coleção pessoal de jogos, **Vite + React 19 + TypeScript + three.js**
+(`@react-three/fiber`, `drei`, `postprocessing`), sem backend. Os dados são um JSON
+versionado — não há API em runtime.
+
+A interface é uma cena WebGL em tela cheia (synthwave) com dois modos: **Biblioteca**
+(carrossel 3D das capas) e **Mapa** (constelação 3D jogos ↔ plataformas ↔ gêneros, no céu
+acima da biblioteca). Todo texto e controle fica num HUD em DOM por cima do canvas.
 
 ```
 src/main.tsx            ponto de entrada
-src/App.tsx             estado global: aba ativa, jogos, paginação, toasts, teclado
+src/App.tsx             estado global: modo, jogos, filtros, seleção, detalhe, toasts, teclado
 src/types.ts            contrato Game
 src/data/games.json     a coleção (fonte única de verdade dos dados)
-src/components/         Sidebar, GameList, GameCard, Dashboard, Toast
+src/lib/collection.ts   filtro/ordenação, listas únicas, gêneros ("FPS / Ação" → 2 tags)
+src/lib/graph.ts        nós/arestas do mapa + layout de forças 3D determinístico
+src/three/              cena (chunk lazy): Experience (Canvas, câmera, bloom), Gallery,
+                        Constellation, Synthwave (chão/sol em shader), covers (texturas)
+src/components/         HUD em DOM: Hud, FilterBar, CarouselNav, GameDetail, StarRating,
+                        StatsPanel, GameIndex, BootScreen, Toast
 vite.config.ts          config do Vite (sem `base` — o app vive na raiz do domínio)
 eslint.config.js        flat config: js.recommended + typescript-eslint + react-hooks
 ```
 
 ## Onde mexer
 
-- **Estado da aplicação**: tudo relevante mora em `src/App.tsx`. `Dashboard` e `GameList`
-  recebem dados por props e não fazem fetch.
+- **Estado da aplicação**: tudo relevante mora em `src/App.tsx`. A cena 3D e o HUD recebem
+  dados por props e não fazem fetch. O jogo selecionado é guardado por `id`; o índice no
+  carrossel é derivado da lista filtrada (sem efeito sincronizando estado).
 - **Coleção**:_edite `src/data/games.json`_, nunca o array dentro do componente. Para
   regerar a partir do HTML legado use `node extract-games.js`.
-- **Grafo do dashboard**: nós e arestas são derivados de `games` em `Dashboard.tsx`
-  (`graphData`). Os tipos `GraphNode`/`GraphLink` e `COLORS` estão no topo do arquivo —
-  mexer no visual do grafo começa por ali, não por literais espalhados no JSX.
+- **Mapa (grafo 3D)**: dados e layout em `src/lib/graph.ts` (`buildGraph`); visual
+  (`COLORS`, geometrias, escala dos nós) no topo de `src/three/Constellation.tsx`.
+- **Carrossel**: pose de cada caixa (coverflow, detalhe aberto, fora do filtro) é calculada
+  no `useFrame` de `GameCase` em `src/three/Gallery.tsx`. Todas as caixas ficam montadas;
+  filtrar só muda o slot e a animação reposiciona.
+- **Câmera**: `CameraRig` em `Experience.tsx` anima entre modos; no Mapa, ao chegar, passa
+  o controle para o `OrbitControls`.
 - **Visual**: as cores e espaçamentos saem das custom properties do CSS. Cada componente
   tem o seu `*.css` ao lado; alterar valor ali propaga só para aquele componente.
 
@@ -56,8 +71,16 @@ eslint.config.js        flat config: js.recommended + typescript-eslint + react-
 4. **`vite.config.ts` não define `base`.** O app é servido na raiz de `acervo.lagrimante.com.br`;
    um `base` de subpath quebraria todos os assets.
 5. **Acessibilidade**: campos de busca/filtro precisam de rótulo associável, botões de
-   paginação com nome acessível e foco visível. Navegação por teclado é requisito.
-6. **Idioma**: interface em português brasileiro; código e comentários em português.
+   navegação com nome acessível e foco visível. Navegação por teclado é requisito
+   (←/→ jogo, ↑/↓ modo, Enter detalhe, Esc fecha, `/` busca). O canvas é `aria-hidden`:
+   toda informação da cena precisa existir também no HUD/DOM (região `aria-live`, Índice).
+   Sem WebGL, o Índice vira a página.
+6. **three.js com react-hooks v7**: não mute objetos vindos de `useMemo`/`useState` dentro
+   de `useFrame` (regra `react-hooks/immutability`). Mute via `ref` do mesh/material ou use
+   material declarativo em JSX. Evite `<Html>` do drei: ele cria um React root por rótulo e
+   o `unmount` síncrono gera erro no console — rótulos do mapa são DOM imperativo projetado
+   por frame.
+7. **Idioma**: interface em português brasileiro; código e comentários em português.
 
 ## Como verificar
 
@@ -67,9 +90,9 @@ npm run lint
 npm run build
 ```
 
-- Ao mexer no grafo ou em CSS de layout, valide no navegador em largura de desktop **e**
-  mobile — o `ForceGraph2D` depende de `clientWidth`/`clientHeight` do container, então
-  depende do CSS estar certo para calcular as dimensões.
+- Ao mexer na cena ou em CSS de layout, valide no navegador em largura de desktop **e**
+  mobile (retrato): a câmera recua e o detalhe vira bottom sheet conforme o aspecto.
+  Teste também com `prefers-reduced-motion: reduce` (sem animações automáticas).
 - Erro silencioso em `useEffect` derruba a página sem mensagem útil: rode o console.
 
 ## Deploy

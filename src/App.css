@@ -1,83 +1,44 @@
-.main-content {
-  flex: 1;
+.app {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.experience-canvas {
+  position: fixed !important;
+  inset: 0;
+  z-index: 0;
+  touch-action: none;
+}
+
+.empty-state {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 15;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 1200px;
-  width: 100%;
-  min-height: 0;
-}
-
-.topbar {
-  background: var(--surface-1);
-  border: 1px solid var(--surface-border);
-  border-radius: 16px;
-  padding: 1.25rem 2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-}
-
-@media (max-width: 768px) {
-  .topbar {
-    padding: 1rem 1.25rem;
-    border-radius: 12px;
-  }
-}
-
-.topbar-content {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.6rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
 }
 
-.page-title {
+.empty-icon {
+  font-size: 2.5rem;
+}
+
+.empty-state h3 {
   font-family: var(--font-mono);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 0;
-  letter-spacing: 0.5px;
+  font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-  .page-title {
-    font-size: 1.1rem;
-    letter-spacing: 0;
-  }
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.content-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-in {
-  animation: fadeIn 0.4s ease-out forwards;
+.empty-state p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
 }
