@@ -162,7 +162,8 @@
     "rating": 0,
     "cover": "/covers/37.webp",
     "comment": "Tommy Vercetti em Miami nos anos 80. Trilha sonora icônica no rádio, neon, palmeiras e aquela sensação de liberdade total.",
-    "youtubeId": "BQ69p-libCc"
+    "youtubeId": "BQ69p-libCc",
+    "aliases": ["GTA", "GTA Vice City"]
   },
   {
     "id": 38,
@@ -173,7 +174,8 @@
     "rating": 0,
     "cover": "/covers/38.webp",
     "comment": "CJ, Grove Street e um mapa gigantesco com três cidades. O jogo que todo mundo jogou por centenas de horas e ainda tem histórias pra contar.",
-    "youtubeId": "G6x6GHDVwSk"
+    "youtubeId": "G6x6GHDVwSk",
+    "aliases": ["GTA", "GTA San Andreas", "GTA SA"]
   },
   {
     "id": 39,
@@ -954,7 +956,8 @@
     "rating": 0,
     "cover": "/covers/111.webp",
     "comment": "Michael, Trevor e Franklin em Los Santos. Três protagonistas, um mundo gigantesco e o GTA Online que se tornou um fenômeno próprio.",
-    "youtubeId": "j3vYBusVm40"
+    "youtubeId": "j3vYBusVm40",
+    "aliases": ["GTA", "GTA V", "GTA 5"]
   },
   {
     "id": 112,

@@ -23,8 +23,7 @@ export function filterGames(games: Game[], f: Filters): Game[] {
   return games
     .filter(g => {
       const matchSearch = !term
-        || g.title.toLowerCase().includes(term)
-        || g.comment.toLowerCase().includes(term);
+        || [g.title, g.comment, ...(g.aliases ?? [])].some(text => text.toLowerCase().includes(term));
       const matchPlatform = !f.platform || g.platform === f.platform;
       const matchYear = !f.year || g.year === f.year;
       const matchGenre = !f.genre || genreTags(g.genre).includes(f.genre);

@@ -41,7 +41,7 @@ function App() {
   const [webgl] = useState(hasWebGL);
   const [mode, setModeState] = useState<Mode>('library');
   const [mapVisited, setMapVisited] = useState(false);
-  const [games, setGames] = useState<Game[]>(() => gamesData as Game[]);
+  const [games, setGames] = useState<Game[]>(() => gamesData satisfies Game[]);
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);

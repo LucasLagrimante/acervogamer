@@ -46,8 +46,10 @@ eslint.config.js        flat config: js.recommended + typescript-eslint + react-
 - **Estado da aplicação**: tudo relevante mora em `src/App.tsx`. A cena 3D e o HUD recebem
   dados por props e não fazem fetch. O jogo selecionado é guardado por `id`; o índice no
   carrossel é derivado da lista filtrada (sem efeito sincronizando estado).
-- **Coleção**:_edite `src/data/games.json`_, nunca o array dentro do componente. Para
-  regerar a partir do HTML legado use `node extract-games.js`.
+- **Coleção**: edite `src/data/games.json`, nunca o array dentro do componente. Antes de
+  adicionar um jogo, confira se ele já está cadastrado (incluindo título alternativo) para
+  evitar duplicatas. `node extract-games.js` regrava o JSON a partir do HTML legado; não
+  rode esse utilitário para uma inclusão manual.
 - **Mapa (grafo 3D)**: dados e layout em `src/lib/graph.ts` (`buildGraph`); visual
   (`COLORS`, geometrias, escala dos nós) no topo de `src/three/Constellation.tsx`.
 - **Carrossel**: pose de cada caixa (coverflow, detalhe aberto, fora do filtro) é calculada
@@ -57,6 +59,32 @@ eslint.config.js        flat config: js.recommended + typescript-eslint + react-
   o controle para o `OrbitControls`.
 - **Visual**: as cores e espaçamentos saem das custom properties do CSS. Cada componente
   tem o seu `*.css` ao lado; alterar valor ali propaga só para aquele componente.
+
+## Cadastro de jogos (obrigatório)
+
+Para cada jogo novo, cumpra todos os itens abaixo antes de considerar a entrada pronta:
+
+1. Use um `id` numérico único e preencha todos os campos do contrato `Game`, incluindo
+   `youtubeId`. Se o jogo tiver abreviações ou nomes alternativos comuns, registre-os em
+   `aliases` para que também possam ser encontrados pela busca. Não cadastre novamente um
+   jogo já presente com título alternativo.
+2. Obtenha a capa correspondente ao jogo e grave o arquivo localmente como
+   `public/covers/{id}.webp`. Converta para WebP, limite a largura a 500 px sem ampliar
+   imagens menores e preserve a proporção. Em `games.json`, use `cover: "/covers/{id}.webp"`;
+   não deixe URL externa nem caminho de arquivo inexistente.
+3. Registre a origem e a transformação em `src/data/cover-sources.json`, com o título, URL
+   original e página-fonte, bytes/dimensões originais, caminho local e bytes/dimensões após
+   conversão, além do método de aquisição. Confirme que o arquivo existe e que é WebP real.
+   **`fetch-covers.js` só reaplica URLs de correção no JSON; ele não baixa nem converte capas.**
+4. Encontre um vídeo público de gameplay/walkthrough do jogo exato (não trailer/review quando
+   houver gameplay). Pesquise pelo título, plataforma e ano; valide o candidato por oEmbed do
+   YouTube e exija HTTP 200, `type: "video"` e título/canal compatíveis. Grave somente o ID
+   de 11 caracteres em `youtubeId`; esse ID é usado por `GameVideo` para montar o iframe.
+   Nunca invente IDs nem deixe o campo vazio. Se não houver candidato verificável, não conclua
+   a inclusão até localizar um vídeo adequado.
+5. Antes de finalizar, valide JSON, IDs únicos, capa local/WebP e metadados da capa para cada
+   registro; valide também cada `youtubeId` por oEmbed. Rode os comandos de typecheck, lint e
+   build abaixo. Não substitua entradas preexistentes ao regenerar o arquivo legado.
 
 ## Regras
 
