@@ -19,7 +19,7 @@
     "rating": 4,
     "cover": "/covers/2.webp",
     "comment": "Colorido, divertido e viciante. Um clássico que muita gente jogou no Brasil.",
-    "youtubeId": "noWBnmfS5Go"
+    "youtubeId": "p5vJa5cgo3U"
   },
   {
     "id": 11,
@@ -40,7 +40,8 @@
     "genre": "Luta",
     "rating": 0,
     "cover": "/covers/22.webp",
-    "comment": "Ryu cobrando Hadouken contra Guile. O jogo de luta que viciou gerações."
+    "comment": "Ryu cobrando Hadouken contra Guile. O jogo de luta que viciou gerações.",
+    "youtubeId": "ol6EOgu89l0"
   },
   {
     "id": 23,
@@ -61,7 +62,8 @@
     "genre": "RPG",
     "rating": 0,
     "cover": "/covers/26.webp",
-    "comment": "Johto em toda sua glória. Lyra (ou Kris) em sua jornada. 16 badges, Ho-Oh esperando."
+    "comment": "Johto em toda sua glória. Lyra (ou Kris) em sua jornada. 16 badges, Ho-Oh esperando.",
+    "youtubeId": "_QWWynLH7Qk"
   },
   {
     "id": 28,
@@ -71,7 +73,8 @@
     "genre": "MMORPG",
     "rating": 0,
     "cover": "/covers/28.webp",
-    "comment": "Azeroth. Raids, dungeons, PvP. 'For the Horde!' ou 'For the Alliance!'. Aquilo que roubou vidas."
+    "comment": "Azeroth. Raids, dungeons, PvP. 'For the Horde!' ou 'For the Alliance!'. Aquilo que roubou vidas.",
+    "youtubeId": "WHJstP-BOGY"
   },
   {
     "id": 30,
@@ -92,7 +95,8 @@
     "genre": "RPG",
     "rating": 0,
     "cover": "/covers/31.webp",
-    "comment": "O começo de tudo. Escolher entre Bulbasaur, Charmander e Squirtle e sair de Pallet Town para se tornar mestre Pokémon."
+    "comment": "O começo de tudo. Escolher entre Bulbasaur, Charmander e Squirtle e sair de Pallet Town para se tornar mestre Pokémon.",
+    "youtubeId": "hYcotDHI0dg"
   },
   {
     "id": 32,
@@ -113,7 +117,8 @@
     "genre": "FPS",
     "rating": 0,
     "cover": "/covers/33.webp",
-    "comment": "FPS de Segunda Guerra Mundial que definiu o gênero. O desembarque na Normandia era tenso e cinematográfico — inspirou até o próprio Call of Duty."
+    "comment": "FPS de Segunda Guerra Mundial que definiu o gênero. O desembarque na Normandia era tenso e cinematográfico — inspirou até o próprio Call of Duty.",
+    "youtubeId": "AAy41daco4U"
   },
   {
     "id": 34,
@@ -145,7 +150,8 @@
     "genre": "Ação / Mundo Aberto",
     "rating": 0,
     "cover": "/covers/36.webp",
-    "comment": "GTA dos Simpsons em Springfield. Cada personagem com seu próprio capítulo, diálogos hilários e horas explorando a cidade."
+    "comment": "GTA dos Simpsons em Springfield. Cada personagem com seu próprio capítulo, diálogos hilários e horas explorando a cidade.",
+    "youtubeId": "e6KbvEJIBAM"
   },
   {
     "id": 37,
@@ -156,7 +162,7 @@
     "rating": 0,
     "cover": "/covers/37.webp",
     "comment": "Tommy Vercetti em Miami nos anos 80. Trilha sonora icônica no rádio, neon, palmeiras e aquela sensação de liberdade total.",
-    "youtubeId": "iXJBbWvXWhc"
+    "youtubeId": "BQ69p-libCc"
   },
   {
     "id": 38,
@@ -188,7 +194,8 @@
     "genre": "Estratégia / Simulação",
     "rating": 0,
     "cover": "/covers/40.webp",
-    "comment": "Construir castelos medievais, gerenciar o povo e defender o reino de invasões. O Lorde Rat e o Snake eram vilões memoráveis."
+    "comment": "Construir castelos medievais, gerenciar o povo e defender o reino de invasões. O Lorde Rat e o Snake eram vilões memoráveis.",
+    "youtubeId": "TF7KEGxZSzo"
   },
   {
     "id": 41,
@@ -198,7 +205,8 @@
     "genre": "MMORPG",
     "rating": 0,
     "cover": "/covers/41.webp",
-    "comment": "MMORPG coreano que viciou o Brasil inteiro. Farmar experiência por horas, subir de classe e exibir o equipamento raro era a vida."
+    "comment": "MMORPG coreano que viciou o Brasil inteiro. Farmar experiência por horas, subir de classe e exibir o equipamento raro era a vida.",
+    "youtubeId": "Dg1xMX7DiWA"
   },
   {
     "id": 42,
@@ -219,7 +227,8 @@
     "genre": "Estratégia / Tático",
     "rating": 0,
     "cover": "/covers/43.webp",
-    "comment": "Minhocas armadas com granadas, bazucas e ovelhas explosivas. No multiplayer local era pura gritaria e risada."
+    "comment": "Minhocas armadas com granadas, bazucas e ovelhas explosivas. No multiplayer local era pura gritaria e risada.",
+    "youtubeId": "_FtlsF7GHcE"
   },
   {
     "id": 44,
@@ -251,7 +260,8 @@
     "genre": "Ação / Noir",
     "rating": 0,
     "cover": "/covers/46.webp",
-    "comment": "Max sofrendo em New York enquanto você dispara em câmera lenta em dramatic poses. Noir noir noir. Quadrinhos como cinemática. Obra de arte sombria."
+    "comment": "Max sofrendo em New York enquanto você dispara em câmera lenta em dramatic poses. Noir noir noir. Quadrinhos como cinemática. Obra de arte sombria.",
+    "youtubeId": "-f5RmT9XWvA"
   },
   {
     "id": 47,
@@ -261,7 +271,8 @@
     "genre": "RTS / Estratégia",
     "rating": 0,
     "cover": "/covers/47.webp",
-    "comment": "O RTS que dividiu a história dos e-sports. Arthas, Illidan, Tyrande. Modo campanha com cinemáticas épicas. Customizável para mods infinitos."
+    "comment": "O RTS que dividiu a história dos e-sports. Arthas, Illidan, Tyrande. Modo campanha com cinemáticas épicas. Customizável para mods infinitos.",
+    "youtubeId": "9YMPGV9e7Bc"
   },
   {
     "id": 48,
@@ -282,7 +293,8 @@
     "genre": "RPG / Ação",
     "rating": 0,
     "cover": "/covers/49.webp",
-    "comment": "Matar demônios nas catacumbas de Tristram. Clique clique clique no mouse até explodir. Addictivo demais. O começo de uma lendária série."
+    "comment": "Matar demônios nas catacumbas de Tristram. Clique clique clique no mouse até explodir. Addictivo demais. O começo de uma lendária série.",
+    "youtubeId": "ezE6vkmZzcU"
   },
   {
     "id": 50,
@@ -292,7 +304,8 @@
     "genre": "RPG / Ação",
     "rating": 0,
     "cover": "/covers/50.webp",
-    "comment": "O opus máximo do gênero. 7 classes jogáveis, Baal, Sorceress com Frozen Orb e D2 roubava sua vida. Ainda é jogado em 2025."
+    "comment": "O opus máximo do gênero. 7 classes jogáveis, Baal, Sorceress com Frozen Orb e D2 roubava sua vida. Ainda é jogado em 2025.",
+    "youtubeId": "Z3HV445GM0U"
   },
   {
     "id": 51,
@@ -302,7 +315,8 @@
     "genre": "FPS",
     "rating": 0,
     "cover": "/covers/51.webp",
-    "comment": "Arena shooter puro, rocket jump, railgun e aquele som de morte que ecoava na sua cabeça. Multiplayer insano."
+    "comment": "Arena shooter puro, rocket jump, railgun e aquele som de morte que ecoava na sua cabeça. Multiplayer insano.",
+    "youtubeId": "g3bI6KEbk9k"
   },
   {
     "id": 52,
@@ -323,7 +337,8 @@
     "genre": "FPS / Multiplayer",
     "rating": 0,
     "cover": "/covers/53.webp",
-    "comment": "UT2K4: o FPS que combinava arte, velocidade e insanidade. Dodge jump, Flak Canon, mapa Onslaught. Pura adrenalina e pixel perfect."
+    "comment": "UT2K4: o FPS que combinava arte, velocidade e insanidade. Dodge jump, Flak Canon, mapa Onslaught. Pura adrenalina e pixel perfect.",
+    "youtubeId": "-uNNYR6XoyY"
   },
   {
     "id": 54,
@@ -355,7 +370,8 @@
     "genre": "Ação / Plataforma",
     "rating": 0,
     "cover": "/covers/56.webp",
-    "comment": "Jogo eletrônico de ação e plataforma no estilo run and gun. Controle inovador com mouse, muita violência pixelada e um demônio irritante."
+    "comment": "Jogo eletrônico de ação e plataforma no estilo run and gun. Controle inovador com mouse, muita violência pixelada e um demônio irritante.",
+    "youtubeId": "_QlV0baGpMM"
   },
   {
     "id": 57,
@@ -365,7 +381,8 @@
     "genre": "Ação / Plataforma",
     "rating": 0,
     "cover": "/covers/57.webp",
-    "comment": "Jogo de ação e plataforma 2D independente. Um clássico indie que marcou geração com história emocionante, gameplay genial e trilha sonora incrível."
+    "comment": "Jogo de ação e plataforma 2D independente. Um clássico indie que marcou geração com história emocionante, gameplay genial e trilha sonora incrível.",
+    "youtubeId": "PR_6CbI7dhQ"
   },
   {
     "id": 58,
@@ -375,7 +392,8 @@
     "genre": "Tiro / Plataforma",
     "rating": 0,
     "cover": "/covers/58.webp",
-    "comment": "Jogo de tiro e plataforma em 2D. Multiplayer caótico, física maluca, armas diversas e adrenalina pura em matches rápidos."
+    "comment": "Jogo de tiro e plataforma em 2D. Multiplayer caótico, física maluca, armas diversas e adrenalina pura em matches rápidos.",
+    "youtubeId": "9v_bxbnZ0Cc"
   },
   {
     "id": 59,
@@ -385,7 +403,8 @@
     "genre": "Tiro / Ação",
     "rating": 0,
     "cover": "/covers/59.webp",
-    "comment": "Jogo eletrônico de tiro em tempo real. Combate subterrâneo entre duas minhocas armadas com física destrutível. Clássico cult finlandês criado por Joosa Riekkinen com partidas intensas."
+    "comment": "Jogo eletrônico de tiro em tempo real. Combate subterrâneo entre duas minhocas armadas com física destrutível. Clássico cult finlandês criado por Joosa Riekkinen com partidas intensas.",
+    "youtubeId": "KE2XtQaMb5I"
   },
   {
     "id": 60,
@@ -395,7 +414,8 @@
     "genre": "Tiro / Ação",
     "rating": 0,
     "cover": "/covers/60.webp",
-    "comment": "Continuação do clássico Liero. Mais armas, mais chaos, mais minhocas armadas se destruindo em batalhas épicas subterrâneas."
+    "comment": "Continuação do clássico Liero. Mais armas, mais chaos, mais minhocas armadas se destruindo em batalhas épicas subterrâneas.",
+    "youtubeId": "cDX-IynQSWc"
   },
   {
     "id": 61,
@@ -405,7 +425,8 @@
     "genre": "Tiro / Ação",
     "rating": 0,
     "cover": "/covers/61.webp",
-    "comment": "Jogo de tiro em primeira/terceira pessoa no N64. Pilote a Arwing com Fox McCloud contra Andross. Ação rápida, múltiplas rotas e aquele joystick analógico revolucionário."
+    "comment": "Jogo de tiro em primeira/terceira pessoa no N64. Pilote a Arwing com Fox McCloud contra Andross. Ação rápida, múltiplas rotas e aquele joystick analógico revolucionário.",
+    "youtubeId": "eyxI65Kqntg"
   },
   {
     "id": 62,
@@ -415,7 +436,8 @@
     "genre": "RPG / Ação",
     "rating": 0,
     "cover": "/covers/62.webp",
-    "comment": "RPG de ação em tempo real. Explorar masmorras épicas, recrutar heróis, derrotar monstros. Gameplay addictivo com câmera isométrica e clima de aventura medieval pura."
+    "comment": "RPG de ação em tempo real. Explorar masmorras épicas, recrutar heróis, derrotar monstros. Gameplay addictivo com câmera isométrica e clima de aventura medieval pura.",
+    "youtubeId": "1Dvf-9Vdc84"
   },
   {
     "id": 63,
@@ -425,7 +447,8 @@
     "genre": "RTS / Estratégia",
     "rating": 0,
     "cover": "/covers/63.webp",
-    "comment": "RTS de estratégia em tempo real. Construir cidades, comandar mitos e criaturas de Egípcios, Gregos, Nórdicos e Atlânticos. Campanha épica contra Kronos com gameplay viciante."
+    "comment": "RTS de estratégia em tempo real. Construir cidades, comandar mitos e criaturas de Egípcios, Gregos, Nórdicos e Atlânticos. Campanha épica contra Kronos com gameplay viciante.",
+    "youtubeId": "RaWCtXWyf-U"
   },
   {
     "id": 64,
@@ -457,7 +480,8 @@
     "genre": "FPS / Tiro",
     "rating": 0,
     "cover": "/covers/68.webp",
-    "comment": "FPS gratuito do tipo pay-to-win que viciou milhões. Mercenários vs Black List, compre armas, customize personagem. Um clássico dos PC bangs brasileiros."
+    "comment": "FPS gratuito do tipo pay-to-win que viciou milhões. Mercenários vs Black List, compre armas, customize personagem. Um clássico dos PC bangs brasileiros.",
+    "youtubeId": "Kpbwptc5rf0"
   },
   {
     "id": 69,
@@ -467,7 +491,8 @@
     "genre": "FPS / Tiro",
     "rating": 0,
     "cover": "/covers/69.webp",
-    "comment": "FPS em primeira pessoa para lan houses. Modo Death Match, Bomb, Elimination. Jogo de tiro rápido que marcou gerações em cybercafés do Brasil."
+    "comment": "FPS em primeira pessoa para lan houses. Modo Death Match, Bomb, Elimination. Jogo de tiro rápido que marcou gerações em cybercafés do Brasil.",
+    "youtubeId": "k3eY-JJA0BM"
   },
   {
     "id": 70,
@@ -477,7 +502,8 @@
     "genre": "Tiro / Ação",
     "rating": 0,
     "cover": "/covers/70.webp",
-    "comment": "Jogo de tiro por turnos cartunesco. Tanques combatendo em terrenos aleatórios, física divertida, muitos efeitos. Simples mas viciante para horas de jogo."
+    "comment": "Jogo de tiro por turnos cartunesco. Tanques combatendo em terrenos aleatórios, física divertida, muitos efeitos. Simples mas viciante para horas de jogo.",
+    "youtubeId": "T_4W_ZtkC-o"
   },
   {
     "id": 71,
@@ -487,7 +513,8 @@
     "genre": "FPS / Ação",
     "rating": 0,
     "cover": "/covers/71.webp",
-    "comment": "FPS único com parkour e combate corpo-a-corpo. Wallrun, double jump, combate melee. Gameplay inovador que marcou épocas nos PC bangs asiáticos e brasileiros."
+    "comment": "FPS único com parkour e combate corpo-a-corpo. Wallrun, double jump, combate melee. Gameplay inovador que marcou épocas nos PC bangs asiáticos e brasileiros.",
+    "youtubeId": "_Xn3qCgdd3g"
   },
   {
     "id": 72,
@@ -497,7 +524,8 @@
     "genre": "RPG / Multiplayer",
     "rating": 0,
     "cover": "/covers/72.webp",
-    "comment": "MMORPG casual e colorido. Missões fáceis, crafting, personalizações. Jogo descontraído perfeito para jogar enquanto faz outras coisas. Comunidade brasileira forte."
+    "comment": "MMORPG casual e colorido. Missões fáceis, crafting, personalizações. Jogo descontraído perfeito para jogar enquanto faz outras coisas. Comunidade brasileira forte.",
+    "youtubeId": "Kjm-pXE6E3E"
   },
   {
     "id": 73,
@@ -507,7 +535,8 @@
     "genre": "MMORPG",
     "rating": 0,
     "cover": "/covers/73.webp",
-    "comment": "Um dos primeiros MMORPGs da história. Mundo persistente isométrico, PvP aberto, farming infinito. Clássico que ainda está vivo em 2025 com comunidade fiel."
+    "comment": "Um dos primeiros MMORPGs da história. Mundo persistente isométrico, PvP aberto, farming infinito. Clássico que ainda está vivo em 2025 com comunidade fiel.",
+    "youtubeId": "Q_YQCeVe7nA"
   },
   {
     "id": 74,
@@ -517,7 +546,8 @@
     "genre": "Música / Ritmo",
     "rating": 0,
     "cover": "/covers/74.webp",
-    "comment": "Jogo musical onde você segue a batida em partituras coloridas. Educativo e divertido, perfeito para aprender ritmo e música. Melhorias e músicas novas em cada sequência."
+    "comment": "Jogo musical onde você segue a batida em partituras coloridas. Educativo e divertido, perfeito para aprender ritmo e música. Melhorias e músicas novas em cada sequência.",
+    "youtubeId": "VCUWIOBZFC4"
   },
   {
     "id": 75,
@@ -527,7 +557,8 @@
     "genre": "Beat em up / Ação",
     "rating": 0,
     "cover": "/covers/75.webp",
-    "comment": "Grande clássico do PS1 onde você controla o próprio Jackie Chan em porradarias épicas e acrobacias."
+    "comment": "Grande clássico do PS1 onde você controla o próprio Jackie Chan em porradarias épicas e acrobacias.",
+    "youtubeId": "WXaYNhjJA_g"
   },
   {
     "id": 76,
@@ -537,7 +568,8 @@
     "genre": "Trivia / Quiz",
     "rating": 0,
     "cover": "/covers/76.webp",
-    "comment": "O clássico do SBT com o Silvio Santos. Você está certo disso?"
+    "comment": "O clássico do SBT com o Silvio Santos. Você está certo disso?",
+    "youtubeId": "VKxiBNalfNs"
   },
   {
     "id": 77,
@@ -547,7 +579,8 @@
     "genre": "FPS / Battle Royale",
     "rating": 0,
     "cover": "/covers/77.webp",
-    "comment": "Battle Royale frenético no universo de Call of Duty. Verdansk, gulag e aquela tensão de ser o último sobrevivente."
+    "comment": "Battle Royale frenético no universo de Call of Duty. Verdansk, gulag e aquela tensão de ser o último sobrevivente.",
+    "youtubeId": "dKpL_h7va4w"
   },
   {
     "id": 78,
@@ -557,7 +590,8 @@
     "genre": "Hero Shooter",
     "rating": 0,
     "cover": "/covers/78.webp",
-    "comment": "Hero Shooter com os heróis e vilões da Marvel. Combates 6v6 dinâmicos e cenários destrutíveis."
+    "comment": "Hero Shooter com os heróis e vilões da Marvel. Combates 6v6 dinâmicos e cenários destrutíveis.",
+    "youtubeId": "LtGRIjpXD_g"
   },
   {
     "id": 79,
@@ -578,7 +612,8 @@
     "genre": "Esporte / Skate",
     "rating": 0,
     "cover": "/covers/80.webp",
-    "comment": "O aguardado retorno da franquia Skate. Foco total em realismo, expressão e comunidade no San Vansterdam."
+    "comment": "O aguardado retorno da franquia Skate. Foco total em realismo, expressão e comunidade no San Vansterdam.",
+    "youtubeId": "1Y2AB8GV9aw"
   },
   {
     "id": 81,
@@ -588,7 +623,8 @@
     "genre": "FPS / Guerra",
     "rating": 0,
     "cover": "/covers/81.webp",
-    "comment": "O sexto capítulo principal da série Battlefield, trazendo combates épicos em grande escala e destruição massiva."
+    "comment": "O sexto capítulo principal da série Battlefield, trazendo combates épicos em grande escala e destruição massiva.",
+    "youtubeId": "F9RIM-1I8Z8"
   },
   {
     "id": 82,
@@ -598,7 +634,8 @@
     "genre": "Roguelike / Ação",
     "rating": 0,
     "cover": "/covers/82.webp",
-    "comment": "Zagreus tentando escapar do submundo de seu pai. Um roguelike perfeito com narrativa envolvente e arte belíssima."
+    "comment": "Zagreus tentando escapar do submundo de seu pai. Um roguelike perfeito com narrativa envolvente e arte belíssima.",
+    "youtubeId": "dPmMCzvLs9E"
   },
   {
     "id": 83,
@@ -608,7 +645,8 @@
     "genre": "FPS / Ação",
     "rating": 0,
     "cover": "/covers/83.webp",
-    "comment": "Conspirações e espionagem durante a Guerra Fria. Campanha intensa, zumbis e o multiplayer clássico da Raven e Treyarch."
+    "comment": "Conspirações e espionagem durante a Guerra Fria. Campanha intensa, zumbis e o multiplayer clássico da Raven e Treyarch.",
+    "youtubeId": "Cjhr8qSr6Cc"
   },
   {
     "id": 84,
@@ -618,7 +656,8 @@
     "genre": "FPS / Ação",
     "rating": 0,
     "cover": "/covers/84.webp",
-    "comment": "Task Force 141 de volta em uma campanha global. Gráficos de ponta e uma jogabilidade refinada que definiu o novo padrão da série."
+    "comment": "Task Force 141 de volta em uma campanha global. Gráficos de ponta e uma jogabilidade refinada que definiu o novo padrão da série.",
+    "youtubeId": "sUprOFvJlZ8"
   },
   {
     "id": 85,
@@ -628,7 +667,8 @@
     "genre": "Simulação / Estratégia",
     "rating": 0,
     "cover": "/covers/85.webp",
-    "comment": "Um jogo de gerenciamento e estratégia que desafia suas habilidades de organização e planejamento."
+    "comment": "Um jogo de gerenciamento e estratégia que desafia suas habilidades de organização e planejamento.",
+    "youtubeId": "vMneZiNG-Bs"
   },
   {
     "id": 86,
@@ -638,7 +678,8 @@
     "genre": "MOBA",
     "rating": 0,
     "cover": "/covers/86.webp",
-    "comment": "O MOBA mais popular do mundo. Centenas de campeões, estratégia profunda e uma cena competitiva gigantesca."
+    "comment": "O MOBA mais popular do mundo. Centenas de campeões, estratégia profunda e uma cena competitiva gigantesca.",
+    "youtubeId": "cIjqhw425Z4"
   },
   {
     "id": 87,
@@ -670,7 +711,8 @@
     "genre": "Sobrevivência",
     "rating": 0,
     "cover": "/covers/89.webp",
-    "comment": "Sobrevivência e construção nas Minas de Moria. Explore, minere e enfrente os perigos para retomar Khazad-dûm."
+    "comment": "Sobrevivência e construção nas Minas de Moria. Explore, minere e enfrente os perigos para retomar Khazad-dûm.",
+    "youtubeId": "74appGlLuhU"
   },
   {
     "id": 90,
@@ -702,7 +744,8 @@
     "genre": "RTS / Estratégia",
     "rating": 0,
     "cover": "/covers/92.webp",
-    "comment": "Estratégia Viking em que você lidera o seu clã na descoberta de um novo continente misterioso e perigoso."
+    "comment": "Estratégia Viking em que você lidera o seu clã na descoberta de um novo continente misterioso e perigoso.",
+    "youtubeId": "T5s-9dK97HQ"
   },
   {
     "id": 93,
@@ -712,7 +755,8 @@
     "genre": "Ação / Mundo Aberto",
     "rating": 0,
     "cover": "/covers/93.webp",
-    "comment": "Explosões em Medici. Rico Rodriguez destruindo ditaduras, planando de wingsuit e causando o absoluto caos."
+    "comment": "Explosões em Medici. Rico Rodriguez destruindo ditaduras, planando de wingsuit e causando o absoluto caos.",
+    "youtubeId": "dEbt0HKj2z0"
   },
   {
     "id": 94,
@@ -722,7 +766,8 @@
     "genre": "Aventura / Cooperativo",
     "rating": 0,
     "cover": "/covers/94.webp",
-    "comment": "Uma aventura cooperativa incrível que começa com uma fuga de prisão e se transforma em uma jornada emocionante e interconectada entre dois jogadores."
+    "comment": "Uma aventura cooperativa incrível que começa com uma fuga de prisão e se transforma em uma jornada emocionante e interconectada entre dois jogadores.",
+    "youtubeId": "v1n1EaRejP8"
   },
   {
     "id": 95,
@@ -732,7 +777,8 @@
     "genre": "Looter Shooter",
     "rating": 0,
     "cover": "/covers/95.webp",
-    "comment": "Tiro, porrada e um bilhão de armas em Pandora. Enfrente Handsome Jack com seus amigos."
+    "comment": "Tiro, porrada e um bilhão de armas em Pandora. Enfrente Handsome Jack com seus amigos.",
+    "youtubeId": "t6x99TCdqkw"
   },
   {
     "id": 96,
@@ -742,7 +788,8 @@
     "genre": "Sobrevivência / RPG",
     "rating": 0,
     "cover": "/covers/96.webp",
-    "comment": "Sobreviva ao Ragnarök com sua tribo. Colete recursos durante o dia e defenda a Semente de Yggdrasil à noite."
+    "comment": "Sobreviva ao Ragnarök com sua tribo. Colete recursos durante o dia e defenda a Semente de Yggdrasil à noite.",
+    "youtubeId": "vyGZAUTeYjY"
   },
   {
     "id": 97,
@@ -752,7 +799,8 @@
     "genre": "MMO / Voxel",
     "rating": 0,
     "cover": "/covers/97.webp",
-    "comment": "Aventuras em voxel. Minere, construa, derrote chefes em dungeons geradas proceduralmente com diversas classes únicas."
+    "comment": "Aventuras em voxel. Minere, construa, derrote chefes em dungeons geradas proceduralmente com diversas classes únicas.",
+    "youtubeId": "biP4fMVbDPE"
   },
   {
     "id": 98,
@@ -762,7 +810,8 @@
     "genre": "Estratégia / Defesa de Torre",
     "rating": 0,
     "cover": "/covers/98.webp",
-    "comment": "Um jogo de construção e defesa de reino minimalista. Equilibre a economia de dia e defenda seu castelo à noite."
+    "comment": "Um jogo de construção e defesa de reino minimalista. Equilibre a economia de dia e defenda seu castelo à noite.",
+    "youtubeId": "wLTUzB9ZWDI"
   },
   {
     "id": 99,
@@ -772,7 +821,8 @@
     "genre": "Defesa de Torre / Ação",
     "rating": 0,
     "cover": "/covers/99.webp",
-    "comment": "Posicione armadilhas letais e use magia e armas para trucidar hordas de orcs e defender os Rifts (Fendas)."
+    "comment": "Posicione armadilhas letais e use magia e armas para trucidar hordas de orcs e defender os Rifts (Fendas).",
+    "youtubeId": "tJZmivgwbeA"
   },
   {
     "id": 100,
@@ -782,7 +832,8 @@
     "genre": "Ação / Aventura",
     "rating": 0,
     "cover": "/covers/100.webp",
-    "comment": "Combine elementos para criar feitiços devastadores. Cuidado com o fogo amigo nesta hilária aventura mágica."
+    "comment": "Combine elementos para criar feitiços devastadores. Cuidado com o fogo amigo nesta hilária aventura mágica.",
+    "youtubeId": "DYjCVcYkzOs"
   },
   {
     "id": 101,
@@ -792,7 +843,8 @@
     "genre": "FPS / Sobrevivência / Cooperativo",
     "rating": 0,
     "cover": "/covers/101.webp",
-    "comment": "Sobreviva ao apocalipse zumbi com seus amigos! Armas viscerais e um diretor de IA que garante que nenhuma partida seja igual a outra."
+    "comment": "Sobreviva ao apocalipse zumbi com seus amigos! Armas viscerais e um diretor de IA que garante que nenhuma partida seja igual a outra.",
+    "youtubeId": "tctq_WdX-Ec"
   },
   {
     "id": 102,
@@ -813,7 +865,8 @@
     "genre": "RPG / Aventura",
     "rating": 0,
     "cover": "/covers/103.webp",
-    "comment": "RPG single-player no navegador da Artix Entertainment. Aventuras épicas com dragões, classes variadas e aquela nostalgia dos jogos em Flash que marcaram uma geração."
+    "comment": "RPG single-player no navegador da Artix Entertainment. Aventuras épicas com dragões, classes variadas e aquela nostalgia dos jogos em Flash que marcaram uma geração.",
+    "youtubeId": "26aqQONHXrM"
   },
   {
     "id": 104,
@@ -823,7 +876,8 @@
     "genre": "Estratégia / MMO",
     "rating": 0,
     "cover": "/covers/104.webp",
-    "comment": "Estratégia medieval no navegador. Construir aldeias, recrutar tropas e conquistar territórios inimigos. Diplomacia, alianças e guerras que duravam semanas inteiras."
+    "comment": "Estratégia medieval no navegador. Construir aldeias, recrutar tropas e conquistar territórios inimigos. Diplomacia, alianças e guerras que duravam semanas inteiras.",
+    "youtubeId": "w1-0dqTCxyM"
   },
   {
     "id": 105,
@@ -833,7 +887,8 @@
     "genre": "RPG / MMO",
     "rating": 0,
     "cover": "/covers/105.webp",
-    "comment": "RPG de navegador onde você escolhe entre vampiros e lobisomens. Missões, PvP e evolução do personagem em um mundo sombrio e viciante."
+    "comment": "RPG de navegador onde você escolhe entre vampiros e lobisomens. Missões, PvP e evolução do personagem em um mundo sombrio e viciante.",
+    "youtubeId": "lratzR7SsiQ"
   },
   {
     "id": 106,
@@ -843,7 +898,8 @@
     "genre": "Estratégia / MMO",
     "rating": 0,
     "cover": "/covers/106.webp",
-    "comment": "Estratégia no navegador ambientada na Grécia Antiga. Construir cidades em ilhas, pesquisar tecnologias, formar alianças e dominar o mar Mediterrâneo."
+    "comment": "Estratégia no navegador ambientada na Grécia Antiga. Construir cidades em ilhas, pesquisar tecnologias, formar alianças e dominar o mar Mediterrâneo.",
+    "youtubeId": "YOpMzH5fNj8"
   },
   {
     "id": 107,
@@ -853,7 +909,8 @@
     "genre": "RPG / Crime",
     "rating": 0,
     "cover": "/covers/107.webp",
-    "comment": "RPG de crime no navegador. Roube, trafique, suba na hierarquia do submundo e domine a cidade. Clássico dos jogos de browser que viciou muita gente."
+    "comment": "RPG de crime no navegador. Roube, trafique, suba na hierarquia do submundo e domine a cidade. Clássico dos jogos de browser que viciou muita gente.",
+    "youtubeId": "vGn9xa4tgkY"
   },
   {
     "id": 108,
@@ -863,7 +920,8 @@
     "genre": "MMORPG",
     "rating": 0,
     "cover": "/covers/108.webp",
-    "comment": "MMORPG clássico com mundo aberto, sistema de skills único e aventuras sem fim. Jogue no navegador ou baixe o cliente e explore Gielinor."
+    "comment": "MMORPG clássico com mundo aberto, sistema de skills único e aventuras sem fim. Jogue no navegador ou baixe o cliente e explore Gielinor.",
+    "youtubeId": "zxNdhdp2Ek8"
   },
   {
     "id": 109,
@@ -874,7 +932,7 @@
     "rating": 0,
     "cover": "/covers/109.webp",
     "comment": "O jogo que redefiniu uma geração. Minerar, construir, sobreviver e criar mundos infinitos bloco por bloco. De cavernas a castelos, tudo é possível.",
-    "youtubeId": "yea7LtOB4JI"
+    "youtubeId": "xuq9-18rmQQ"
   },
   {
     "id": 110,
@@ -884,7 +942,8 @@
     "genre": "Social / MMO",
     "rating": 0,
     "cover": "/covers/110.webp",
-    "comment": "O hotel virtual que viciou milhões. Decorar quartos, fazer amigos, trocar moedas e curtir eventos. A rede social gamer antes das redes sociais."
+    "comment": "O hotel virtual que viciou milhões. Decorar quartos, fazer amigos, trocar moedas e curtir eventos. A rede social gamer antes das redes sociais.",
+    "youtubeId": "h6EuSbvx_NE"
   },
   {
     "id": 111,
@@ -895,7 +954,7 @@
     "rating": 0,
     "cover": "/covers/111.webp",
     "comment": "Michael, Trevor e Franklin em Los Santos. Três protagonistas, um mundo gigantesco e o GTA Online que se tornou um fenômeno próprio.",
-    "youtubeId": "N-xHcvug3WI"
+    "youtubeId": "j3vYBusVm40"
   },
   {
     "id": 112,
@@ -905,7 +964,8 @@
     "genre": "MMORPG",
     "rating": 0,
     "cover": "/covers/112.webp",
-    "comment": "MMORPG no navegador da Artix Entertainment. Classes, quests épicas e batalhas em tempo real no universo de Lore. O irmão multiplayer do DragonFable."
+    "comment": "MMORPG no navegador da Artix Entertainment. Classes, quests épicas e batalhas em tempo real no universo de Lore. O irmão multiplayer do DragonFable.",
+    "youtubeId": "L97ZNc_qW6A"
   },
   {
     "id": 113,
@@ -915,7 +975,8 @@
     "genre": "Ação / Multiplayer",
     "rating": 0,
     "cover": "/covers/113.webp",
-    "comment": "O hit mobile da Supercell. Partidas rápidas 3v3, brawlers carismáticos e modos variados que viciam no celular. Competitivo e casual ao mesmo tempo."
+    "comment": "O hit mobile da Supercell. Partidas rápidas 3v3, brawlers carismáticos e modos variados que viciam no celular. Competitivo e casual ao mesmo tempo.",
+    "youtubeId": "rEmClS6_8LQ"
   },
   {
     "id": 114,
@@ -925,7 +986,8 @@
     "genre": "MOBA",
     "rating": 0,
     "cover": "/covers/114.webp",
-    "comment": "O mod de Warcraft III que criou o gênero MOBA. Escolher herói, farmar creeps, defender as torres e destruir a Ancient. O pai do League of Legends e do Dota 2."
+    "comment": "O mod de Warcraft III que criou o gênero MOBA. Escolher herói, farmar creeps, defender as torres e destruir a Ancient. O pai do League of Legends e do Dota 2.",
+    "youtubeId": "-mFKVsmMi9c"
   },
   {
     "id": 115,
@@ -936,7 +998,7 @@
     "rating": 0,
     "cover": "/covers/115.webp",
     "comment": "Sobrevivência Viking cooperativa no purgatório nórdico. Construir bases épicas, derrotar chefões míticos e explorar biomas perigosos com os amigos. Fenômeno indie de 2021.",
-    "youtubeId": "IAMPr9kytfk"
+    "youtubeId": "NsV2VU92nrc"
   },
   {
     "id": 116,
@@ -946,7 +1008,8 @@
     "genre": "RPG / MMO",
     "rating": 0,
     "cover": "/covers/116.webp",
-    "comment": "RPG de gladiadores no navegador. Treinar personagem, lutar na arena, formar alianças e conquistar a glória em Roma Antiga."
+    "comment": "RPG de gladiadores no navegador. Treinar personagem, lutar na arena, formar alianças e conquistar a glória em Roma Antiga.",
+    "youtubeId": "3j9Z3edx1eY"
   },
   {
     "id": 117,
@@ -956,7 +1019,8 @@
     "genre": "Ação / Beat 'em up",
     "rating": 0,
     "cover": "/covers/117.webp",
-    "comment": "Um clássico do Mega Drive! Você é um guerreiro ressuscitado para salvar a filha do Zeus, se transformando em feras míticas pelo caminho. Power-ups, chefões gigantes e aquela nostalgia pura dos anos 90."
+    "comment": "Um clássico do Mega Drive! Você é um guerreiro ressuscitado para salvar a filha do Zeus, se transformando em feras míticas pelo caminho. Power-ups, chefões gigantes e aquela nostalgia pura dos anos 90.",
+    "youtubeId": "m92JFeUVOPw"
   },
   {
     "id": 118,
