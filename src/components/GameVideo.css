@@ -134,6 +134,40 @@
   .game-video { top: 26%; left: 50%; width: min(480px, 84vw); }
 }
 
+@media (max-height: 500px) and (orientation: landscape) {
+  .game-video {
+    top: 50%;
+    left: 46%;
+    width: min(210px, 25vw);
+  }
+
+  .game-video-launch {
+    min-height: 68px;
+    gap: 0.55rem;
+    padding: 0.6rem 0.65rem;
+  }
+
+  .game-video-play {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .game-video-kicker {
+    font-size: 0.56rem;
+    letter-spacing: 1.2px;
+  }
+
+  .game-video-launch-title {
+    font-size: 0.82rem;
+  }
+
+  .game-video-player-head {
+    min-height: 32px;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .game-video-player { animation: none; }
   .game-video-play { transition: none; }

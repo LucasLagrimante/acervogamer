@@ -146,3 +146,34 @@
     font-size: 0.85rem;
   }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hud {
+    gap: 0.5rem;
+    padding: 0.45rem 0.75rem;
+  }
+
+  .hud-brand {
+    gap: 0.5rem;
+  }
+
+  .hud-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hud-sub,
+  .hud-save {
+    display: none;
+  }
+
+  .hud-mode {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .hud-icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

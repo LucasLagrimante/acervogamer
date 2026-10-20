@@ -189,6 +189,7 @@ function GameCase({ game, slot, scroll, selected, detailOpen, receded, load, int
     if (!g) return;
     const lambda = reducedMotion ? 1000 : 7;
     const wide = state.size.width / state.size.height > 1;
+    const compactLandscape = wide && state.size.height <= 500;
 
     let x: number, y: number, z: number, ry: number, rx = 0, s = 1;
     if (slot === null) {
@@ -198,7 +199,8 @@ function GameCase({ game, slot, scroll, selected, detailOpen, receded, load, int
       const t = state.clock.elapsedTime;
       // Detalhe aberto: deslocamento contido para manter a capa na cena.
       // Em retrato, sobe só um pouco acima da posição normal do carrossel.
-      x = wide ? -1.05 : 0;
+      // Paisagem curta: separa capa, gameplay e detalhes em três faixas.
+      x = wide ? (compactLandscape ? -1.9 : -1.05) : 0;
       // Mantém o centro da capa acima do plano do chão também em widescreen.
       y = FLOOR_Y + 0.18;
       z = wide ? 0.7 : 0.9;
