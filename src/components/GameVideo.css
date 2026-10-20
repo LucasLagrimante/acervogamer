@@ -9,6 +9,15 @@
   border: 1px solid rgba(5, 217, 232, 0.3);
   background: #0c0a1d;
   box-shadow: inset 0 0 0 1px rgba(255, 42, 109, 0.16), 0 14px 36px rgba(0, 0, 0, 0.72);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1), top 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.game-video.is-playing {
+  z-index: 30;
+  transform: translate(-50%, -50%) scale(1.4);
+  border-color: rgba(5, 217, 232, 0.75);
+  box-shadow: inset 0 0 0 1px rgba(255, 42, 109, 0.24), 0 0 28px rgba(5, 217, 232, 0.35), 0 20px 52px rgba(0, 0, 0, 0.82);
 }
 
 .game-video-launch {
@@ -132,6 +141,11 @@
 
 @media (max-aspect-ratio: 1/1) {
   .game-video { top: 26%; left: 50%; width: min(480px, 84vw); }
+  .game-video.is-open { top: 31%; }
+  .game-video.is-playing {
+    width: min(117.6vw, calc(100vw - 1rem));
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
@@ -140,6 +154,8 @@
     left: 46%;
     width: min(210px, 25vw);
   }
+
+  .game-video.is-open { top: 56%; }
 
   .game-video-launch {
     min-height: 68px;
@@ -169,6 +185,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .game-video { transition: none; }
   .game-video-player { animation: none; }
   .game-video-play { transition: none; }
 }
