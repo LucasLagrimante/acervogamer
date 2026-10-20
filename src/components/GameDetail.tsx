@@ -3,7 +3,6 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Game } from '../types';
 import { genreTags } from '../lib/collection';
 import { StarRating } from './StarRating';
-import { GameVideo } from './GameVideo';
 import './GameDetail.css';
 
 interface GameDetailProps {
@@ -55,8 +54,6 @@ export function GameDetail({ game, index, total, onClose, onPrev, onNext, onUpda
           <span className="detail-label">Sua nota</span>
           <StarRating value={game.rating} onChange={r => onUpdateRating(game.id, r)} label={`Nota para ${game.title}`} />
         </div>
-
-        <GameVideo game={game} />
 
         {game.comment && (
           <figure className="detail-memory">

@@ -4,7 +4,7 @@
   right: max(1.5rem, calc((100vw - 1280px) / 2));
   transform: translateY(-46%);
   z-index: 16;
-  width: min(420px, 42vw);
+  width: min(360px, 34vw);
   max-height: calc(100vh - 7rem);
   display: flex;
   flex-direction: column;

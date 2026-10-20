@@ -3,6 +3,7 @@ import { Hud } from './components/Hud';
 import { FilterBar } from './components/FilterBar';
 import { CarouselNav } from './components/CarouselNav';
 import { GameDetail } from './components/GameDetail';
+import { GameVideo } from './components/GameVideo';
 import { GameIndex } from './components/GameIndex';
 import { StatsPanel } from './components/StatsPanel';
 import { BootScreen } from './components/BootScreen';
@@ -204,16 +205,19 @@ function App() {
             />
           )}
           {detailOpen && selectedGame && (
-            <GameDetail
-              game={selectedGame}
-              index={selectedIndex}
-              total={filtered.length}
-              onClose={() => setDetailOpen(false)}
-              onPrev={() => selectIndex(selectedIndex - 1)}
-              onNext={() => selectIndex(selectedIndex + 1)}
-              onUpdateRating={updateGameRating}
-              onFilter={pickHub}
-            />
+            <>
+              <GameVideo key={selectedGame.id} game={selectedGame} />
+              <GameDetail
+                game={selectedGame}
+                index={selectedIndex}
+                total={filtered.length}
+                onClose={() => setDetailOpen(false)}
+                onPrev={() => selectIndex(selectedIndex - 1)}
+                onNext={() => selectIndex(selectedIndex + 1)}
+                onUpdateRating={updateGameRating}
+                onFilter={pickHub}
+              />
+            </>
           )}
         </>
       )}

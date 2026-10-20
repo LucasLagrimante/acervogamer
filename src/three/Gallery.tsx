@@ -197,7 +197,8 @@ function GameCase({ game, slot, scroll, selected, detailOpen, receded, load, int
       // Detalhe aberto: deslocamento contido para manter a capa na cena.
       // Em retrato, sobe só um pouco acima da posição normal do carrossel.
       x = wide ? -1.05 : 0;
-      y = wide ? 0.42 : FLOOR_Y + 0.18;
+      // Mantém o centro da capa acima do plano do chão também em widescreen.
+      y = FLOOR_Y + 0.18;
       z = wide ? 0.7 : 0.9;
       ry = (wide ? 0.32 : 0) + (reducedMotion ? 0 : Math.sin(t * 0.6) * 0.12);
       rx = reducedMotion ? 0 : Math.sin(t * 0.8) * 0.03;

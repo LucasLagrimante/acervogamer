@@ -11,19 +11,8 @@ export function GameVideo({ game }: GameVideoProps) {
   const [open, setOpen] = useState(false);
   const videoId = game.youtubeId;
 
-  if (!videoId) {
-    const terms = [game.title, game.platform, game.year, game.genre, 'gameplay vídeo'].filter(Boolean);
-    const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(terms.join(' '))}`;
-    return (
-      <section className="game-video game-video-unavailable" aria-label={`Gameplay de ${game.title}`}>
-        <span className="game-video-kicker">Gameplay</span>
-        <p>Vídeo ainda não cadastrado para este jogo.</p>
-        <a className="game-video-search" href={searchUrl} target="_blank" rel="noopener noreferrer">
-          Buscar gameplay no Google ↗
-        </a>
-      </section>
-    );
-  }
+  // Não reserva espaço nem exibe um estado de vídeo para jogos sem vídeo cadastrado.
+  if (!videoId) return null;
 
   return (
     <section className={`game-video ${open ? 'is-open' : ''}`} aria-label={`Gameplay de ${game.title}`}>
