@@ -9,6 +9,7 @@ import { StatsPanel } from './components/StatsPanel';
 import { BootScreen } from './components/BootScreen';
 import { ToastContainer, ToastMessage } from './components/Toast';
 import { useMediaQuery } from './hooks/useMediaQuery';
+import { useDeviceOrientation } from './hooks/useDeviceOrientation';
 import { EMPTY_FILTERS, Filters, filterGames } from './lib/collection';
 import type { Mode } from './three/Experience';
 import type { NodeType } from './lib/graph';
@@ -49,6 +50,8 @@ function App() {
   const [sceneReady, setSceneReady] = useState(false);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
+  const touchDevice = useMediaQuery('(pointer: coarse)');
+  const { status: motionStatus, offsetRef: motionOffset, toggle: toggleMotion } = useDeviceOrientation();
   const toastedImages = useRef(new Set<string>());
 
   const filtered = useMemo(() => filterGames(games, filters), [games, filters]);
@@ -65,6 +68,17 @@ function App() {
   const dismissToast = useCallback((id: number) => {
     setToasts(prev => prev.filter(t => t.id !== id));
   }, []);
+
+  const toggleDeviceOrientation = useCallback(async () => {
+    const next = await toggleMotion();
+    if (next === 'denied') {
+      addToast('Permissão do sensor negada. Libere o acesso ao movimento nas configurações do navegador e tente novamente.');
+    } else if (next === 'unavailable') {
+      addToast('O celular não enviou dados de movimento. Confira o suporte do aparelho e do navegador.');
+    } else if (next === 'unsupported') {
+      addToast('Este navegador não oferece sensor de orientação para o celular.');
+    }
+  }, [toggleMotion, addToast]);
 
   // galeria e mapa carregam a mesma capa: avisa uma vez por jogo
   const handleImageError = useCallback((title: string) => {
@@ -166,6 +180,7 @@ function App() {
             detailOpen={detailOpen}
             mapVisited={mapVisited}
             reducedMotion={reducedMotion}
+            motionOffset={motionOffset}
             onSelect={selectIndex}
             onOpen={() => setDetailOpen(true)}
             onPickGame={openGame}
@@ -182,6 +197,10 @@ function App() {
         totalGames={games.length}
         indexOpen={indexOpen}
         onToggleIndex={() => setIndexOpen(o => !o)}
+        showMotionControl={touchDevice && webgl}
+        motionStatus={motionStatus}
+        motionDisabled={reducedMotion}
+        onToggleMotion={toggleDeviceOrientation}
       />
 
       {mode === 'library' && (

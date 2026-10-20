@@ -5,6 +5,7 @@ import { Bloom, EffectComposer, ToneMapping, Vignette } from '@react-three/postp
 import { ToneMappingMode } from 'postprocessing';
 import { Vector3 } from 'three';
 import { Game } from '../types';
+import type { DeviceMotionValue } from '../hooks/useDeviceOrientation';
 import { buildGraph, NodeType } from '../lib/graph';
 import { Synthwave } from './Synthwave';
 import { Gallery } from './Gallery';
@@ -25,6 +26,7 @@ export interface ExperienceProps {
   detailOpen: boolean;
   mapVisited: boolean;
   reducedMotion: boolean;
+  motionOffset: { current: DeviceMotionValue };
   onSelect: (index: number) => void;
   onOpen: () => void;
   onPickGame: (game: Game) => void;
@@ -76,7 +78,7 @@ export default function Experience(props: ExperienceProps) {
           onImageError={props.onImageError}
         />
       )}
-      <CameraRig mode={mode} reducedMotion={reducedMotion} />
+      <CameraRig mode={mode} reducedMotion={reducedMotion} motionOffset={props.motionOffset} />
 
       <EffectComposer multisampling={4}>
         <Bloom mipmapBlur luminanceThreshold={1} luminanceSmoothing={0.2} intensity={0.85} />
@@ -87,29 +89,47 @@ export default function Experience(props: ExperienceProps) {
   );
 }
 
-function CameraRig({ mode, reducedMotion }: { mode: Mode; reducedMotion: boolean }) {
+function CameraRig({
+  mode, reducedMotion, motionOffset,
+}: { mode: Mode; reducedMotion: boolean; motionOffset: { current: DeviceMotionValue } }) {
   const controls = useRef<ComponentRef<typeof OrbitControls>>(null);
   const look = useRef(LIB_LOOK.clone());
   const goal = useRef(new Vector3());
   const settled = useRef(false);
   const lastMode = useRef(mode);
+  const appliedMapOffset = useRef({ x: 0, y: 0 });
 
   useFrame((state, delta) => {
     const c = controls.current;
     if (lastMode.current !== mode) {
       lastMode.current = mode;
       settled.current = false;
+      appliedMapOffset.current = { x: 0, y: 0 };
     }
-    // no mapa, depois de chegar, quem manda na câmera é o OrbitControls
-    if (mode === 'map' && settled.current) return;
-
+    // Mapa: OrbitControls navega; o sensor translada câmera/alvo como uma camada parallax.
+    if (mode === 'map' && settled.current) {
+      const x = reducedMotion || !motionOffset.current.active ? 0 : motionOffset.current.x;
+      const y = reducedMotion || !motionOffset.current.active ? 0 : motionOffset.current.y;
+      const dx = (x - appliedMapOffset.current.x) * 0.8;
+      const dy = (y - appliedMapOffset.current.y) * 0.45;
+      if (c) {
+        state.camera.position.x += dx;
+        state.camera.position.y += dy;
+        c.target.x += dx;
+        c.target.y += dy;
+      }
+      appliedMapOffset.current = { x, y };
+      return;
+    }
     const aspect = state.size.width / state.size.height;
     // retrato: recua a câmera para caber o carrossel
     const portrait = aspect < 1 ? (1 / aspect - 1) : 0;
     let target: Vector3;
     if (mode === 'library') {
-      const px = reducedMotion ? 0 : state.pointer.x * 0.3;
-      const py = reducedMotion ? 0 : state.pointer.y * 0.12;
+      const x = motionOffset.current.active ? motionOffset.current.x : state.pointer.x;
+      const y = motionOffset.current.active ? motionOffset.current.y : state.pointer.y;
+      const px = reducedMotion ? 0 : x * 0.3;
+      const py = reducedMotion ? 0 : y * 0.12;
       goal.current.set(px, 1.05 + py + portrait * 0.4, 4.3 + portrait * 2.6);
       target = LIB_LOOK;
     } else {
