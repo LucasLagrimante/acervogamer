@@ -7,4 +7,5 @@ export interface Game {
   rating: number;
   cover: string;
   comment: string;
+  youtubeId?: string;
 }
