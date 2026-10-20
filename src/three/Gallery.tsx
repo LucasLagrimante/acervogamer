@@ -8,6 +8,8 @@ const H = 1.4;
 const W = H * CASE_ASPECT;
 const D = 0.12;
 const FLOOR_Y = H / 2 + 0.02;
+const SELECTED_SCALE = 1.12;
+const SELECTED_FLOOR_CLEARANCE = 0.2;
 /** Distância (em slots) a partir da qual a caixa sai de cena */
 const VISIBLE_RANGE = 13;
 /** Capas carregadas antes de entrarem no campo de visão */
@@ -209,9 +211,12 @@ function GameCase({ game, slot, scroll, selected, detailOpen, receded, load, int
       const near = Math.min(a, 1);
       x = sgn * (near * 1.35 + Math.max(a - 1, 0) * 0.55);
       z = -near * 1.1 - Math.max(a - 1, 0) * 0.32;
-      y = FLOOR_Y + (selected && hovered ? 0.08 : 0);
+      // Compensa a escala da capa selecionada e mantém margem visível acima do piso.
+      y = FLOOR_Y
+        + (selected ? H * (SELECTED_SCALE - 1) / 2 + SELECTED_FLOOR_CLEARANCE : 0)
+        + (selected && hovered ? 0.08 : 0);
       ry = -sgn * near * 1.05;
-      s = selected ? 1.12 : 1;
+      s = selected ? SELECTED_SCALE : 1;
     }
     // demais caixas recuam quando o detalhe está aberto
     if (receded) z -= 1.6;
