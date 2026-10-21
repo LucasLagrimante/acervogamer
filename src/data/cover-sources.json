@@ -937,7 +937,7 @@
   },
   {
     "id": 77,
-    "title": "Call of Duty: Warzone",
+    "title": "Call of Duty: Warzone 1",
     "originalSource": "https://upload.wikimedia.org/wikipedia/en/6/65/COD_Warzone_Cover_Art.jpg",
     "sourcePage": "https://upload.wikimedia.org/wikipedia/en/6/65/COD_Warzone_Cover_Art.jpg",
     "originalBytes": 46730,
@@ -1063,21 +1063,21 @@
   },
   {
     "id": 84,
-    "title": "Call of Duty: Modern Warfare II",
-    "originalSource": "https://upload.wikimedia.org/wikipedia/pt/2/2e/Call_of_Duty_Modern_Warfare_II.jpg",
-    "sourcePage": "https://upload.wikimedia.org/wikipedia/pt/2/2e/Call_of_Duty_Modern_Warfare_II.jpg",
-    "originalBytes": 87857,
+    "title": "Call of Duty: Modern Warfare",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/1/1f/Call_of_Duty_Modern_Warfare_%282019%29_cover.jpg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Call_of_Duty_Modern_Warfare_(2019)_cover.jpg",
+    "originalBytes": 39257,
     "originalDimensions": [
       282,
-      353
+      352
     ],
     "localFile": "/covers/84.webp",
-    "localBytes": 21054,
+    "localBytes": 13856,
     "localDimensions": [
       282,
-      353
+      352
     ],
-    "acquisition": "downloaded from source asset URL"
+    "acquisition": "Baixada da capa do jogo na Wikipédia e convertida localmente para WebP (qualidade 82, sem redimensionamento)."
   },
   {
     "id": 85,

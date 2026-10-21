@@ -575,14 +575,19 @@
   },
   {
     "id": 77,
-    "title": "Call of Duty: Warzone",
+    "title": "Call of Duty: Warzone 1",
     "platform": "PC",
     "year": "2020",
     "genre": "FPS / Battle Royale",
     "rating": 0,
     "cover": "/covers/77.webp",
     "comment": "Battle Royale frenético no universo de Call of Duty. Verdansk, gulag e aquela tensão de ser o último sobrevivente.",
-    "youtubeId": "dKpL_h7va4w"
+    "youtubeId": "dKpL_h7va4w",
+    "aliases": [
+      "Warzone 1",
+      "Warzone Caldera",
+      "WZ1"
+    ]
   },
   {
     "id": 78,
@@ -652,14 +657,20 @@
   },
   {
     "id": 84,
-    "title": "Call of Duty: Modern Warfare II",
+    "title": "Call of Duty: Modern Warfare",
     "platform": "PC",
-    "year": "2022",
+    "year": "2019",
     "genre": "FPS / Ação",
     "rating": 0,
     "cover": "/covers/84.webp",
-    "comment": "Task Force 141 de volta em uma campanha global. Gráficos de ponta e uma jogabilidade refinada que definiu o novo padrão da série.",
-    "youtubeId": "sUprOFvJlZ8"
+    "comment": "Reboot de 2019 da subsérie Modern Warfare, com campanha focada em Captain Price, Farah e Alex em Urzikstan, além dos modos multiplayer e Spec Ops.",
+    "youtubeId": "Vpf5z8VdGhM",
+    "aliases": [
+      "Modern Warfare",
+      "MW 2019",
+      "MW2019",
+      "COD MW 2019"
+    ]
   },
   {
     "id": 85,
