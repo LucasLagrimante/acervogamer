@@ -35,7 +35,7 @@ src/lib/collection.ts   filtro/ordenação, listas únicas, gêneros ("FPS / Aç
 src/lib/graph.ts        nós/arestas do mapa + layout de forças 3D determinístico
 src/three/              cena (chunk lazy): Experience (Canvas, câmera, bloom), Gallery,
                         Constellation, Synthwave (chão/sol em shader), covers (texturas)
-src/components/         HUD em DOM: Hud, FilterBar, CarouselNav, GameDetail, StarRating,
+src/components/         HUD em DOM: Hud, FilterBar, CarouselNav, GameDetail,
                         StatsPanel, GameIndex, BootScreen, Toast
 vite.config.ts          config do Vite (sem `base` — o app vive na raiz do domínio)
 eslint.config.js        flat config: js.recommended + typescript-eslint + react-hooks
@@ -67,7 +67,8 @@ Para cada jogo novo, cumpra todos os itens abaixo antes de considerar a entrada 
 1. Use um `id` numérico único e preencha todos os campos do contrato `Game`, incluindo
    `youtubeId`. Se o jogo tiver abreviações ou nomes alternativos comuns, registre-os em
    `aliases` para que também possam ser encontrados pela busca. Não cadastre novamente um
-   jogo já presente com título alternativo.
+   jogo já presente com título alternativo. Para o jogo que Lucas está jogando no momento,
+   use `currentlyPlaying: true`; essa marca o prioriza sem alterar o ano de lançamento.
 2. Obtenha a capa correspondente ao jogo e grave o arquivo localmente como
    `public/covers/{id}.webp`. Converta para WebP, limite a largura a 500 px sem ampliar
    imagens menores e preserve a proporção. Em `games.json`, use `cover: "/covers/{id}.webp"`;

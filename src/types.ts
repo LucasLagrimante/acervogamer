@@ -5,7 +5,7 @@ export interface Game {
   platform: string;
   year: string;
   genre: string;
-  rating: number;
+  currentlyPlaying?: boolean;
   cover: string;
   comment: string;
   youtubeId: string;

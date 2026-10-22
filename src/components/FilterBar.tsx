@@ -23,44 +23,47 @@ export function FilterBar({ games, filters, onChange, resultCount }: FilterBarPr
 
   return (
     <section className={`filter-bar ${expanded ? 'expanded' : ''}`} aria-label="Busca e filtros">
-      <div className="filter-search">
-        <Search size={16} className="filter-search-icon" aria-hidden="true" />
-        <label htmlFor="search-input" className="sr-only">Buscar jogos</label>
-        <input
-          id="search-input"
-          type="search"
-          className="filter-input"
-          placeholder="Buscar títulos, memórias…  ( / )"
-          value={filters.search}
-          onChange={set('search')}
-          autoComplete="off"
-        />
-        <button
-          className="filter-toggle"
-          aria-expanded={expanded}
-          aria-controls="filter-selects"
-          aria-label="Mostrar filtros"
-          onClick={() => setExpanded(e => !e)}
-        >
-          <SlidersHorizontal size={16} aria-hidden="true" />
-        </button>
-      </div>
-
-      <div className="filter-selects" id="filter-selects">
-        <FilterSelect id="filter-platform" label="Plataforma" value={filters.platform} onChange={set('platform')} all="Todas plataformas" options={platforms} />
-        <FilterSelect id="filter-genre" label="Gênero" value={filters.genre} onChange={set('genre')} all="Todos os gêneros" options={genres} />
-        <FilterSelect id="filter-year" label="Ano" value={filters.year} onChange={set('year')} all="Todos os anos" options={years} />
-      </div>
-
-      <div className="filter-meta">
-        <span className="filter-count" role="status">
-          {resultCount} jogo{resultCount !== 1 ? 's' : ''}
-        </span>
-        {active && (
-          <button className="filter-clear" onClick={() => onChange(EMPTY_FILTERS)}>
-            <X size={12} aria-hidden="true" /> Limpar
+      <p className="filter-owner"><strong>Acervo pessoal de Lucas Lagrimante</strong> — todos os jogos que já joguei na vida.</p>
+      <div className="filter-controls">
+        <div className="filter-search">
+          <Search size={16} className="filter-search-icon" aria-hidden="true" />
+          <label htmlFor="search-input" className="sr-only">Buscar jogos</label>
+          <input
+            id="search-input"
+            type="search"
+            className="filter-input"
+            placeholder="Buscar títulos, memórias…  ( / )"
+            value={filters.search}
+            onChange={set('search')}
+            autoComplete="off"
+          />
+          <button
+            className="filter-toggle"
+            aria-expanded={expanded}
+            aria-controls="filter-selects"
+            aria-label="Mostrar filtros"
+            onClick={() => setExpanded(e => !e)}
+          >
+            <SlidersHorizontal size={16} aria-hidden="true" />
           </button>
-        )}
+        </div>
+
+        <div className="filter-selects" id="filter-selects">
+          <FilterSelect id="filter-platform" label="Plataforma" value={filters.platform} onChange={set('platform')} all="Todas plataformas" options={platforms} />
+          <FilterSelect id="filter-genre" label="Gênero" value={filters.genre} onChange={set('genre')} all="Todos os gêneros" options={genres} />
+          <FilterSelect id="filter-year" label="Ano" value={filters.year} onChange={set('year')} all="Todos os anos" options={years} />
+        </div>
+
+        <div className="filter-meta">
+          <span className="filter-count" role="status">
+            {resultCount} jogo{resultCount !== 1 ? 's' : ''}
+          </span>
+          {active && (
+            <button className="filter-clear" onClick={() => onChange(EMPTY_FILTERS)}>
+              <X size={12} aria-hidden="true" /> Limpar
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );

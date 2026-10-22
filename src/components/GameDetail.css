@@ -98,10 +98,6 @@
   margin-bottom: 0.35rem;
 }
 
-.detail-rating .star-rating {
-  margin-left: -0.5rem;
-}
-
 .detail-memory blockquote {
   position: relative;
   padding: 0.9rem 1rem 0.9rem 1.1rem;
@@ -158,21 +154,6 @@
 
   .detail-tags {
     gap: 0.3rem;
-  }
-
-  .detail-rating {
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
-  }
-
-  .detail-rating .detail-label {
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .detail-rating .star-rating {
-    margin-left: 0;
   }
 
   .detail-memory blockquote {

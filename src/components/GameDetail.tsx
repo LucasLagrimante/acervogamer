@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Game } from '../types';
 import { genreTags } from '../lib/collection';
-import { StarRating } from './StarRating';
 import './GameDetail.css';
 
 interface GameDetailProps {
@@ -12,11 +11,10 @@ interface GameDetailProps {
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
-  onUpdateRating: (id: number, rating: number) => void;
   onFilter: (type: 'platform' | 'genre', value: string) => void;
 }
 
-export function GameDetail({ game, index, total, onClose, onPrev, onNext, onUpdateRating, onFilter }: GameDetailProps) {
+export function GameDetail({ game, index, total, onClose, onPrev, onNext, onFilter }: GameDetailProps) {
   const heading = useRef<HTMLHeadingElement>(null);
 
   // foco vai para o título ao abrir: leitor de tela anuncia o jogo
@@ -48,11 +46,7 @@ export function GameDetail({ game, index, total, onClose, onPrev, onNext, onUpda
               {tag}
             </button>
           ))}
-        </div>
-
-        <div className="detail-rating">
-          <span className="detail-label">Sua nota</span>
-          <StarRating value={game.rating} onChange={r => onUpdateRating(game.id, r)} label={`Nota para ${game.title}`} />
+          {game.currentlyPlaying && <span className="tag tag-current">Jogando agora</span>}
         </div>
 
         {game.comment && (

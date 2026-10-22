@@ -1699,5 +1699,41 @@
       352
     ],
     "acquisition": "downloaded from source asset URL"
+  },
+  {
+    "id": 119,
+    "title": "Destiny 2",
+    "originalSource": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/1aa20f983639643d7961f3ffcadf63bd3c49362f/library_capsule.jpg",
+    "sourcePage": "https://store.steampowered.com/app/1085660/Destiny_2/",
+    "originalBytes": 36286,
+    "originalDimensions": [
+      300,
+      450
+    ],
+    "localFile": "/covers/119.webp",
+    "localBytes": 14336,
+    "localDimensions": [
+      300,
+      450
+    ],
+    "acquisition": "Baixada da biblioteca Steam e convertida localmente para WebP (qualidade 82, sem redimensionamento)."
+  },
+  {
+    "id": 120,
+    "title": "Call of Duty: Warzone 2.0",
+    "originalSource": "https://upload.wikimedia.org/wikipedia/en/4/49/Call_of_Duty_Warzone_2.0_Cover.png",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Call_of_Duty_Warzone_2.0_Cover.png",
+    "originalBytes": 207725,
+    "originalDimensions": [
+      316,
+      316
+    ],
+    "localFile": "/covers/120.webp",
+    "localBytes": 23444,
+    "localDimensions": [
+      316,
+      316
+    ],
+    "acquisition": "Baixada da capa do jogo na Wikipédia e convertida localmente para WebP (qualidade 82, sem redimensionamento)."
   }
 ]

@@ -140,8 +140,8 @@
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .game-video { top: 26%; left: 50%; width: min(480px, 84vw); }
-  .game-video.is-open { top: 31%; }
+  .game-video { top: max(31%, 230px); left: 50%; width: min(480px, 84vw); }
+  .game-video.is-open { top: max(35%, 290px); }
   .game-video.is-playing {
     width: min(117.6vw, calc(100vw - 1rem));
     transform: translate(-50%, -50%);

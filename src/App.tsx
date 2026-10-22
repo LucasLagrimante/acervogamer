@@ -42,7 +42,7 @@ function App() {
   const [webgl] = useState(hasWebGL);
   const [mode, setModeState] = useState<Mode>('library');
   const [mapVisited, setMapVisited] = useState(false);
-  const [games, setGames] = useState<Game[]>(() => gamesData satisfies Game[]);
+  const games = gamesData satisfies Game[];
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
@@ -86,10 +86,6 @@ function App() {
     toastedImages.current.add(title);
     addToast(`⚠ Imagem quebrada: "${title}"`);
   }, [addToast]);
-
-  const updateGameRating = useCallback((id: number, rating: number) => {
-    setGames(prev => prev.map(g => g.id === id ? { ...g, rating } : g));
-  }, []);
 
   const setMode = useCallback((next: Mode) => {
     setModeState(next);
@@ -233,7 +229,6 @@ function App() {
                 onClose={() => setDetailOpen(false)}
                 onPrev={() => selectIndex(selectedIndex - 1)}
                 onNext={() => selectIndex(selectedIndex + 1)}
-                onUpdateRating={updateGameRating}
                 onFilter={pickHub}
               />
             </>

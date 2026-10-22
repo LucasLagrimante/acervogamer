@@ -5,7 +5,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "Corrida",
-    "rating": 5,
     "cover": "/covers/1.webp",
     "comment": "CD de demonstração que circulou por aí. Gráficos incríveis pra época, mais de 60 carros Ford!",
     "youtubeId": "DtmxHXv_Vpg"
@@ -16,7 +15,6 @@
     "platform": "PC",
     "year": "2000",
     "genre": "Plataforma",
-    "rating": 4,
     "cover": "/covers/2.webp",
     "comment": "Colorido, divertido e viciante. Um clássico que muita gente jogou no Brasil.",
     "youtubeId": "p5vJa5cgo3U"
@@ -27,7 +25,6 @@
     "platform": "Sega Genesis",
     "year": "1991",
     "genre": "Plataforma",
-    "rating": 0,
     "cover": "/covers/11.webp",
     "comment": "Sonic em Hills Zone a toda velocidade. Emeralds, loops e aquele toque de nostalgia.",
     "youtubeId": "JqQYDLcvkBc"
@@ -38,7 +35,6 @@
     "platform": "Super Nintendo",
     "year": "1992",
     "genre": "Luta",
-    "rating": 0,
     "cover": "/covers/22.webp",
     "comment": "Ryu cobrando Hadouken contra Guile. O jogo de luta que viciou gerações.",
     "youtubeId": "ol6EOgu89l0"
@@ -49,7 +45,6 @@
     "platform": "Sega Genesis",
     "year": "1993",
     "genre": "Luta",
-    "rating": 0,
     "cover": "/covers/23.webp",
     "comment": "Luta sangrenta com fatalities. Johnny Cage contra Scorpion — atalho para o coração.",
     "youtubeId": "9Wp402Dhb8k"
@@ -60,7 +55,6 @@
     "platform": "Game Boy Color",
     "year": "2000",
     "genre": "RPG",
-    "rating": 0,
     "cover": "/covers/26.webp",
     "comment": "Johto em toda sua glória. Lyra (ou Kris) em sua jornada. 16 badges, Ho-Oh esperando.",
     "youtubeId": "_QWWynLH7Qk"
@@ -71,7 +65,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "MMORPG",
-    "rating": 0,
     "cover": "/covers/28.webp",
     "comment": "Azeroth. Raids, dungeons, PvP. 'For the Horde!' ou 'For the Alliance!'. Aquilo que roubou vidas.",
     "youtubeId": "WHJstP-BOGY"
@@ -82,7 +75,6 @@
     "platform": "Nintendo 64",
     "year": "1996",
     "genre": "Corrida",
-    "rating": 0,
     "cover": "/covers/30.webp",
     "comment": "Corrida com casca de banana, tartaruga vermelha e muito xingamento entre amigos. Rainbow Road era o terror de todo mundo.",
     "youtubeId": "bvpYWJ6WxLE"
@@ -93,7 +85,6 @@
     "platform": "Game Boy Color",
     "year": "1996",
     "genre": "RPG",
-    "rating": 0,
     "cover": "/covers/31.webp",
     "comment": "O começo de tudo. Escolher entre Bulbasaur, Charmander e Squirtle e sair de Pallet Town para se tornar mestre Pokémon.",
     "youtubeId": "hYcotDHI0dg"
@@ -104,7 +95,6 @@
     "platform": "PC",
     "year": "1999",
     "genre": "Plataforma 3D",
-    "rating": 0,
     "cover": "/covers/32.webp",
     "comment": "Aventura incrível em 3D com o Rayman sem braços e pernas. Fases criativas, trilha sonora marcante e um dos melhores plataformas do PC.",
     "youtubeId": "YMHn_v9d5hw"
@@ -115,7 +105,6 @@
     "platform": "PC",
     "year": "2002",
     "genre": "FPS",
-    "rating": 0,
     "cover": "/covers/33.webp",
     "comment": "FPS de Segunda Guerra Mundial que definiu o gênero. O desembarque na Normandia era tenso e cinematográfico — inspirou até o próprio Call of Duty.",
     "youtubeId": "AAy41daco4U"
@@ -126,7 +115,6 @@
     "platform": "PC",
     "year": "2005",
     "genre": "Corrida",
-    "rating": 0,
     "cover": "/covers/34.webp",
     "comment": "Fugir da polícia em mundo aberto com o BMW M3 GTR. A lista negra dos 15 rivais e aquela perseguição épica final — um dos melhores jogos de corrida já feitos.",
     "youtubeId": "a0vK8wIpkvg"
@@ -137,7 +125,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "Corrida",
-    "rating": 0,
     "cover": "/covers/35.webp",
     "comment": "Tunar o carro do zero, mundo aberto à noite e trilha sonora incrível. Colocar aerofólio, neon e vinils era quase tão divertido quanto as corridas.",
     "youtubeId": "IGhE5Nxeres"
@@ -148,7 +135,6 @@
     "platform": "PC",
     "year": "2003",
     "genre": "Ação / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/36.webp",
     "comment": "GTA dos Simpsons em Springfield. Cada personagem com seu próprio capítulo, diálogos hilários e horas explorando a cidade.",
     "youtubeId": "e6KbvEJIBAM"
@@ -159,11 +145,13 @@
     "platform": "PC",
     "year": "2002",
     "genre": "Ação / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/37.webp",
     "comment": "Tommy Vercetti em Miami nos anos 80. Trilha sonora icônica no rádio, neon, palmeiras e aquela sensação de liberdade total.",
     "youtubeId": "BQ69p-libCc",
-    "aliases": ["GTA", "GTA Vice City"]
+    "aliases": [
+      "GTA",
+      "GTA Vice City"
+    ]
   },
   {
     "id": 38,
@@ -171,11 +159,14 @@
     "platform": "PC",
     "year": "2004",
     "genre": "Ação / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/38.webp",
     "comment": "CJ, Grove Street e um mapa gigantesco com três cidades. O jogo que todo mundo jogou por centenas de horas e ainda tem histórias pra contar.",
     "youtubeId": "G6x6GHDVwSk",
-    "aliases": ["GTA", "GTA San Andreas", "GTA SA"]
+    "aliases": [
+      "GTA",
+      "GTA San Andreas",
+      "GTA SA"
+    ]
   },
   {
     "id": 39,
@@ -183,7 +174,6 @@
     "platform": "PC",
     "year": "2000",
     "genre": "Simulação de Vida",
-    "rating": 0,
     "cover": "/covers/39.webp",
     "comment": "Criar uma família, construir a casa dos sonhos e às vezes tirar a escada da piscina. O jogo que capturou jogadores de todos os perfis.",
     "youtubeId": "5ZB_limVqr8"
@@ -194,7 +184,6 @@
     "platform": "PC",
     "year": "2001",
     "genre": "Estratégia / Simulação",
-    "rating": 0,
     "cover": "/covers/40.webp",
     "comment": "Construir castelos medievais, gerenciar o povo e defender o reino de invasões. O Lorde Rat e o Snake eram vilões memoráveis.",
     "youtubeId": "TF7KEGxZSzo"
@@ -205,7 +194,6 @@
     "platform": "PC",
     "year": "2001",
     "genre": "MMORPG",
-    "rating": 0,
     "cover": "/covers/41.webp",
     "comment": "MMORPG coreano que viciou o Brasil inteiro. Farmar experiência por horas, subir de classe e exibir o equipamento raro era a vida.",
     "youtubeId": "Dg1xMX7DiWA"
@@ -216,7 +204,6 @@
     "platform": "PC",
     "year": "2009",
     "genre": "Tower Defense",
-    "rating": 0,
     "cover": "/covers/42.webp",
     "comment": "Defender a casa dos zumbis com ervilhas, girassóis e cogumelos. Simples, genial e impossível de largar.",
     "youtubeId": "WiZLygwCwd0"
@@ -227,7 +214,6 @@
     "platform": "PC",
     "year": "1999",
     "genre": "Estratégia / Tático",
-    "rating": 0,
     "cover": "/covers/43.webp",
     "comment": "Minhocas armadas com granadas, bazucas e ovelhas explosivas. No multiplayer local era pura gritaria e risada.",
     "youtubeId": "_FtlsF7GHcE"
@@ -238,7 +224,6 @@
     "platform": "PC",
     "year": "2000",
     "genre": "FPS / Tático",
-    "rating": 0,
     "cover": "/covers/44.webp",
     "comment": "O FPS que viciou gerações de PC gamers no Brasil. Lan houses, m4a1 silenciada, e aquele eco do silenciador da Glock. Clássico absoluto.",
     "youtubeId": "8iqN6jD1yLo"
@@ -249,7 +234,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "FPS / Ação",
-    "rating": 0,
     "cover": "/covers/45.webp",
     "comment": "Gordon Freeman em City 17 contra a Combine. Câmaras de testes, gravgun revolucionária e aquele episódio de trem que te deixava tenso.",
     "youtubeId": "jElU1mD8JnI"
@@ -260,7 +244,6 @@
     "platform": "PC",
     "year": "2001",
     "genre": "Ação / Noir",
-    "rating": 0,
     "cover": "/covers/46.webp",
     "comment": "Max sofrendo em New York enquanto você dispara em câmera lenta em dramatic poses. Noir noir noir. Quadrinhos como cinemática. Obra de arte sombria.",
     "youtubeId": "-f5RmT9XWvA"
@@ -271,7 +254,6 @@
     "platform": "PC",
     "year": "2002",
     "genre": "RTS / Estratégia",
-    "rating": 0,
     "cover": "/covers/47.webp",
     "comment": "O RTS que dividiu a história dos e-sports. Arthas, Illidan, Tyrande. Modo campanha com cinemáticas épicas. Customizável para mods infinitos.",
     "youtubeId": "9YMPGV9e7Bc"
@@ -282,7 +264,6 @@
     "platform": "PlayStation 2",
     "year": "2001",
     "genre": "Esporte / Ação",
-    "rating": 0,
     "cover": "/covers/48.webp",
     "comment": "Fazer combos infinitos descendo ladeiras, espiral no corrimão e aquela satisfação de o contador de pontos virar vermelho de tão alto.",
     "youtubeId": "Ib-YwWzh8kM"
@@ -293,7 +274,6 @@
     "platform": "PC",
     "year": "1996",
     "genre": "RPG / Ação",
-    "rating": 0,
     "cover": "/covers/49.webp",
     "comment": "Matar demônios nas catacumbas de Tristram. Clique clique clique no mouse até explodir. Addictivo demais. O começo de uma lendária série.",
     "youtubeId": "ezE6vkmZzcU"
@@ -304,7 +284,6 @@
     "platform": "PC",
     "year": "2000",
     "genre": "RPG / Ação",
-    "rating": 0,
     "cover": "/covers/50.webp",
     "comment": "O opus máximo do gênero. 7 classes jogáveis, Baal, Sorceress com Frozen Orb e D2 roubava sua vida. Ainda é jogado em 2025.",
     "youtubeId": "Z3HV445GM0U"
@@ -315,7 +294,6 @@
     "platform": "PC",
     "year": "1999",
     "genre": "FPS",
-    "rating": 0,
     "cover": "/covers/51.webp",
     "comment": "Arena shooter puro, rocket jump, railgun e aquele som de morte que ecoava na sua cabeça. Multiplayer insano.",
     "youtubeId": "g3bI6KEbk9k"
@@ -326,7 +304,6 @@
     "platform": "Nintendo 64",
     "year": "1998",
     "genre": "Ação / Aventura",
-    "rating": 0,
     "cover": "/covers/52.webp",
     "comment": "Link em Hyrule em 3D. Ocarina tocando músicas, puzzles geniais, transformações em criatura e o melhor jogo de todos os tempos de acordo com a internet.",
     "youtubeId": "_KO2a83jfas"
@@ -337,7 +314,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "FPS / Multiplayer",
-    "rating": 0,
     "cover": "/covers/53.webp",
     "comment": "UT2K4: o FPS que combinava arte, velocidade e insanidade. Dodge jump, Flak Canon, mapa Onslaught. Pura adrenalina e pixel perfect.",
     "youtubeId": "-uNNYR6XoyY"
@@ -348,7 +324,6 @@
     "platform": "PC",
     "year": "1999",
     "genre": "RTS / Estratégia",
-    "rating": 0,
     "cover": "/covers/54.webp",
     "comment": "Construir cidades medievais, pesquisar tecnologias e mandar cavaleiros contra o inimigo. Campanhas históricas épicas. Clássico indiscutível.",
     "youtubeId": "dF7LS5rHpGc"
@@ -359,7 +334,6 @@
     "platform": "PlayStation 2",
     "year": "2005",
     "genre": "Música / Ritmo",
-    "rating": 0,
     "cover": "/covers/55.webp",
     "comment": "Tocar guitarrinha de plástico no sofá e se sentir rockstar. Ligar hard mode e explodir sua performance. Boomtown Rats e Stevie Ray Vaughan na setlist.",
     "youtubeId": "BVyWcUHPWUU"
@@ -370,7 +344,6 @@
     "platform": "PC",
     "year": "1996",
     "genre": "Ação / Plataforma",
-    "rating": 0,
     "cover": "/covers/56.webp",
     "comment": "Jogo eletrônico de ação e plataforma no estilo run and gun. Controle inovador com mouse, muita violência pixelada e um demônio irritante.",
     "youtubeId": "_QlV0baGpMM"
@@ -381,7 +354,6 @@
     "platform": "PC",
     "year": "2004",
     "genre": "Ação / Plataforma",
-    "rating": 0,
     "cover": "/covers/57.webp",
     "comment": "Jogo de ação e plataforma 2D independente. Um clássico indie que marcou geração com história emocionante, gameplay genial e trilha sonora incrível.",
     "youtubeId": "PR_6CbI7dhQ"
@@ -392,7 +364,6 @@
     "platform": "PC",
     "year": "2002",
     "genre": "Tiro / Plataforma",
-    "rating": 0,
     "cover": "/covers/58.webp",
     "comment": "Jogo de tiro e plataforma em 2D. Multiplayer caótico, física maluca, armas diversas e adrenalina pura em matches rápidos.",
     "youtubeId": "9v_bxbnZ0Cc"
@@ -403,7 +374,6 @@
     "platform": "MS-DOS / PC",
     "year": "1998",
     "genre": "Tiro / Ação",
-    "rating": 0,
     "cover": "/covers/59.webp",
     "comment": "Jogo eletrônico de tiro em tempo real. Combate subterrâneo entre duas minhocas armadas com física destrutível. Clássico cult finlandês criado por Joosa Riekkinen com partidas intensas.",
     "youtubeId": "KE2XtQaMb5I"
@@ -414,7 +384,6 @@
     "platform": "PC",
     "year": "2000",
     "genre": "Tiro / Ação",
-    "rating": 0,
     "cover": "/covers/60.webp",
     "comment": "Continuação do clássico Liero. Mais armas, mais chaos, mais minhocas armadas se destruindo em batalhas épicas subterrâneas.",
     "youtubeId": "cDX-IynQSWc"
@@ -425,7 +394,6 @@
     "platform": "Nintendo 64",
     "year": "1997",
     "genre": "Tiro / Ação",
-    "rating": 0,
     "cover": "/covers/61.webp",
     "comment": "Jogo de tiro em primeira/terceira pessoa no N64. Pilote a Arwing com Fox McCloud contra Andross. Ação rápida, múltiplas rotas e aquele joystick analógico revolucionário.",
     "youtubeId": "eyxI65Kqntg"
@@ -436,7 +404,6 @@
     "platform": "PC",
     "year": "2002",
     "genre": "RPG / Ação",
-    "rating": 0,
     "cover": "/covers/62.webp",
     "comment": "RPG de ação em tempo real. Explorar masmorras épicas, recrutar heróis, derrotar monstros. Gameplay addictivo com câmera isométrica e clima de aventura medieval pura.",
     "youtubeId": "1Dvf-9Vdc84"
@@ -447,7 +414,6 @@
     "platform": "PC",
     "year": "2002",
     "genre": "RTS / Estratégia",
-    "rating": 0,
     "cover": "/covers/63.webp",
     "comment": "RTS de estratégia em tempo real. Construir cidades, comandar mitos e criaturas de Egípcios, Gregos, Nórdicos e Atlânticos. Campanha épica contra Kronos com gameplay viciante.",
     "youtubeId": "RaWCtXWyf-U"
@@ -458,7 +424,6 @@
     "platform": "PC",
     "year": "1998",
     "genre": "FPS / Ação",
-    "rating": 0,
     "cover": "/covers/64.webp",
     "comment": "O FPS que revolucionou o gênero. Gordon Freeman em Black Mesa contra os Xen. Física inovadora, storytelling cinematográfico e mods infinitos. Obra-prima absoluta.",
     "youtubeId": "R0zLf4jG5XQ"
@@ -469,7 +434,6 @@
     "platform": "PlayStation 2",
     "year": "2005",
     "genre": "Corrida / Esporte",
-    "rating": 0,
     "cover": "/covers/67.webp",
     "comment": "Jogo de corrida de downhill no PlayStation 2. Pilote bikes em pistas alucinantes, customize seu equipamento, vença campeonatos. Adrenalina, velocidade e gravidade te esperando.",
     "youtubeId": "MgeuOtr8caU"
@@ -480,7 +444,6 @@
     "platform": "PC",
     "year": "2007",
     "genre": "FPS / Tiro",
-    "rating": 0,
     "cover": "/covers/68.webp",
     "comment": "FPS gratuito do tipo pay-to-win que viciou milhões. Mercenários vs Black List, compre armas, customize personagem. Um clássico dos PC bangs brasileiros.",
     "youtubeId": "Kpbwptc5rf0"
@@ -491,7 +454,6 @@
     "platform": "PC",
     "year": "2008",
     "genre": "FPS / Tiro",
-    "rating": 0,
     "cover": "/covers/69.webp",
     "comment": "FPS em primeira pessoa para lan houses. Modo Death Match, Bomb, Elimination. Jogo de tiro rápido que marcou gerações em cybercafés do Brasil.",
     "youtubeId": "k3eY-JJA0BM"
@@ -502,7 +464,6 @@
     "platform": "Browser",
     "year": "2008",
     "genre": "Tiro / Ação",
-    "rating": 0,
     "cover": "/covers/70.webp",
     "comment": "Jogo de tiro por turnos cartunesco. Tanques combatendo em terrenos aleatórios, física divertida, muitos efeitos. Simples mas viciante para horas de jogo.",
     "youtubeId": "T_4W_ZtkC-o"
@@ -513,7 +474,6 @@
     "platform": "PC",
     "year": "2005",
     "genre": "FPS / Ação",
-    "rating": 0,
     "cover": "/covers/71.webp",
     "comment": "FPS único com parkour e combate corpo-a-corpo. Wallrun, double jump, combate melee. Gameplay inovador que marcou épocas nos PC bangs asiáticos e brasileiros.",
     "youtubeId": "_Xn3qCgdd3g"
@@ -524,7 +484,6 @@
     "platform": "PC",
     "year": "2003",
     "genre": "RPG / Multiplayer",
-    "rating": 0,
     "cover": "/covers/72.webp",
     "comment": "MMORPG casual e colorido. Missões fáceis, crafting, personalizações. Jogo descontraído perfeito para jogar enquanto faz outras coisas. Comunidade brasileira forte.",
     "youtubeId": "Kjm-pXE6E3E"
@@ -535,7 +494,6 @@
     "platform": "PC",
     "year": "1997",
     "genre": "MMORPG",
-    "rating": 0,
     "cover": "/covers/73.webp",
     "comment": "Um dos primeiros MMORPGs da história. Mundo persistente isométrico, PvP aberto, farming infinito. Clássico que ainda está vivo em 2025 com comunidade fiel.",
     "youtubeId": "Q_YQCeVe7nA"
@@ -546,7 +504,6 @@
     "platform": "PC",
     "year": "2010",
     "genre": "Música / Ritmo",
-    "rating": 0,
     "cover": "/covers/74.webp",
     "comment": "Jogo musical onde você segue a batida em partituras coloridas. Educativo e divertido, perfeito para aprender ritmo e música. Melhorias e músicas novas em cada sequência.",
     "youtubeId": "VCUWIOBZFC4"
@@ -557,7 +514,6 @@
     "platform": "PlayStation",
     "year": "2000",
     "genre": "Beat em up / Ação",
-    "rating": 0,
     "cover": "/covers/75.webp",
     "comment": "Grande clássico do PS1 onde você controla o próprio Jackie Chan em porradarias épicas e acrobacias.",
     "youtubeId": "WXaYNhjJA_g"
@@ -568,7 +524,6 @@
     "platform": "PC CD-ROM",
     "year": "2000",
     "genre": "Trivia / Quiz",
-    "rating": 0,
     "cover": "/covers/76.webp",
     "comment": "O clássico do SBT com o Silvio Santos. Você está certo disso?",
     "youtubeId": "VKxiBNalfNs"
@@ -579,7 +534,6 @@
     "platform": "PC",
     "year": "2020",
     "genre": "FPS / Battle Royale",
-    "rating": 0,
     "cover": "/covers/77.webp",
     "comment": "Battle Royale frenético no universo de Call of Duty. Verdansk, gulag e aquela tensão de ser o último sobrevivente.",
     "youtubeId": "dKpL_h7va4w",
@@ -595,7 +549,6 @@
     "platform": "PC",
     "year": "2024",
     "genre": "Hero Shooter",
-    "rating": 0,
     "cover": "/covers/78.webp",
     "comment": "Hero Shooter com os heróis e vilões da Marvel. Combates 6v6 dinâmicos e cenários destrutíveis.",
     "youtubeId": "LtGRIjpXD_g"
@@ -606,7 +559,6 @@
     "platform": "PC",
     "year": "2022",
     "genre": "Hero Shooter",
-    "rating": 0,
     "cover": "/covers/79.webp",
     "comment": "Evolução do hero shooter da Blizzard. Novos heróis, mapas e o modo 5v5 que mudou a dinâmica das partidas.",
     "youtubeId": "hjpDTQq7hLQ"
@@ -617,7 +569,6 @@
     "platform": "PC",
     "year": "2025",
     "genre": "Esporte / Skate",
-    "rating": 0,
     "cover": "/covers/80.webp",
     "comment": "O aguardado retorno da franquia Skate. Foco total em realismo, expressão e comunidade no San Vansterdam.",
     "youtubeId": "1Y2AB8GV9aw"
@@ -628,7 +579,6 @@
     "platform": "PC",
     "year": "2021",
     "genre": "FPS / Guerra",
-    "rating": 0,
     "cover": "/covers/81.webp",
     "comment": "O sexto capítulo principal da série Battlefield, trazendo combates épicos em grande escala e destruição massiva.",
     "youtubeId": "F9RIM-1I8Z8"
@@ -639,7 +589,6 @@
     "platform": "PC",
     "year": "2020",
     "genre": "Roguelike / Ação",
-    "rating": 0,
     "cover": "/covers/82.webp",
     "comment": "Zagreus tentando escapar do submundo de seu pai. Um roguelike perfeito com narrativa envolvente e arte belíssima.",
     "youtubeId": "dPmMCzvLs9E"
@@ -650,7 +599,6 @@
     "platform": "PC",
     "year": "2020",
     "genre": "FPS / Ação",
-    "rating": 0,
     "cover": "/covers/83.webp",
     "comment": "Conspirações e espionagem durante a Guerra Fria. Campanha intensa, zumbis e o multiplayer clássico da Raven e Treyarch.",
     "youtubeId": "Cjhr8qSr6Cc"
@@ -661,7 +609,6 @@
     "platform": "PC",
     "year": "2019",
     "genre": "FPS / Ação",
-    "rating": 0,
     "cover": "/covers/84.webp",
     "comment": "Reboot de 2019 da subsérie Modern Warfare, com campanha focada em Captain Price, Farah e Alex em Urzikstan, além dos modos multiplayer e Spec Ops.",
     "youtubeId": "Vpf5z8VdGhM",
@@ -678,7 +625,6 @@
     "platform": "PC",
     "year": "2025",
     "genre": "Simulação / Estratégia",
-    "rating": 0,
     "cover": "/covers/85.webp",
     "comment": "Um jogo de gerenciamento e estratégia que desafia suas habilidades de organização e planejamento.",
     "youtubeId": "vMneZiNG-Bs"
@@ -689,7 +635,6 @@
     "platform": "PC",
     "year": "2009",
     "genre": "MOBA",
-    "rating": 0,
     "cover": "/covers/86.webp",
     "comment": "O MOBA mais popular do mundo. Centenas de campeões, estratégia profunda e uma cena competitiva gigantesca.",
     "youtubeId": "cIjqhw425Z4"
@@ -700,7 +645,6 @@
     "platform": "Master System",
     "year": "1986",
     "genre": "Plataforma",
-    "rating": 0,
     "cover": "/covers/87.webp",
     "comment": "O clássico mascote da Sega no Master System. Pular, dar socos e jogar Jokenpô com os chefões inesquecíveis.",
     "youtubeId": "Rb9haoWT5js"
@@ -711,7 +655,6 @@
     "platform": "Sega Genesis",
     "year": "1989",
     "genre": "Beat 'em up",
-    "rating": 0,
     "cover": "/covers/88.webp",
     "comment": "Escolher entre o bárbaro, a amazona ou o anão e sair dando porrada e magia nos inimigos. Um clássico absoluto da Sega.",
     "youtubeId": "UpS_lJnIEes"
@@ -722,7 +665,6 @@
     "platform": "PC",
     "year": "2023",
     "genre": "Sobrevivência",
-    "rating": 0,
     "cover": "/covers/89.webp",
     "comment": "Sobrevivência e construção nas Minas de Moria. Explore, minere e enfrente os perigos para retomar Khazad-dûm.",
     "youtubeId": "74appGlLuhU"
@@ -733,7 +675,6 @@
     "platform": "PC",
     "year": "2022",
     "genre": "Sobrevivência",
-    "rating": 0,
     "cover": "/covers/90.webp",
     "comment": "Sobrevivência oceânica cooperativa. Comece com um simples anzol e um pedaço de madeira, e construa uma mansão flutuante enquanto enfrenta tubarões e explora ilhas.",
     "youtubeId": "QbDVzKVmi1Q"
@@ -744,7 +685,6 @@
     "platform": "PC",
     "year": "2021",
     "genre": "Plataforma / Cooperativo",
-    "rating": 0,
     "cover": "/covers/91.webp",
     "comment": "Uma aventura de plataforma alucinante criada exclusivamente para ser jogada em modo cooperativo.",
     "youtubeId": "SPa5JXzPaAk"
@@ -755,7 +695,6 @@
     "platform": "PC",
     "year": "2018",
     "genre": "RTS / Estratégia",
-    "rating": 0,
     "cover": "/covers/92.webp",
     "comment": "Estratégia Viking em que você lidera o seu clã na descoberta de um novo continente misterioso e perigoso.",
     "youtubeId": "T5s-9dK97HQ"
@@ -766,7 +705,6 @@
     "platform": "PC",
     "year": "2015",
     "genre": "Ação / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/93.webp",
     "comment": "Explosões em Medici. Rico Rodriguez destruindo ditaduras, planando de wingsuit e causando o absoluto caos.",
     "youtubeId": "dEbt0HKj2z0"
@@ -777,7 +715,6 @@
     "platform": "PC",
     "year": "2018",
     "genre": "Aventura / Cooperativo",
-    "rating": 0,
     "cover": "/covers/94.webp",
     "comment": "Uma aventura cooperativa incrível que começa com uma fuga de prisão e se transforma em uma jornada emocionante e interconectada entre dois jogadores.",
     "youtubeId": "v1n1EaRejP8"
@@ -788,7 +725,6 @@
     "platform": "PC",
     "year": "2012",
     "genre": "Looter Shooter",
-    "rating": 0,
     "cover": "/covers/95.webp",
     "comment": "Tiro, porrada e um bilhão de armas em Pandora. Enfrente Handsome Jack com seus amigos.",
     "youtubeId": "t6x99TCdqkw"
@@ -799,7 +735,6 @@
     "platform": "PC",
     "year": "2021",
     "genre": "Sobrevivência / RPG",
-    "rating": 0,
     "cover": "/covers/96.webp",
     "comment": "Sobreviva ao Ragnarök com sua tribo. Colete recursos durante o dia e defenda a Semente de Yggdrasil à noite.",
     "youtubeId": "vyGZAUTeYjY"
@@ -810,7 +745,6 @@
     "platform": "PC",
     "year": "2015",
     "genre": "MMO / Voxel",
-    "rating": 0,
     "cover": "/covers/97.webp",
     "comment": "Aventuras em voxel. Minere, construa, derrote chefes em dungeons geradas proceduralmente com diversas classes únicas.",
     "youtubeId": "biP4fMVbDPE"
@@ -821,7 +755,6 @@
     "platform": "PC",
     "year": "2023",
     "genre": "Estratégia / Defesa de Torre",
-    "rating": 0,
     "cover": "/covers/98.webp",
     "comment": "Um jogo de construção e defesa de reino minimalista. Equilibre a economia de dia e defenda seu castelo à noite.",
     "youtubeId": "wLTUzB9ZWDI"
@@ -832,7 +765,6 @@
     "platform": "PC",
     "year": "2011",
     "genre": "Defesa de Torre / Ação",
-    "rating": 0,
     "cover": "/covers/99.webp",
     "comment": "Posicione armadilhas letais e use magia e armas para trucidar hordas de orcs e defender os Rifts (Fendas).",
     "youtubeId": "tJZmivgwbeA"
@@ -843,7 +775,6 @@
     "platform": "PC",
     "year": "2011",
     "genre": "Ação / Aventura",
-    "rating": 0,
     "cover": "/covers/100.webp",
     "comment": "Combine elementos para criar feitiços devastadores. Cuidado com o fogo amigo nesta hilária aventura mágica.",
     "youtubeId": "DYjCVcYkzOs"
@@ -854,7 +785,6 @@
     "platform": "PC",
     "year": "2009",
     "genre": "FPS / Sobrevivência / Cooperativo",
-    "rating": 0,
     "cover": "/covers/101.webp",
     "comment": "Sobreviva ao apocalipse zumbi com seus amigos! Armas viscerais e um diretor de IA que garante que nenhuma partida seja igual a outra.",
     "youtubeId": "tctq_WdX-Ec"
@@ -865,7 +795,6 @@
     "platform": "Super Nintendo",
     "year": "1990",
     "genre": "Plataforma",
-    "rating": 0,
     "cover": "/covers/102.webp",
     "comment": "Mario e Yoshi em Dinosaur Land. Fases secretas, Star Road e aquela sensação mágica de descobrir cada cantinho do mapa. O melhor plataforma de todos os tempos.",
     "youtubeId": "ta7ufW0Prws"
@@ -876,7 +805,6 @@
     "platform": "Browser",
     "year": "2006",
     "genre": "RPG / Aventura",
-    "rating": 0,
     "cover": "/covers/103.webp",
     "comment": "RPG single-player no navegador da Artix Entertainment. Aventuras épicas com dragões, classes variadas e aquela nostalgia dos jogos em Flash que marcaram uma geração.",
     "youtubeId": "26aqQONHXrM"
@@ -887,7 +815,6 @@
     "platform": "Browser",
     "year": "2003",
     "genre": "Estratégia / MMO",
-    "rating": 0,
     "cover": "/covers/104.webp",
     "comment": "Estratégia medieval no navegador. Construir aldeias, recrutar tropas e conquistar territórios inimigos. Diplomacia, alianças e guerras que duravam semanas inteiras.",
     "youtubeId": "w1-0dqTCxyM"
@@ -898,7 +825,6 @@
     "platform": "Browser",
     "year": "2006",
     "genre": "RPG / MMO",
-    "rating": 0,
     "cover": "/covers/105.webp",
     "comment": "RPG de navegador onde você escolhe entre vampiros e lobisomens. Missões, PvP e evolução do personagem em um mundo sombrio e viciante.",
     "youtubeId": "lratzR7SsiQ"
@@ -909,7 +835,6 @@
     "platform": "Browser",
     "year": "2008",
     "genre": "Estratégia / MMO",
-    "rating": 0,
     "cover": "/covers/106.webp",
     "comment": "Estratégia no navegador ambientada na Grécia Antiga. Construir cidades em ilhas, pesquisar tecnologias, formar alianças e dominar o mar Mediterrâneo.",
     "youtubeId": "YOpMzH5fNj8"
@@ -920,7 +845,6 @@
     "platform": "Browser",
     "year": "2005",
     "genre": "RPG / Crime",
-    "rating": 0,
     "cover": "/covers/107.webp",
     "comment": "RPG de crime no navegador. Roube, trafique, suba na hierarquia do submundo e domine a cidade. Clássico dos jogos de browser que viciou muita gente.",
     "youtubeId": "vGn9xa4tgkY"
@@ -931,7 +855,6 @@
     "platform": "PC",
     "year": "2001",
     "genre": "MMORPG",
-    "rating": 0,
     "cover": "/covers/108.webp",
     "comment": "MMORPG clássico com mundo aberto, sistema de skills único e aventuras sem fim. Jogue no navegador ou baixe o cliente e explore Gielinor.",
     "youtubeId": "zxNdhdp2Ek8"
@@ -942,7 +865,6 @@
     "platform": "PC",
     "year": "2011",
     "genre": "Sandbox / Sobrevivência",
-    "rating": 0,
     "cover": "/covers/109.webp",
     "comment": "O jogo que redefiniu uma geração. Minerar, construir, sobreviver e criar mundos infinitos bloco por bloco. De cavernas a castelos, tudo é possível.",
     "youtubeId": "xuq9-18rmQQ"
@@ -953,7 +875,6 @@
     "platform": "Browser",
     "year": "2000",
     "genre": "Social / MMO",
-    "rating": 0,
     "cover": "/covers/110.webp",
     "comment": "O hotel virtual que viciou milhões. Decorar quartos, fazer amigos, trocar moedas e curtir eventos. A rede social gamer antes das redes sociais.",
     "youtubeId": "h6EuSbvx_NE"
@@ -964,11 +885,14 @@
     "platform": "PC",
     "year": "2013",
     "genre": "Ação / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/111.webp",
     "comment": "Michael, Trevor e Franklin em Los Santos. Três protagonistas, um mundo gigantesco e o GTA Online que se tornou um fenômeno próprio.",
     "youtubeId": "j3vYBusVm40",
-    "aliases": ["GTA", "GTA V", "GTA 5"]
+    "aliases": [
+      "GTA",
+      "GTA V",
+      "GTA 5"
+    ]
   },
   {
     "id": 112,
@@ -976,7 +900,6 @@
     "platform": "Browser",
     "year": "2008",
     "genre": "MMORPG",
-    "rating": 0,
     "cover": "/covers/112.webp",
     "comment": "MMORPG no navegador da Artix Entertainment. Classes, quests épicas e batalhas em tempo real no universo de Lore. O irmão multiplayer do DragonFable.",
     "youtubeId": "L97ZNc_qW6A"
@@ -987,7 +910,6 @@
     "platform": "Mobile",
     "year": "2018",
     "genre": "Ação / Multiplayer",
-    "rating": 0,
     "cover": "/covers/113.webp",
     "comment": "O hit mobile da Supercell. Partidas rápidas 3v3, brawlers carismáticos e modos variados que viciam no celular. Competitivo e casual ao mesmo tempo.",
     "youtubeId": "rEmClS6_8LQ"
@@ -998,7 +920,6 @@
     "platform": "PC",
     "year": "2003",
     "genre": "MOBA",
-    "rating": 0,
     "cover": "/covers/114.webp",
     "comment": "O mod de Warcraft III que criou o gênero MOBA. Escolher herói, farmar creeps, defender as torres e destruir a Ancient. O pai do League of Legends e do Dota 2.",
     "youtubeId": "-mFKVsmMi9c"
@@ -1009,7 +930,6 @@
     "platform": "PC",
     "year": "2021",
     "genre": "Sobrevivência / Mundo Aberto",
-    "rating": 0,
     "cover": "/covers/115.webp",
     "comment": "Sobrevivência Viking cooperativa no purgatório nórdico. Construir bases épicas, derrotar chefões míticos e explorar biomas perigosos com os amigos. Fenômeno indie de 2021.",
     "youtubeId": "NsV2VU92nrc"
@@ -1020,7 +940,6 @@
     "platform": "Browser",
     "year": "2005",
     "genre": "RPG / MMO",
-    "rating": 0,
     "cover": "/covers/116.webp",
     "comment": "RPG de gladiadores no navegador. Treinar personagem, lutar na arena, formar alianças e conquistar a glória em Roma Antiga.",
     "youtubeId": "3j9Z3edx1eY"
@@ -1031,7 +950,6 @@
     "platform": "Sega Genesis",
     "year": "1989",
     "genre": "Ação / Beat 'em up",
-    "rating": 0,
     "cover": "/covers/117.webp",
     "comment": "Um clássico do Mega Drive! Você é um guerreiro ressuscitado para salvar a filha do Zeus, se transformando em feras míticas pelo caminho. Power-ups, chefões gigantes e aquela nostalgia pura dos anos 90.",
     "youtubeId": "m92JFeUVOPw"
@@ -1042,9 +960,40 @@
     "platform": "Browser",
     "year": "2007",
     "genre": "Luta / RPG",
-    "rating": 0,
     "cover": "/covers/118.webp",
     "comment": "O clássico de gladiadores em Flash. Criar seu guerreiro, treinar atributos e duelar na arena até derrotar o imperador. Combate por turnos viciante que marcou toda uma geração de jogadores de browser.",
     "youtubeId": "BwvSx6DZSRY"
+  },
+  {
+    "id": 119,
+    "title": "Destiny 2",
+    "aliases": [
+      "Destiny II",
+      "D2"
+    ],
+    "platform": "PC",
+    "year": "2017",
+    "genre": "FPS / Ação",
+    "currentlyPlaying": true,
+    "cover": "/covers/119.webp",
+    "comment": "FPS de ficção científica da Bungie, com campanha, atividades cooperativas e modos PvP.",
+    "youtubeId": "8N48bVr0MPQ"
+  },
+  {
+    "id": 120,
+    "title": "Call of Duty: Warzone",
+    "aliases": [
+      "Warzone 2",
+      "Warzone 2.0",
+      "Call of Duty: Warzone 2",
+      "Call of Duty: Warzone 2.0",
+      "WZ2"
+    ],
+    "platform": "PC",
+    "year": "2022",
+    "genre": "FPS / Battle Royale",
+    "cover": "/covers/120.webp",
+    "comment": "A versão lançada como Warzone 2.0 em 2022, rebatizada para Call of Duty: Warzone em 2023; battle royale gratuito que continua recebendo temporadas e mapas.",
+    "youtubeId": "9ptw5Sbyor4"
   }
 ]

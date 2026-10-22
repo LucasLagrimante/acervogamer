@@ -11,5 +11,6 @@ if (!match) {
 }
 
 const games = new Function(`return [${match[1]}]`)()
+  .map(({ rating: _rating, ...game }) => game)
 fs.writeFileSync('src/data/games.json', JSON.stringify(games, null, 2))
 console.log(`games.json regravado com ${games.length} jogos.`)

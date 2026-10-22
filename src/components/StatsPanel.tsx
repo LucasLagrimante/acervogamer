@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Game } from '../types';
-import { averageRating, countBy, formatRating, genreTags } from '../lib/collection';
+import { countBy, genreTags } from '../lib/collection';
 import './StatsPanel.css';
 
 interface StatsPanelProps {
@@ -11,8 +11,8 @@ export function StatsPanel({ games }: StatsPanelProps) {
   const stats = useMemo(() => {
     const platforms = countBy(games, g => g.platform ? [g.platform] : []);
     const genres = countBy(games, g => genreTags(g.genre));
-    const rated = games.filter(g => g.rating > 0).length;
-    return { platforms, genres, rated, avg: averageRating(games) };
+    const currentlyPlaying = games.filter(g => g.currentlyPlaying);
+    return { platforms, genres, currentlyPlaying };
   }, [games]);
 
   const topPlatforms = stats.platforms.slice(0, 5);
@@ -28,9 +28,9 @@ export function StatsPanel({ games }: StatsPanelProps) {
           <dd className="neon-text-pink">{games.length}</dd>
         </div>
         <div className="stats-kpi">
-          <dt>Nota média</dt>
-          <dd className="neon-text-yellow">{stats.avg === null ? '—' : formatRating(stats.avg)}</dd>
-          <span className="stats-foot">{stats.rated} avaliado{stats.rated !== 1 ? 's' : ''}</span>
+          <dt>Jogando agora</dt>
+          <dd className="neon-text-yellow">{stats.currentlyPlaying.length}</dd>
+          <span className="stats-foot">{stats.currentlyPlaying.map(game => game.title).join(', ') || 'Nenhum jogo em andamento'}</span>
         </div>
         <div className="stats-kpi">
           <dt>Plataformas</dt>

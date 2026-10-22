@@ -1,4 +1,4 @@
-import { Game } from '../types';
+import type { Game } from '../types.ts';
 
 export interface Filters {
   search: string;
@@ -30,6 +30,9 @@ export function filterGames(games: Game[], f: Filters): Game[] {
       return matchSearch && matchPlatform && matchYear && matchGenre;
     })
     .sort((a, b) => {
+      const currentA = a.currentlyPlaying === true ? 1 : 0;
+      const currentB = b.currentlyPlaying === true ? 1 : 0;
+      if (currentA !== currentB) return currentB - currentA;
       const yearA = parseInt(a.year) || 0;
       const yearB = parseInt(b.year) || 0;
       if (yearA !== yearB) return yearB - yearA;
@@ -56,17 +59,8 @@ export function uniqueYears(games: Game[]): string[] {
   });
 }
 
-export function averageRating(games: Game[]): number | null {
-  const rated = games.filter(g => g.rating > 0);
-  if (!rated.length) return null;
-  return rated.reduce((acc, g) => acc + g.rating, 0) / rated.length;
-}
-
 export function countBy(games: Game[], key: (g: Game) => string[]): [string, number][] {
   const counts = new Map<string, number>();
   games.forEach(g => key(g).forEach(k => counts.set(k, (counts.get(k) ?? 0) + 1)));
   return Array.from(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
-
-export const formatRating = (n: number) =>
-  n.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
